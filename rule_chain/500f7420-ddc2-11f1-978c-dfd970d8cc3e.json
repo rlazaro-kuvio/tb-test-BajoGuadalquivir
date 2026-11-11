@@ -1,0 +1,29 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "500f7420-ddc2-11f1-978c-dfd970d8cc3e"
+    },
+    "name" : "Lisímetros - AgZoom",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : null,
+    "firstNodeIndex" : null,
+    "nodes" : [ ],
+    "ruleChainConnections" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
