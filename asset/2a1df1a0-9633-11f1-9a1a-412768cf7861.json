@@ -1,0 +1,628 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "063b63d0-9633-11f1-9a1a-412768cf7861"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "label" : null,
+    "name" : "JM GONZALEZ",
+    "ownerId" : null,
+    "type" : "Guarda"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "b3de15d0-84fb-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000394
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "b3f6a6e0-84fb-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000477
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea13a080-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000341
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea165fa0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000345
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea188280-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000349
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea19bb00-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000342
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea1c04f0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000343
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea1d1660-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000352
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea335d80-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000359
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea3447e0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000361
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea375520-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000353
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea6e6ab0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000364
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea7177f0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000370
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea73c1e0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000381
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea7aedd0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000380
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea7dacf0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000385
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea88f791-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000389
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea8a5721-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000391
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea90e6d1-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000393
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea926d70-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000396
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eab1b540-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000409
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eabe8680-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000418
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eabead90-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000420
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eabfe610-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000421
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ead31ff0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000429
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eadd5920-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000432
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eadeb8b0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000438
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eae659d0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000440
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eaec2630-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000443
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eaf4b1b0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000449
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eaff11f0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000453
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb0182f1-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000454
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb046920-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000458
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb072840-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000456
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb092410-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000462
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb09c050-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000465
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb0f8cb0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000461
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb1272e0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000459
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb1495c0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000471
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb17ca11-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000480
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb1b9aa0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000479
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb1de490-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000476
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb242620-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000481
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb275a70-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000487
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb2ab5d0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000486
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eb4da720-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2a1df1a0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000507
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

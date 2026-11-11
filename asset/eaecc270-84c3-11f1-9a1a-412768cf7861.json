@@ -1,0 +1,283 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : { },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "cc836b90-84c3-11f1-9a1a-412768cf7861"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "eaecc270-84c3-11f1-9a1a-412768cf7861"
+    },
+    "label" : null,
+    "name" : "Liebanas",
+    "ownerId" : null,
+    "type" : "Grupo_Riego"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eaecc270-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b1580730-84fb-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Forma_parte_de",
+    "typeGroup" : "COMMON",
+    "version" : 8610560
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "eaecc270-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "14897fd0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000446
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "443ca3f2-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "eaecc270-84c3-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Esta",
+    "typeGroup" : "COMMON",
+    "version" : 1741107
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Guarda",
+      "lastUpdateTs" : 1786528317520,
+      "longValue" : null,
+      "strValue" : "M DÍAZ"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Sector",
+      "lastUpdateTs" : 1786528317520,
+      "longValue" : null,
+      "strValue" : "S-3"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ajuste_resta_otro_grupo",
+      "lastUpdateTs" : 1789371898039,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ajuste_resta_otro_grupo_diario_m3",
+      "lastUpdateTs" : 1789371898039,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cf_state",
+      "lastUpdateTs" : 1794385799774,
+      "longValue" : null,
+      "strValue" : "{\"ultimoValor\":0,\"ultimoTs\":1794385799376,\"sumaPonderada\":0,\"tiempoAcumulado\":33300022,\"dia\":\"2026-11-11\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clave_parcela_catastro",
+      "lastUpdateTs" : 1788432628663,
+      "longValue" : null,
+      "strValue" : "LIEBANAS"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "contador",
+      "lastUpdateTs" : 1794385799613,
+      "longValue" : 37,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cultivo_dominante",
+      "lastUpdateTs" : 1788432628663,
+      "longValue" : null,
+      "strValue" : "Invernaderos y cultivos bajo plÃ¡stico"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia",
+      "lastUpdateTs" : 1794353399662,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "estado_revision",
+      "lastUpdateTs" : 1788432628663,
+      "longValue" : null,
+      "strValue" : "confirmado"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "geometry",
+      "lastUpdateTs" : 1784611242040,
+      "longValue" : null,
+      "strValue" : "[[37.20475823333319, -5.934706209409876], [37.20455199033663, -5.935145467737798], [37.20418520662535, -5.93590227007066], [37.2038280301295, -5.936865038519644], [37.20376837926445, -5.937358790996329], [37.20363759772288, -5.938312113607701], [37.20343288272964, -5.938227587987028], [37.20336252742081, -5.938579986371052], [37.20311504934645, -5.938550906758474], [37.20299859604845, -5.938505484785951], [37.20296450871323, -5.938704521075462], [37.20267838146916, -5.938654083910906], [37.20254424608979, -5.939008739721745], [37.2022127135937, -5.939307152030089], [37.20217905364212, -5.939026530642662], [37.20195142784303, -5.938982601384461], [37.20191962373222, -5.939112069115477], [37.20129873083061, -5.93814586160112], [37.2014695450148, -5.936670869694217], [37.20207432549342, -5.936787157878238], [37.20241462816099, -5.93678765046474], [37.20248106765939, -5.936656613897593], [37.20192293681129, -5.936646897534519], [37.20158370987443, -5.936537351339993], [37.20155181762519, -5.936351587185785], [37.20117077497855, -5.936206311872056], [37.2011107836804, -5.936451874373139], [37.2002602801002, -5.936305959095758], [37.20035222593265, -5.935257916561561], [37.20045392864298, -5.93402751878163], [37.20219767239485, -5.934360160446163], [37.20192297393282, -5.936659230628115], [37.20245874437058, -5.936654252758249], [37.20252357204832, -5.935930282722568], [37.20266548715421, -5.934485145209352], [37.2025523232594, -5.93434327507641], [37.20276357796232, -5.933153409285914], [37.20314498861663, -5.933197358437702], [37.20336517803306, -5.931921247835553], [37.2038740052242, -5.932061266298627], [37.2036616812318, -5.934473284914436], [37.20475823333319, -5.934706209409876]]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 13.2508,
+      "jsonValue" : null,
+      "key" : "ha",
+      "lastUpdateTs" : 1784611242040,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "indice",
+      "lastUpdateTs" : 1784611242040,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "indice 2",
+      "lastUpdateTs" : 1784611242040,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inicio_ventana",
+      "lastUpdateTs" : 1784611242040,
+      "longValue" : 1778569247039,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "last_4",
+      "lastUpdateTs" : 1794356099776,
+      "longValue" : null,
+      "strValue" : "0,0,0,0"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones",
+      "lastUpdateTs" : 1791695698752,
+      "longValue" : null,
+      "strValue" : "{\"CAU-94-1\":0}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones_anual",
+      "lastUpdateTs" : 1791694798697,
+      "longValue" : null,
+      "strValue" : "{\"CAU-94-1\":27039.602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones_diario",
+      "lastUpdateTs" : 1791756898737,
+      "longValue" : null,
+      "strValue" : "{\"CAU-94-1\":0}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones_total_m3",
+      "lastUpdateTs" : 1791694798697,
+      "longValue" : null,
+      "strValue" : "{\"CAU-94-1\":27039.602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n_parcelas_catastro",
+      "lastUpdateTs" : 1788432628663,
+      "longValue" : 40,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "posicion",
+      "lastUpdateTs" : 1784611242040,
+      "longValue" : 50,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "posicion_memoria",
+      "lastUpdateTs" : 1784611242040,
+      "longValue" : 51,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "suma",
+      "lastUpdateTs" : 1791756898835,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 75.66,
+      "jsonValue" : null,
+      "key" : "superficie_ha_estimada",
+      "lastUpdateTs" : 1788432628663,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 7566.0,
+      "jsonValue" : null,
+      "key" : "superficie_raw_suma",
+      "lastUpdateTs" : 1788432628663,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimo_ts_contado",
+      "lastUpdateTs" : 1794385799613,
+      "longValue" : 1794385799376,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

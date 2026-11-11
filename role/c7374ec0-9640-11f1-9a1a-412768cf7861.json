@@ -1,0 +1,30 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "name" : "Operarios",
+    "permissions" : {
+      "ALL" : [ "READ_CREDENTIALS", "READ_ATTRIBUTES", "RPC_CALL", "READ_TELEMETRY", "READ" ],
+      "PROFILE" : [ "ALL" ],
+      "USER" : [ "WRITE_ATTRIBUTES", "READ_ATTRIBUTES" ],
+      "ASSET" : [ "WRITE_TELEMETRY", "READ_TELEMETRY" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "c7374ec0-9640-11f1-9a1a-412768cf7861"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

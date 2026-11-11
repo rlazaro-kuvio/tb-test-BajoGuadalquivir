@@ -1,0 +1,1137 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Ingesta 4eGrowth, mismo patron que Qampo: cada 30 min lista las sondas, las crea si no existen con nombre 4e-CODIGO y guarda la telemetria del dia de cada una. Credenciales en atributos de servidor del dispositivo '4eGrowth Poller' (fg_username, fg_password)."
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "9d6aaf90-d756-11f1-978c-dfd970d8cc3e"
+    },
+    "name" : "Ingesta 4eGrowth",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "renovar"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 8,
+      "type" : "vigente"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 23,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 23,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 20,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 24,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 15,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 18,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 19,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 21,
+      "type" : "True"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 25,
+      "type" : "True"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 27,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 28,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 29,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "Pon como Originador el dispositivo '4eGrowth Poller' (igual que en Qampo)",
+        "layoutX" : 40,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 5,
+        "scriptLang" : "JS",
+        "jsScript" : "return { msg: {}, metadata: {}, msgType: \"FG_TICK\" };",
+        "tbelScript" : "return { msg: {}, metadata: {}, msgType: \"FG_TICK\" };",
+        "originatorId" : "a722a500-d29d-11f1-978c-dfd970d8cc3e",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da2fda0-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Disparador (cada 30 min)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Atributos de servidor del poller (llegan como ss_*)",
+        "layoutX" : 240,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "fg_username", "fg_password", "fg_token", "fg_token_exp" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "tellFailureIfAbsent" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da2fda1-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Cargar credenciales + token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "El token de 4eGrowth dura 7 dias",
+        "layoutX" : 440,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var exp = metadata.ss_fg_token_exp ? parseInt(metadata.ss_fg_token_exp) : 0;\nif (metadata.ss_fg_token && exp > Date.now() + 3600000) {\n    return [\"vigente\"];\n}\nreturn [\"renovar\"];\n",
+        "tbelScript" : "return [\"renovar\"];"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da324b0-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "¿Token vigente?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 440,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Cuerpo del POST /api/login/ con las credenciales del poller (atributos de servidor).\nif (!metadata.ss_fg_username || !metadata.ss_fg_password) {\n    throw new Error(\"Faltan los atributos de servidor fg_username / fg_password en el 4eGrowth Poller\");\n}\nreturn {\n    msg: { username: \"\" + metadata.ss_fg_username, password: \"\" + metadata.ss_fg_password },\n    metadata: metadata,\n    msgType: \"POST\"\n};\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da324b1-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Cuerpo login",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Devuelve {access, refresh}",
+        "layoutX" : 640,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://panel.4egrowth.com/api/login/",
+        "requestMethod" : "POST",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 30000,
+        "maxParallelRequestsCount" : 1,
+        "headers" : {
+          "Accept" : "application/json",
+          "Content-Type" : "application/json"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da324b2-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "POST /api/login/",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 840,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Respuesta de /api/login/: { access, refresh }. El access es un JWT de 7 dias.\nif (!msg.access) {\n    throw new Error(\"Login 4eGrowth sin token: \" + (msg.detail || JSON.stringify(msg)));\n}\nvar exp = Date.now() + 6 * 86400000;          // margen: se renueva a los 6 dias\ntry {\n    var p = msg.access.split(\".\")[1].replace(/-/g, \"+\").replace(/_/g, \"/\");\n    // decodificacion base64 sin atob (no existe en el motor JS de ThingsBoard)\n    var chars = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\";\n    var bits = \"\", txt = \"\";\n    for (var i = 0; i < p.length; i++) {\n        var c = chars.indexOf(p.charAt(i));\n        if (c < 0) { continue; }\n        bits += (\"000000\" + c.toString(2)).slice(-6);\n    }\n    for (var j = 0; j + 8 <= bits.length; j += 8) { txt += String.fromCharCode(parseInt(bits.substr(j, 8), 2)); }\n    var payload = JSON.parse(txt);\n    if (payload.exp) { exp = payload.exp * 1000 - 86400000; }\n} catch (e) { /* nos quedamos con el margen por defecto */ }\nmetadata.ss_fg_token = msg.access;\nmetadata.ss_fg_token_exp = \"\" + exp;\nreturn {\n    msg: { fg_token: msg.access, fg_token_exp: exp },\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc0-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Guardar token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1040,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc1-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Persistir token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1040,
+        "layoutY" : 600
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Tras guardar el token, vuelve a un mensaje vacio para la llamada GET de dispositivos.\nreturn { msg: {}, metadata: metadata, msgType: \"FG_TICK\" };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc2-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Volver a GET",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "GET /devices/ (con barra final)",
+        "layoutX" : 680,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://panel.4egrowth.com/api/data_device/devices/",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 30000,
+        "maxParallelRequestsCount" : 1,
+        "headers" : {
+          "Accept" : "application/json",
+          "Authorization" : "Bearer ${ss_fg_token}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc3-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Lista sondas 4eGrowth",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 880,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc4-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Una sonda por mensaje",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Dia de hoy (y ayer entre 00 y 03 h UTC)",
+        "layoutX" : 1080,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Una sonda de /api/data_device/devices/:\n// { key, description: \"S1195\", company{id,name}, farm{id,name}, parcel{id,name} }\n// Prepara nombre/tipo del dispositivo y la ventana de fechas (igual que \"Clasifica + ventana\" de Qampo).\nvar dev = msg;\nif (!dev || !dev.key || !dev.description) {\n    throw new Error(\"Sonda 4eGrowth sin key/description: \" + JSON.stringify(dev));\n}\nmetadata.fg_key = \"\" + dev.key;\nmetadata.fg_codigo = \"\" + dev.description;\n// NOMBRE: los equipos 4eGrowth se llaman 4e-CODIGO (p.ej. 4e-S1195).\nmetadata.deviceName = \"4e-\" + dev.description;\nmetadata.deviceType = \"Sonda de humedad de suelo\";\nmetadata.fg_empresa = (dev.company && dev.company.name) ? (\"\" + dev.company.name).trim() : \"\";\nmetadata.fg_finca = (dev.farm && dev.farm.name) ? (\"\" + dev.farm.name).trim() : \"\";\nmetadata.fg_parcela = (dev.parcel && dev.parcel.name) ? (\"\" + dev.parcel.name).trim() : \"\";\nmetadata.fg_parcel_id = (dev.parcel && dev.parcel.id) ? (\"\" + dev.parcel.id) : \"\";\n\n// Ventana: el dia de hoy (UTC). Entre las 00:00 y las 03:00 tambien el de ayer, para no\n// perder las ultimas lecturas del dia anterior, que la sonda sube con retraso.\n// Un dia de una sonda pesa ~60 KB (limite de los scripts de ThingsBoard: 100 KB).\nfunction fmt(t) {\n    var d = new Date(t);\n    function p(n) { return (\"0\" + n).slice(-2); }\n    return d.getUTCFullYear() + \"-\" + p(d.getUTCMonth() + 1) + \"-\" + p(d.getUTCDate());\n}\nvar ahora = Date.now();\nmetadata.fg_initial_date = fmt(ahora - 3 * 3600000);\nmetadata.fg_final_date = fmt(ahora);\nreturn { msg: {}, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc5-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Clasifica + ventana",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Crea el dispositivo y pasa el originador a la sonda",
+        "layoutX" : 1280,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "direction" : "FROM",
+        "relationType" : "Contains",
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "${deviceName}",
+        "entityTypePattern" : "${deviceType}",
+        "createEntityIfNotExists" : true,
+        "removeCurrentRelations" : false,
+        "changeOriginatorToRelatedEntity" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc6-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Crea sonda si no existe",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1480,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "zona", "sigpac", "fg_ficha_ts" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "tellFailureIfAbsent" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc7-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Atributos de la sonda",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Una llamada por sonda; de una en una",
+        "layoutX" : 1680,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://panel.4egrowth.com/api/data_device/${fg_key}/all_data/?initial_date=${fg_initial_date}&final_date=${fg_final_date}",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 60000,
+        "maxParallelRequestsCount" : 1,
+        "headers" : {
+          "Accept" : "application/json",
+          "Authorization" : "Bearer ${ss_fg_token}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc8-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "getValues 4eGrowth",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1880,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ===== /api/data_device/<key>/all_data/ -> telemetria ThingsBoard =====\n// Respuesta: { <Grupo>: { <Variable>: { key, coded_key, depth, unit, min, max, data:[{ts,value}] } } }\n//   - ts llega como \"YYYY-MM-DD HH:MM:SS\" sin zona. Se interpreta en UTC\n//     (fg_tz_offset_h en el poller permite corregirlo si fuera hora local).\n//   - value llega como numero o texto; null = sin dato.\n//   - Clima / Riego son valores diarios con ts a las 11:00 del dia.\n// La API a veces responde 200 con un texto de error de su servidor en vez de datos\n// (p.ej. \"dictionary update sequence element #0 ...\"). Se trata como fallo: asi no se\n// guarda nada ni avanza el cursor, y salta la alarma de fallo de API.\nif (msg === null || typeof msg !== \"object\" || Array.isArray(msg)) {\n    throw new Error(\"API 4eGrowth devolvio un error en vez de datos: \" + (\"\" + msg).substr(0, 200));\n}\nvar nGrupos = 0;\nfor (var gk in msg) { if (msg.hasOwnProperty(gk) && msg[gk] && typeof msg[gk] === \"object\") { nGrupos++; } }\nif (nGrupos === 0) {\n    throw new Error(\"API 4eGrowth devolvio una respuesta sin variables: \" + JSON.stringify(msg).substr(0, 200));\n}\nvar tzOff = metadata.ss_fg_tz_offset_h ? parseFloat(metadata.ss_fg_tz_offset_h) : 0;\nvar compat = !(metadata.ss_fg_compat_qampo === \"false\" || metadata.ss_fg_compat_qampo === false);\nvar ahora = Date.now();\n\nfunction parseTs(s) {\n    if (!s) { return null; }\n    var t = \"\" + s;\n    var y = parseInt(t.substr(0, 4), 10), mo = parseInt(t.substr(5, 2), 10), d = parseInt(t.substr(8, 2), 10);\n    var h = parseInt(t.substr(11, 2) || \"0\", 10), mi = parseInt(t.substr(14, 2) || \"0\", 10), se = parseInt(t.substr(17, 2) || \"0\", 10);\n    if (isNaN(y) || isNaN(mo) || isNaN(d)) { return null; }\n    return Date.UTC(y, mo - 1, d, h || 0, mi || 0, se || 0) - tzOff * 3600000;\n}\nfunction slug(s) {\n    var r = (\"\" + s).toLowerCase();\n    var a = \"áéíóúüñ\", b = \"aeiouun\";\n    for (var i = 0; i < a.length; i++) { r = r.split(a.charAt(i)).join(b.charAt(i)); }\n    r = r.replace(/m3\\/ha/g, \"m3ha\").replace(/[^a-z0-9]+/g, \"_\").replace(/^_+|_+$/g, \"\");\n    return r;\n}\nvar FIJAS = {\n    \"eto\": \"eto\",\n    \"prec\": \"precipitacion\",\n    \"Riego Aplicado Acumulado m3/Ha\": \"riego_acumulado_m3ha\",\n    \"Tiempo de Riego\": \"riego_tiempo\",\n    \"Cantidad del Evento de Riego m3/Ha\": \"riego_evento_m3ha\",\n    \"Minutos del Evento de Riego\": \"riego_evento_min\",\n    \"Humedad suelo promedio\": \"hum_suelo_media\"\n};\nvar PREFIJO_GRUPO = {\n    \"Humedad suelo\": \"hum_suelo_\",\n    \"Temperatura suelo\": \"temp_suelo_\",\n    \"Conductividad suelo\": \"ce_suelo_\",\n    \"Potencial matricial\": \"pot_matricial_\"\n};\n\nvar porTs = {};\nvar nOk = 0, nFuera = 0, maxTs = 0;\nvar fueraRango = {};\nvar profundidades = { hum: {}, temp: {}, ce: {} };   // para claves de compatibilidad\nvar catalogo = {};\n\nfor (var g in msg) {\n    if (!msg.hasOwnProperty(g)) { continue; }\n    var grupo = msg[g];\n    if (!grupo || typeof grupo !== \"object\") { continue; }\n    for (var vn in grupo) {\n        if (!grupo.hasOwnProperty(vn)) { continue; }\n        var o = grupo[vn];\n        if (!o || !o.data) { continue; }\n        var depth = (o.depth !== undefined && o.depth !== null) ? o.depth : null;\n        if (depth === null) { var m = (\"\" + vn).match(/(\\d+)\\s*cm/); if (m) { depth = parseInt(m[1], 10); } }\n\n        var clave;\n        if (FIJAS[vn]) { clave = FIJAS[vn]; }\n        else if (PREFIJO_GRUPO[g] && depth !== null) { clave = PREFIJO_GRUPO[g] + depth + \"cm\"; }\n        else { clave = slug(g + \"_\" + vn); }\n\n        if (g === \"Humedad suelo\" && depth !== null) { profundidades.hum[depth] = clave; }\n        if (g === \"Temperatura suelo\" && depth !== null) { profundidades.temp[depth] = clave; }\n        if (g === \"Conductividad suelo\" && depth !== null) { profundidades.ce[depth] = clave; }\n        catalogo[clave] = vn + (o.unit ? \" (\" + o.unit + \")\" : \"\");\n\n        var vmin = (o.min !== undefined && o.min !== null) ? parseFloat(o.min) : null;\n        var vmax = (o.max !== undefined && o.max !== null) ? parseFloat(o.max) : null;\n        var esDiario = (g === \"Clima\" || g === \"Riego\" || g === \"Evento de riego\");\n\n        for (var i = 0; i < o.data.length; i++) {\n            var p = o.data[i];\n            if (!p || p.value === null || p.value === undefined || p.value === \"\") { continue; }\n            var v = parseFloat(p.value);\n            if (isNaN(v)) { continue; }\n            var ts = parseTs(p.ts);\n            if (ts === null) { continue; }\n            if (ts > ahora + 86400000) { continue; }          // nada mas alla de manana\n            if (!porTs[ts]) { porTs[ts] = {}; }\n            var ok = !((vmin !== null && v < vmin) || (vmax !== null && v > vmax));\n            if (ok) {\n                porTs[ts][clave] = v; nOk++;\n            } else {\n                porTs[ts][clave + \"_raw\"] = v; fueraRango[clave] = v; nFuera++;\n            }\n            // ultima lectura real de sensor (no cuentan los valores diarios de las 11:00)\n            if (!esDiario && ts <= ahora && ts > maxTs) { maxTs = ts; }\n        }\n    }\n}\n\n// Claves de compatibilidad con las pantallas actuales de humedad (Qampo):\n// soil_hum_1/2/3 = humedad de menor a mayor profundidad, soil_temp_5 y soil_ce_4 = la mas superficial.\nfunction ordenadas(obj) {\n    var ks = [];\n    for (var k in obj) { if (obj.hasOwnProperty(k)) { ks.push(parseInt(k, 10)); } }\n    ks.sort(function (a, b) { return a - b; });\n    var r = [];\n    for (var i = 0; i < ks.length; i++) { r.push(obj[ks[i]]); }\n    return r;\n}\nif (compat) {\n    var hums = ordenadas(profundidades.hum), temps = ordenadas(profundidades.temp), ces = ordenadas(profundidades.ce);\n    for (var t in porTs) {\n        if (!porTs.hasOwnProperty(t)) { continue; }\n        var row = porTs[t];\n        for (var h = 0; h < hums.length && h < 3; h++) {\n            if (row[hums[h]] !== undefined) { row[\"soil_hum_\" + (h + 1)] = row[hums[h]]; }\n        }\n        if (temps.length && row[temps[0]] !== undefined) { row.soil_temp_5 = row[temps[0]]; }\n        if (ces.length && row[ces[0]] !== undefined) { row.soil_ce_4 = row[ces[0]]; }\n        // Riego para los widgets actuales: \"Riego acumulado\" (irrigsumday) y \"Estado de Riego\" (irrigation_1_1)\n        if (row.riego_acumulado_m3ha !== undefined) { row.irrigsumday = row.riego_acumulado_m3ha; }\n        if (row.riego_tiempo !== undefined) { row.irrigation_1_1 = (row.riego_tiempo > 0) ? 1 : 0; }\n    }\n}\n\nvar tss = [];\nfor (var tk in porTs) { if (porTs.hasOwnProperty(tk)) { tss.push(parseInt(tk, 10)); } }\ntss.sort(function (a, b) { return a - b; });\n\nvar salida = [];\nif (tss.length > 0) {\n    var puntos = [];\n    for (var q = 0; q < tss.length; q++) { puntos.push({ ts: tss[q], values: porTs[tss[q]] }); }\n    salida.push({ msg: puntos, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" });\n}\n\nvar attrs = {\n    fg_key: metadata.fg_key,\n    fg_codigo: metadata.fg_codigo,\n    fg_empresa: metadata.fg_empresa,\n    fg_finca: metadata.fg_finca,\n    fg_parcela: metadata.fg_parcela,\n    funcion: \"Sonda de humedad de suelo\",\n    origen: \"4eGrowth\",\n    fg_ultima_sincro: ahora,\n    fg_puntos_ultima_sincro: tss.length,\n    fg_valores_ok: nOk,\n    fg_valores_fuera_rango: nFuera\n};\nif (maxTs > 0) { attrs.fg_ultima_lectura = maxTs; }\nvar nVars = 0;\nfor (var cv in catalogo) { if (catalogo.hasOwnProperty(cv)) { nVars++; } }\nif (nVars > 0) { attrs.fg_variables = JSON.stringify(catalogo); }\n// Campos que ya usa la ficha del dashboard: solo se rellenan si la sonda aun no los tiene\nif (!metadata.ss_zona && metadata.fg_finca) { attrs.zona = metadata.fg_finca; }\n// SIGPAC: si el nombre de la parcela en 4eGrowth trae la referencia (formato 41/69/13/99),\n// se guarda SIEMPRE esa referencia, para que se actualice cuando la cambien en 4eGrowth.\n// Si no la trae, se mantiene el comportamiento anterior (solo se rellena si esta vacio).\nvar refSigpac = (\"\" + (metadata.fg_parcela || \"\")).match(/\\d{1,2}\\s*\\/\\s*\\d{1,3}\\s*\\/\\s*\\d{1,3}\\s*\\/\\s*\\d{1,5}(?:\\s*\\/\\s*\\d{1,5})?/);\nif (refSigpac) {\n    attrs.sigpac = refSigpac[0].replace(/\\s+/g, \"\");\n} else if (!metadata.ss_sigpac && metadata.fg_parcela) {\n    attrs.sigpac = metadata.fg_parcela;\n}\nsalida.push({ msg: attrs, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" });\n\nreturn salida;\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da34bc9-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Serie temporal",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Segundo intento si 4eGrowth devuelve su error",
+        "layoutX" : 1680,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://panel.4egrowth.com/api/data_device/${fg_key}/all_data/?initial_date=${fg_initial_date}&final_date=${fg_final_date}",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 60000,
+        "maxParallelRequestsCount" : 1,
+        "headers" : {
+          "Accept" : "application/json",
+          "Authorization" : "Bearer ${ss_fg_token}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da372d0-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "getValues 4eGrowth (reintento)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Si vuelve a fallar lo anota en fg_ultimo_error",
+        "layoutX" : 1880,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ===== /api/data_device/<key>/all_data/ -> telemetria ThingsBoard =====\n// Respuesta: { <Grupo>: { <Variable>: { key, coded_key, depth, unit, min, max, data:[{ts,value}] } } }\n//   - ts llega como \"YYYY-MM-DD HH:MM:SS\" sin zona. Se interpreta en UTC\n//     (fg_tz_offset_h en el poller permite corregirlo si fuera hora local).\n//   - value llega como numero o texto; null = sin dato.\n//   - Clima / Riego son valores diarios con ts a las 11:00 del dia.\n// La API a veces responde 200 con un texto de error de su servidor en vez de datos\n// (p.ej. \"dictionary update sequence element #0 ...\"). Se trata como fallo: asi no se\n// guarda nada ni avanza el cursor, y salta la alarma de fallo de API.\n// Segundo intento: si 4eGrowth vuelve a fallar no se lanza error; se anota en fg_ultimo_error\n// (visible en la tabla \"Estado de sincronizacion\") y se reintenta solo en el siguiente ciclo.\nvar errorApi = null;\nif (msg === null || typeof msg !== \"object\" || Array.isArray(msg)) {\n    errorApi = (\"\" + msg).substr(0, 150);\n    msg = {};\n}\nvar tzOff = metadata.ss_fg_tz_offset_h ? parseFloat(metadata.ss_fg_tz_offset_h) : 0;\nvar compat = !(metadata.ss_fg_compat_qampo === \"false\" || metadata.ss_fg_compat_qampo === false);\nvar ahora = Date.now();\n\nfunction parseTs(s) {\n    if (!s) { return null; }\n    var t = \"\" + s;\n    var y = parseInt(t.substr(0, 4), 10), mo = parseInt(t.substr(5, 2), 10), d = parseInt(t.substr(8, 2), 10);\n    var h = parseInt(t.substr(11, 2) || \"0\", 10), mi = parseInt(t.substr(14, 2) || \"0\", 10), se = parseInt(t.substr(17, 2) || \"0\", 10);\n    if (isNaN(y) || isNaN(mo) || isNaN(d)) { return null; }\n    return Date.UTC(y, mo - 1, d, h || 0, mi || 0, se || 0) - tzOff * 3600000;\n}\nfunction slug(s) {\n    var r = (\"\" + s).toLowerCase();\n    var a = \"áéíóúüñ\", b = \"aeiouun\";\n    for (var i = 0; i < a.length; i++) { r = r.split(a.charAt(i)).join(b.charAt(i)); }\n    r = r.replace(/m3\\/ha/g, \"m3ha\").replace(/[^a-z0-9]+/g, \"_\").replace(/^_+|_+$/g, \"\");\n    return r;\n}\nvar FIJAS = {\n    \"eto\": \"eto\",\n    \"prec\": \"precipitacion\",\n    \"Riego Aplicado Acumulado m3/Ha\": \"riego_acumulado_m3ha\",\n    \"Tiempo de Riego\": \"riego_tiempo\",\n    \"Cantidad del Evento de Riego m3/Ha\": \"riego_evento_m3ha\",\n    \"Minutos del Evento de Riego\": \"riego_evento_min\",\n    \"Humedad suelo promedio\": \"hum_suelo_media\"\n};\nvar PREFIJO_GRUPO = {\n    \"Humedad suelo\": \"hum_suelo_\",\n    \"Temperatura suelo\": \"temp_suelo_\",\n    \"Conductividad suelo\": \"ce_suelo_\",\n    \"Potencial matricial\": \"pot_matricial_\"\n};\n\nvar porTs = {};\nvar nOk = 0, nFuera = 0, maxTs = 0;\nvar fueraRango = {};\nvar profundidades = { hum: {}, temp: {}, ce: {} };   // para claves de compatibilidad\nvar catalogo = {};\n\nfor (var g in msg) {\n    if (!msg.hasOwnProperty(g)) { continue; }\n    var grupo = msg[g];\n    if (!grupo || typeof grupo !== \"object\") { continue; }\n    for (var vn in grupo) {\n        if (!grupo.hasOwnProperty(vn)) { continue; }\n        var o = grupo[vn];\n        if (!o || !o.data) { continue; }\n        var depth = (o.depth !== undefined && o.depth !== null) ? o.depth : null;\n        if (depth === null) { var m = (\"\" + vn).match(/(\\d+)\\s*cm/); if (m) { depth = parseInt(m[1], 10); } }\n\n        var clave;\n        if (FIJAS[vn]) { clave = FIJAS[vn]; }\n        else if (PREFIJO_GRUPO[g] && depth !== null) { clave = PREFIJO_GRUPO[g] + depth + \"cm\"; }\n        else { clave = slug(g + \"_\" + vn); }\n\n        if (g === \"Humedad suelo\" && depth !== null) { profundidades.hum[depth] = clave; }\n        if (g === \"Temperatura suelo\" && depth !== null) { profundidades.temp[depth] = clave; }\n        if (g === \"Conductividad suelo\" && depth !== null) { profundidades.ce[depth] = clave; }\n        catalogo[clave] = vn + (o.unit ? \" (\" + o.unit + \")\" : \"\");\n\n        var vmin = (o.min !== undefined && o.min !== null) ? parseFloat(o.min) : null;\n        var vmax = (o.max !== undefined && o.max !== null) ? parseFloat(o.max) : null;\n        var esDiario = (g === \"Clima\" || g === \"Riego\" || g === \"Evento de riego\");\n\n        for (var i = 0; i < o.data.length; i++) {\n            var p = o.data[i];\n            if (!p || p.value === null || p.value === undefined || p.value === \"\") { continue; }\n            var v = parseFloat(p.value);\n            if (isNaN(v)) { continue; }\n            var ts = parseTs(p.ts);\n            if (ts === null) { continue; }\n            if (ts > ahora + 86400000) { continue; }          // nada mas alla de manana\n            if (!porTs[ts]) { porTs[ts] = {}; }\n            var ok = !((vmin !== null && v < vmin) || (vmax !== null && v > vmax));\n            if (ok) {\n                porTs[ts][clave] = v; nOk++;\n            } else {\n                porTs[ts][clave + \"_raw\"] = v; fueraRango[clave] = v; nFuera++;\n            }\n            // ultima lectura real de sensor (no cuentan los valores diarios de las 11:00)\n            if (!esDiario && ts <= ahora && ts > maxTs) { maxTs = ts; }\n        }\n    }\n}\n\n// Claves de compatibilidad con las pantallas actuales de humedad (Qampo):\n// soil_hum_1/2/3 = humedad de menor a mayor profundidad, soil_temp_5 y soil_ce_4 = la mas superficial.\nfunction ordenadas(obj) {\n    var ks = [];\n    for (var k in obj) { if (obj.hasOwnProperty(k)) { ks.push(parseInt(k, 10)); } }\n    ks.sort(function (a, b) { return a - b; });\n    var r = [];\n    for (var i = 0; i < ks.length; i++) { r.push(obj[ks[i]]); }\n    return r;\n}\nif (compat) {\n    var hums = ordenadas(profundidades.hum), temps = ordenadas(profundidades.temp), ces = ordenadas(profundidades.ce);\n    for (var t in porTs) {\n        if (!porTs.hasOwnProperty(t)) { continue; }\n        var row = porTs[t];\n        for (var h = 0; h < hums.length && h < 3; h++) {\n            if (row[hums[h]] !== undefined) { row[\"soil_hum_\" + (h + 1)] = row[hums[h]]; }\n        }\n        if (temps.length && row[temps[0]] !== undefined) { row.soil_temp_5 = row[temps[0]]; }\n        if (ces.length && row[ces[0]] !== undefined) { row.soil_ce_4 = row[ces[0]]; }\n        // Riego para los widgets actuales: \"Riego acumulado\" (irrigsumday) y \"Estado de Riego\" (irrigation_1_1)\n        if (row.riego_acumulado_m3ha !== undefined) { row.irrigsumday = row.riego_acumulado_m3ha; }\n        if (row.riego_tiempo !== undefined) { row.irrigation_1_1 = (row.riego_tiempo > 0) ? 1 : 0; }\n    }\n}\n\nvar tss = [];\nfor (var tk in porTs) { if (porTs.hasOwnProperty(tk)) { tss.push(parseInt(tk, 10)); } }\ntss.sort(function (a, b) { return a - b; });\n\nvar salida = [];\nif (tss.length > 0) {\n    var puntos = [];\n    for (var q = 0; q < tss.length; q++) { puntos.push({ ts: tss[q], values: porTs[tss[q]] }); }\n    salida.push({ msg: puntos, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" });\n}\n\nvar attrs = {\n    fg_key: metadata.fg_key,\n    fg_codigo: metadata.fg_codigo,\n    fg_empresa: metadata.fg_empresa,\n    fg_finca: metadata.fg_finca,\n    fg_parcela: metadata.fg_parcela,\n    funcion: \"Sonda de humedad de suelo\",\n    origen: \"4eGrowth\",\n    fg_ultima_sincro: ahora,\n    fg_puntos_ultima_sincro: tss.length,\n    fg_valores_ok: nOk,\n    fg_valores_fuera_rango: nFuera\n};\nif (maxTs > 0) { attrs.fg_ultima_lectura = maxTs; }\nvar nVars = 0;\nfor (var cv in catalogo) { if (catalogo.hasOwnProperty(cv)) { nVars++; } }\nif (nVars > 0) { attrs.fg_variables = JSON.stringify(catalogo); }\n// Campos que ya usa la ficha del dashboard: solo se rellenan si la sonda aun no los tiene\nif (!metadata.ss_zona && metadata.fg_finca) { attrs.zona = metadata.fg_finca; }\n// SIGPAC: si el nombre de la parcela en 4eGrowth trae la referencia (formato 41/69/13/99),\n// se guarda SIEMPRE esa referencia, para que se actualice cuando la cambien en 4eGrowth.\n// Si no la trae, se mantiene el comportamiento anterior (solo se rellena si esta vacio).\nvar refSigpac = (\"\" + (metadata.fg_parcela || \"\")).match(/\\d{1,2}\\s*\\/\\s*\\d{1,3}\\s*\\/\\s*\\d{1,3}\\s*\\/\\s*\\d{1,5}(?:\\s*\\/\\s*\\d{1,5})?/);\nif (refSigpac) {\n    attrs.sigpac = refSigpac[0].replace(/\\s+/g, \"\");\n} else if (!metadata.ss_sigpac && metadata.fg_parcela) {\n    attrs.sigpac = metadata.fg_parcela;\n}\nif (errorApi !== null) {\n    attrs.fg_ultimo_error = \"Ciclo sin datos (\" + (metadata.fg_initial_date || \"\") + \"): \" + errorApi;\n    attrs.fg_ultimo_error_ts = ahora;\n}\nsalida.push({ msg: attrs, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" });\n\nreturn salida;\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da372d1-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Serie temporal (reintento)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2080,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da372d2-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Enrutar por tipo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2280,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da372d3-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Guarda serie",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2280,
+        "layoutY" : 380
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da372d4-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Guarda atributos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 680,
+        "layoutY" : 140
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var code = metadata.statusCode ? parseInt(metadata.statusCode) : 0;\nreturn code === 401 || code === 403;\n",
+        "tbelScript" : "return true;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da372d5-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "¿401/403?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 880,
+        "layoutY" : 140
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return { msg: { fg_token: \"\", fg_token_exp: 0 }, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e0-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Invalidar token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1080,
+        "layoutY" : 140
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e1-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Persistir token invalidado",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Revisar fg_username / fg_password del poller",
+        "layoutX" : 840,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "alarmType" : "Fallo login 4eGrowth",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : true,
+        "dynamicSeverity" : false,
+        "scriptLang" : "JS",
+        "jsScript" : "var d = {}; d.codigo = metadata.statusCode || ''; d.motivo = metadata.statusReason || metadata.error || ''; return d;",
+        "tbelScript" : "return {};",
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "relationTypes" : [ ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e2-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Alarma: login 4eGrowth",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Cultivo, hectareas y coordenadas: una sola vez por sonda",
+        "layoutX" : 1480,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// La ficha (cultivo, hectareas, coordenadas) solo se pide si la sonda aun no la tiene.\nreturn !metadata.ss_fg_ficha_ts;\n",
+        "tbelScript" : "return true;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e3-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "¿Falta ficha?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1680,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://panel.4egrowth.com/api/devices/${fg_key}/",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 30000,
+        "maxParallelRequestsCount" : 1,
+        "headers" : {
+          "Accept" : "application/json",
+          "Authorization" : "Bearer ${ss_fg_token}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e4-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "GET ficha sonda",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1880,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// /api/devices/<key>/ -> cultivo y coordenadas (vienen en la lista \"sensors\" como {key, value})\nvar s = msg.sensors || [];\nvar v = {};\nfor (var i = 0; i < s.length; i++) { if (s[i] && s[i].key) { v[s[i].key] = s[i].value; } }\nfunction cap(t) {\n    if (t === undefined || t === null || (\"\" + t).trim() === \"\") { return \"\"; }\n    t = (\"\" + t).trim().toLowerCase();\n    return t.charAt(0).toUpperCase() + t.substr(1);\n}\nmetadata.fg_cultivo = cap(v.logo_cultivo);\nvar lat = parseFloat(v.latitud), lon = parseFloat(v.longitud);\nmetadata.fg_lat = isNaN(lat) ? \"\" : \"\" + lat;\nmetadata.fg_lon = isNaN(lon) ? \"\" : \"\" + lon;\nif (!metadata.fg_parcel_id && msg.parcel && msg.parcel.id) { metadata.fg_parcel_id = \"\" + msg.parcel.id; }\nreturn { msg: {}, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e5-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Cultivo y coordenadas",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2080,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://panel.4egrowth.com/api/parcels/${fg_parcel_id}/",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 30000,
+        "maxParallelRequestsCount" : 1,
+        "headers" : {
+          "Accept" : "application/json",
+          "Authorization" : "Bearer ${ss_fg_token}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e6-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "GET parcela",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2280,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// /api/parcels/<id>/ -> hectareas. Junta todo en atributos de servidor de la sonda.\nvar props = (msg && msg.properties) ? msg.properties : {};\nvar attrs = { fg_ficha_ts: Date.now() };\nif (metadata.fg_cultivo) { attrs.cultivo = metadata.fg_cultivo; }\nif (metadata.fg_lat && metadata.fg_lon) {\n    attrs.latitude = parseFloat(metadata.fg_lat);\n    attrs.longitude = parseFloat(metadata.fg_lon);\n}\nvar ha = parseFloat(props.hectares);\nif (!isNaN(ha)) { attrs.hectareas = (Math.round(ha * 100) / 100) + \" ha\"; }   // mismo formato que las demas sondas (\"11.6 ha\")\nreturn { msg: attrs, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da399e7-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Ficha a atributos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2480,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9da3c0f0-d756-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Guarda ficha",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,4446 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "16a7a7b0-84d6-11f1-9a1a-412768cf7861"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "174c9a40-84d6-11f1-9a1a-412768cf7861"
+    },
+    "label" : null,
+    "name" : "CRBG_Resumen_Caudales",
+    "ownerId" : null,
+    "type" : "resumen"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alerta_consumo_pct_2026",
+      "lastUpdateTs" : 1791290398012,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_disponible_2026-11-09",
+      "lastUpdateTs" : 1793941831689,
+      "longValue" : null,
+      "strValue" : "[68,null,null,null,null,null,null]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia",
+      "lastUpdateTs" : 1785215701365,
+      "longValue" : 300731,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_almonazar",
+      "lastUpdateTs" : 1785215693259,
+      "longValue" : 26086,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_maribañez",
+      "lastUpdateTs" : 1785215699263,
+      "longValue" : 27281,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_paraiso",
+      "lastUpdateTs" : 1785215701365,
+      "longValue" : 59779,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_s0",
+      "lastUpdateTs" : 1785215691259,
+      "longValue" : 10973,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_s1",
+      "lastUpdateTs" : 1785215691259,
+      "longValue" : 40879,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_s2",
+      "lastUpdateTs" : 1785215693259,
+      "longValue" : 55490,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_s3",
+      "lastUpdateTs" : 1785215697172,
+      "longValue" : 64181,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_s4",
+      "lastUpdateTs" : 1785215699263,
+      "longValue" : 53402,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "caudal_total_dia_s5",
+      "lastUpdateTs" : 1785215701365,
+      "longValue" : 86779,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_3",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_3_bujalmoro_md",
+      "lastUpdateTs" : 1792390498937,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1792390498718}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_4",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_4_bertedona_dona_ana",
+      "lastUpdateTs" : 1792390498937,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1792390498718}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_4_zambruno",
+      "lastUpdateTs" : 1789735498262,
+      "longValue" : null,
+      "strValue" : "{\"valor\":10,\"sector\":3,\"ts\":1789735497966}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_5",
+      "lastUpdateTs" : 1794385799578,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_6_1",
+      "lastUpdateTs" : 1794385799578,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_iv_6_1_bis",
+      "lastUpdateTs" : 1794385799579,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_v_1",
+      "lastUpdateTs" : 1794385799583,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_v_2",
+      "lastUpdateTs" : 1794385799583,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_v_3",
+      "lastUpdateTs" : 1794385801919,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_v_3_mejorada",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_v_4",
+      "lastUpdateTs" : 1794385801920,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_v_5",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_vii_10_t",
+      "lastUpdateTs" : 1794385801923,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_vii_1_1_1",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_vii_1_1_2",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_vii_3_molinillo",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_vii_8",
+      "lastUpdateTs" : 1794385801924,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_vii_9",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_x_1",
+      "lastUpdateTs" : 1794385804005,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_x_2",
+      "lastUpdateTs" : 1794385804010,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_x_3",
+      "lastUpdateTs" : 1794385804022,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_x_3_bis",
+      "lastUpdateTs" : 1794385804021,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_a_x_5",
+      "lastUpdateTs" : 1794385804015,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_agro_montujar",
+      "lastUpdateTs" : 1794385804018,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_alamo_alto_em",
+      "lastUpdateTs" : 1794385794104,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_alamo_alto_md",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_algodonales",
+      "lastUpdateTs" : 1794385796081,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_almedrillos_altos_canal",
+      "lastUpdateTs" : 1794385804019,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_almendrillos_altos_marismillas",
+      "lastUpdateTs" : 1794385804019,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_almendrillos_puchal",
+      "lastUpdateTs" : 1794385804019,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_antonio_lopez",
+      "lastUpdateTs" : 1794385801918,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_ayala_arenoso",
+      "lastUpdateTs" : 1794385799578,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_b_ii_flume_gate",
+      "lastUpdateTs" : 1794385799573,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_barrera",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_bertedona_dona_ana",
+      "lastUpdateTs" : 1794385799582,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_bujalmoro",
+      "lastUpdateTs" : 1794385799579,
+      "longValue" : null,
+      "strValue" : "{\"valor\":75,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_bujalmoro_md",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_campanero",
+      "lastUpdateTs" : 1794385794116,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_carmona_1_bernal",
+      "lastUpdateTs" : 1794385796080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_carmona_1_la_chacona",
+      "lastUpdateTs" : 1794385796080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_carmona_1_los_lares",
+      "lastUpdateTs" : 1794385796080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_carmona_1_puerto",
+      "lastUpdateTs" : 1794385796088,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_carmona_2",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_carmona_3",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_casablanquilla",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_casavacas_1",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_casavacas_2",
+      "lastUpdateTs" : 1794385796083,
+      "longValue" : null,
+      "strValue" : "{\"valor\":2,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_casavacas_santa_adela",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":1,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_casilla_san_german",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_casilla_villegas",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_cerrado_de_miura",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_cisman_t_md",
+      "lastUpdateTs" : 1794385799580,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_cisman_y_los_frailes",
+      "lastUpdateTs" : 1794385801919,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_cordobilla_carlos",
+      "lastUpdateTs" : 1794385804024,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_cordobilla_cordero",
+      "lastUpdateTs" : 1794385804022,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_cordobilla_tulio",
+      "lastUpdateTs" : 1794385804015,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_cortijo_guadajoz",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_crespo_camino",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":2,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_crespo_recuerda",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_diputacion",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_don_alberto",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_don_bartolome",
+      "lastUpdateTs" : 1794385804006,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_alcachofar_1",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_alcachofar_2",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_bodegon",
+      "lastUpdateTs" : 1794385796081,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_cerro",
+      "lastUpdateTs" : 1794385796080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_corredero",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_cuzco",
+      "lastUpdateTs" : 1794385801918,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_judio",
+      "lastUpdateTs" : 1794385804018,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_marchante",
+      "lastUpdateTs" : 1794385794052,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_millonario",
+      "lastUpdateTs" : 1794385804018,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_pinganillo",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_pino",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_rancho_hermana",
+      "lastUpdateTs" : 1794385804022,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_rancho_marcelino",
+      "lastUpdateTs" : 1794385804010,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_rosal",
+      "lastUpdateTs" : 1794385804023,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_rosario",
+      "lastUpdateTs" : 1794385794117,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_serafin",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_torbiscal",
+      "lastUpdateTs" : 1794385804004,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_toril_fernando",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_toril_i",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_toril_ii",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_el_toruno",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_frutansa",
+      "lastUpdateTs" : 1794385796085,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_gilito",
+      "lastUpdateTs" : 1794385801923,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_gomez_aparicio",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_granaillo_grupo",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_granaillo_la_milana",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_granaillo_leonardo",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_algabarra",
+      "lastUpdateTs" : 1794385796081,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_almonazar",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_arenoso",
+      "lastUpdateTs" : 1794385799579,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_buitrago",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_cesaro",
+      "lastUpdateTs" : 1794385796083,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_cisman",
+      "lastUpdateTs" : 1794385799580,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_el_corzo",
+      "lastUpdateTs" : 1794385796080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_espartales",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_matamarilla",
+      "lastUpdateTs" : 1794385796083,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_grupo_palmilla",
+      "lastUpdateTs" : 1794385804018,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hacienda_hornillo",
+      "lastUpdateTs" : 1794385799581,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hacienda_nueva_san_jose",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hacienda_oran",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hacienda_romana_2_balsa",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hacienda_romana_canal",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hnos_baena",
+      "lastUpdateTs" : 1794385804021,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hnos_bastos",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_hornillo_gilete",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_huerta_escobedo",
+      "lastUpdateTs" : 1794385801919,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_jaime_perez_derecha_t",
+      "lastUpdateTs" : 1794385801923,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_jaime_perez_izquierda",
+      "lastUpdateTs" : 1794385801924,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_jarilla",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_juan_gomez_10_2",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_juan_gomez_t_1",
+      "lastUpdateTs" : 1794385801924,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_algabarra",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_algabarrilla",
+      "lastUpdateTs" : 1794385796081,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_cabana_gravedad_inagro",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_cabana_gravedad_marques",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_cabana_inagro",
+      "lastUpdateTs" : 1794385796085,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_cabana_marques",
+      "lastUpdateTs" : 1794385796087,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_cabana_mg",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_condesa",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_corchuela",
+      "lastUpdateTs" : 1794385799576,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_encina",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_espanola",
+      "lastUpdateTs" : 1794385799572,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_espanola_desembalse",
+      "lastUpdateTs" : 1790271898382,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1790271898107}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_famosa",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_florida",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_gitana",
+      "lastUpdateTs" : 1794385794117,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_jurada",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_raspa",
+      "lastUpdateTs" : 1794385794117,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_la_vega",
+      "lastUpdateTs" : 1794385804010,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_las_arcas",
+      "lastUpdateTs" : 1794385804014,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_las_coronas_1_abonos_jimenez",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_las_coronas_1_casilla_leon",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_las_coronas_2",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_las_crucetas",
+      "lastUpdateTs" : 1794385799580,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_las_lebreras",
+      "lastUpdateTs" : 1794385804010,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_lasarte",
+      "lastUpdateTs" : 1794385796079,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_legua_leal",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_liebanas",
+      "lastUpdateTs" : 1794385799580,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_almendrillos",
+      "lastUpdateTs" : 1794385804021,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_angeles_baldisema",
+      "lastUpdateTs" : 1794385796087,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_angeles_parias",
+      "lastUpdateTs" : 1794385796086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_becerros",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_cabreros",
+      "lastUpdateTs" : 1794385799578,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_huertos",
+      "lastUpdateTs" : 1794385804014,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_llanos",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_rubios_carlos",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_rubios_guayba",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_rubios_jarema",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":16,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_los_santos",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_matamarilla_tubarro",
+      "lastUpdateTs" : 1794385796087,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_matas_verdes",
+      "lastUpdateTs" : 1794385796083,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_melendo",
+      "lastUpdateTs" : 1794385804013,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_meliton",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_merlina_meango",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_merlina_piva",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_mochales",
+      "lastUpdateTs" : 1794385794101,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_montera",
+      "lastUpdateTs" : 1794385804005,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_oidor",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_palmilla_carlos",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_palmilla_ican",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_penon_indesa",
+      "lastUpdateTs" : 1794385804023,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_penon_maestre_indesa",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_pinto_agricola",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_pinto_ansar",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_el_rosario_bombeo",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_el_rosario_desembalse",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_el_rosario_eco",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_la_gitana_bombeo",
+      "lastUpdateTs" : 1794385794105,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_la_gitana_desembalse",
+      "lastUpdateTs" : 1794385794105,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_la_gitana_eco",
+      "lastUpdateTs" : 1794385794105,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_la_restinga_bombeo",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_la_restinga_desembalse",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_presa_la_restinga_eco",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_ranchillo_baena",
+      "lastUpdateTs" : 1794385804021,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_ranchillo_grupo",
+      "lastUpdateTs" : 1794385804021,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_ranchillo_tulio",
+      "lastUpdateTs" : 1794385804022,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_real_club_de_golf",
+      "lastUpdateTs" : 1794385799574,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_real_tesoro",
+      "lastUpdateTs" : 1794385794111,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_rosario_nunez",
+      "lastUpdateTs" : 1794385804017,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_rubio_angel",
+      "lastUpdateTs" : 1794385801918,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_rv_agro",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_salinillas",
+      "lastUpdateTs" : 1794385804010,
+      "longValue" : null,
+      "strValue" : "{\"valor\":50,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_salinillas_marcelino",
+      "lastUpdateTs" : 1794385804011,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_san_fernando",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_san_juan",
+      "lastUpdateTs" : 1794385801919,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_san_rafael",
+      "lastUpdateTs" : 1794385796080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_santa_maria_adrian",
+      "lastUpdateTs" : 1794385804006,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_santa_maria_roalon",
+      "lastUpdateTs" : 1794385804023,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_santana",
+      "lastUpdateTs" : 1794385794115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_santo_tomas",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_sat_dehesilla",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_sat_la_romana",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_secano_de_la_motilla",
+      "lastUpdateTs" : 1794385794114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":1,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_sortes_y_la_botija",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_ii_1_1",
+      "lastUpdateTs" : 1794385799576,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_ii_1_1_3",
+      "lastUpdateTs" : 1794385799576,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_ii_1_2",
+      "lastUpdateTs" : 1794385799574,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_ii_1_2_1",
+      "lastUpdateTs" : 1794385799575,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_ii_1_4",
+      "lastUpdateTs" : 1794385799576,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_iv_6",
+      "lastUpdateTs" : 1794385799578,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_2",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_4",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_4_2",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_5",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_6_acequia",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_6_tuberia",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_7",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_7a_acequia",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_t_vii_7a_tuberia",
+      "lastUpdateTs" : 1794385801922,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_tamaran",
+      "lastUpdateTs" : 1794385801919,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_torre_arana",
+      "lastUpdateTs" : 1794385796083,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_torre_nueva",
+      "lastUpdateTs" : 1794385796084,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":2,\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_torremarismas",
+      "lastUpdateTs" : 1794385804005,
+      "longValue" : null,
+      "strValue" : "{\"valor\":6,\"sector\":5,\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_torremarismas_cd3",
+      "lastUpdateTs" : 1794385801924,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_torres_gomez",
+      "lastUpdateTs" : 1794385799572,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_trinidad_a_rojas",
+      "lastUpdateTs" : 1794385794111,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_trinidad_canaveral",
+      "lastUpdateTs" : 1794385794105,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_trinidad_cavam",
+      "lastUpdateTs" : 1794385794111,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_trinidad_l_rojas",
+      "lastUpdateTs" : 1794385794111,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_trinidad_nufri",
+      "lastUpdateTs" : 1794385794105,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":0,\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_ulloa",
+      "lastUpdateTs" : 1794385801921,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":4,\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_v_rancho_barron",
+      "lastUpdateTs" : 1794385799578,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_v_rancho_cabezuelo",
+      "lastUpdateTs" : 1794385799579,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_v_rancho_cerezuela",
+      "lastUpdateTs" : 1794385799583,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_v_rancho_crucetas",
+      "lastUpdateTs" : 1794385799579,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_v_rancho_lopez_gomez",
+      "lastUpdateTs" : 1794385799579,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_v_rancho_peseta",
+      "lastUpdateTs" : 1794385799578,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cu_zambruno",
+      "lastUpdateTs" : 1794385799577,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":3,\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes",
+      "lastUpdateTs" : 1785189601388,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_almonazar",
+      "lastUpdateTs" : 1785190493175,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_maribañez",
+      "lastUpdateTs" : 1785190499261,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_paraiso",
+      "lastUpdateTs" : 1785189601388,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_proy_acum_s0",
+      "lastUpdateTs" : 1785741291921,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_proy_acum_s1",
+      "lastUpdateTs" : 1785741291921,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_proy_acum_s2",
+      "lastUpdateTs" : 1785741291921,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_proy_acum_s3",
+      "lastUpdateTs" : 1785741291921,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_proy_acum_s4",
+      "lastUpdateTs" : 1785741291921,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_proy_acum_s5",
+      "lastUpdateTs" : 1785741291921,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_s0",
+      "lastUpdateTs" : 1785190491473,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_s1",
+      "lastUpdateTs" : 1785190491473,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_s2",
+      "lastUpdateTs" : 1785190493175,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_s3",
+      "lastUpdateTs" : 1785190497167,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_s4",
+      "lastUpdateTs" : 1785190499261,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia_mes_s5",
+      "lastUpdateTs" : 1785189601388,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dotacion_ha_anual_2026",
+      "lastUpdateTs" : 1791290412319,
+      "longValue" : 5,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "guardas_activos_hoy",
+      "lastUpdateTs" : 1787575667216,
+      "longValue" : null,
+      "strValue" : "{\"A IV-4  Bertedona Doña Ana\":{\"valor\":120,\"dia\":\"2026-08-24\",\"sector\":\"3\"},\"A-IV-6-1\":{\"valor\":80,\"dia\":\"2026-08-24\",\"sector\":\"3\"}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "manual_s0",
+      "lastUpdateTs" : 1785449701325,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "manual_s1",
+      "lastUpdateTs" : 1785449701325,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "manual_s2",
+      "lastUpdateTs" : 1785405591224,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "manual_s3",
+      "lastUpdateTs" : 1785449701325,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "manual_s4",
+      "lastUpdateTs" : 1785405591224,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "manual_s5",
+      "lastUpdateTs" : 1785309291216,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "manuales_activos_hoy",
+      "lastUpdateTs" : 1790109493655,
+      "longValue" : null,
+      "strValue" : "{\"Presa La Restinga Bombeo\":{\"valor\":15,\"dia\":\"2026-09-22\",\"sector\":\"1\"},\"Presa La Restinga desembalse\":{\"valor\":5,\"dia\":\"2026-09-22\",\"sector\":\"1\"},\"Presa La Restinga Eco\":{\"valor\":5,\"dia\":\"2026-09-22\",\"sector\":\"1\"},\"Presa La Gitana Bombeo\":{\"valor\":5,\"dia\":\"2026-09-22\",\"sector\":\"0\"}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "media_proyectada_acumulada_s0",
+      "lastUpdateTs" : 1785742191861,
+      "longValue" : 843,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "media_proyectada_acumulada_s1",
+      "lastUpdateTs" : 1785742191861,
+      "longValue" : 1612,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 4528.5,
+      "jsonValue" : null,
+      "key" : "media_proyectada_acumulada_s2",
+      "lastUpdateTs" : 1785742193764,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "media_proyectada_acumulada_s3",
+      "lastUpdateTs" : 1785742197670,
+      "longValue" : 3539,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 4954.5,
+      "jsonValue" : null,
+      "key" : "media_proyectada_acumulada_s4",
+      "lastUpdateTs" : 1785742199804,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "media_proyectada_acumulada_s5",
+      "lastUpdateTs" : 1785742201971,
+      "longValue" : 4419,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "media_proyectada_acumulada_total",
+      "lastUpdateTs" : 1785742201971,
+      "longValue" : 19053,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "medias_acumulado_grupos",
+      "lastUpdateTs" : 1785497401229,
+      "longValue" : null,
+      "strValue" : "{\"El Torbiscal\":{\"suma\":824,\"contador\":1,\"dia\":\"2026-07-31\"},\"Torremarismas\":{\"suma\":141,\"contador\":1,\"dia\":\"2026-07-31\"},\"Montera\":{\"suma\":53,\"contador\":1,\"dia\":\"2026-07-31\"},\"Don Bartolomé\":{\"suma\":18,\"contador\":1,\"dia\":\"2026-07-31\"},\"A-X-1\":{\"suma\":152,\"contador\":1,\"dia\":\"2026-07-31\"},\"Santa María Adrián\":{\"suma\":111,\"contador\":1,\"dia\":\"2026-07-31\"},\"Santa María Roalón\":{\"suma\":150,\"contador\":1,\"dia\":\"2026-07-31\"},\"La Vega\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Las Lebreras\":{\"suma\":25,\"contador\":1,\"dia\":\"2026-07-31\"},\"Peñon - Maestre -INDESA\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Peñon INDESA\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"A-X-2\":{\"suma\":42,\"contador\":1,\"dia\":\"2026-07-31\"},\"Las Arcas\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Salinillas Marcelino\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Salinillas\":{\"suma\":96,\"contador\":1,\"dia\":\"2026-07-31\"},\"El Rancho Marcelino\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"El Rancho Hermana\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"El Rosal\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"A-X-3\":{\"suma\":69,\"contador\":1,\"dia\":\"2026-07-31\"},\"Cordobilla Carlos\":{\"suma\":22,\"contador\":1,\"dia\":\"2026-07-31\"},\"Cordobilla Tulio\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Ranchillo Tulio\":{\"suma\":42,\"contador\":1,\"dia\":\"2026-07-31\"},\"Ranchillo Baena\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Ranchillo Grupo\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"A-X-3-BIS\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Los Almendrillos\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Cordobilla Cordero\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Almendrillos Puchal\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Hnos. Baena\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Almedrillos Altos canal\":{\"suma\":19,\"contador\":1,\"dia\":\"2026-07-31\"},\"Almendrillos Altos Marismillas\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Agro Montujar\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Grupo Palmilla\":{\"suma\":86,\"contador\":1,\"dia\":\"2026-07-31\"},\"Palmilla Carlos\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"El Millonario\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Palmilla ICAN\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Hnos. Bastos\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"El Judío\":{\"suma\":17,\"contador\":1,\"dia\":\"2026-07-31\"},\"A-X-5\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"La Condesa\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Hornillo-Gilete\":{\"suma\":232,\"contador\":1,\"dia\":\"2026-07-31\"},\"Don Alberto\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Rosario Nuñez\":{\"suma\":1,\"contador\":1,\"dia\":\"2026-07-31\"},\"Merlina Meango\":{\"suma\":0,\"contador\":1,\"dia\":\"2026-07-31\"},\"Merlina Piva\":{\"suma\":38,\"contador\":1,\"dia\":\"2026-07-31\"},\"Los Huertos\":{\"suma\":190,\"contador\":1,\"dia\":\"2026-07-31\"},\"Melendo\":{\"suma\":127,\"contador\":1,\"dia\":\"2026-07-31\"}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "medias_proyectadas_grupos",
+      "lastUpdateTs" : 1785744902062,
+      "longValue" : null,
+      "strValue" : "{\"El Torbiscal\":{\"valor\":575.04,\"sector\":\"5\",\"ts\":1785721501216},\"Torremarismas\":{\"valor\":177.07,\"sector\":\"5\",\"ts\":1785744001220},\"Montera\":{\"valor\":69.48,\"sector\":\"5\",\"ts\":1785743101244},\"Don Bartolomé\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785743101244},\"A-X-1\":{\"valor\":124.77,\"sector\":\"5\",\"ts\":1785742201216},\"Santa María Adrián\":{\"valor\":158.12,\"sector\":\"5\",\"ts\":1785734101229},\"Santa María Roalón\":{\"valor\":58.89,\"sector\":\"5\",\"ts\":1785743101244},\"La Vega\":{\"valor\":219.99,\"sector\":\"5\",\"ts\":1785736801215},\"Las Lebreras\":{\"valor\":18.69,\"sector\":\"5\",\"ts\":1785735901222},\"Peñon - Maestre -INDESA\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785735901222},\"Peñon INDESA\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785736801215},\"A-X-2\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785743101244},\"Las Arcas\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785744001220},\"Salinillas Marcelino\":{\"valor\":40.73,\"sector\":\"5\",\"ts\":1785743101244},\"Salinillas\":{\"valor\":31.84,\"sector\":\"5\",\"ts\":1785728701213},\"El Rancho Marcelino\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785735901222},\"El Rancho Hermana\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785735001224},\"El Rosal\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743993141},\"A-X-3\":{\"valor\":86.47,\"sector\":\"5\",\"ts\":1785742201216},\"Cordobilla Carlos\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785726901216},\"Cordobilla Tulio\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785744001220},\"Ranchillo Tulio\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785744001220},\"Ranchillo Baena\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785743101244},\"Ranchillo Grupo\":{\"valor\":54,\"sector\":\"5\",\"ts\":1785723301215},\"A-X-3-BIS\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785742201216},\"Los Almendrillos\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785729601222},\"Cordobilla Cordero\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785722401223},\"Almendrillos Puchal\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785621600000},\"Hnos. Baena\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785730501232},\"Almedrillos Altos canal\":{\"valor\":23.06,\"sector\":\"5\",\"ts\":1785742201216},\"Almendrillos Altos Marismillas\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785716101169},\"Agro Montujar\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785732301228},\"Grupo Palmilla\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785735001224},\"Palmilla Carlos\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785723301215},\"El Millonario\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785735901222},\"Palmilla ICAN\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785730501232},\"Hnos. Bastos\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785735001224},\"El Judío\":{\"valor\":15,\"sector\":\"5\",\"ts\":1785735001224},\"A-X-5\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785726001221},\"La Condesa\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785727801215},\"Hornillo-Gilete\":{\"valor\":229.71,\"sector\":\"5\",\"ts\":1785744001220},\"Don Alberto\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785736801215},\"Rosario Nuñez\":{\"valor\":0.03,\"sector\":\"5\",\"ts\":1785743101244},\"Merlina Meango\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785744001220},\"Merlina Piva\":{\"valor\":0,\"sector\":\"5\",\"ts\":1785736801215},\"Los Huertos\":{\"valor\":144.83,\"sector\":\"5\",\"ts\":1785736801215},\"Melendo\":{\"valor\":142.64,\"sector\":\"5\",\"ts\":1785743101244},\"El Rosario\":{\"valor\":31.43,\"sector\":\"1\",\"ts\":1785736791198},\"Gomez Aparicio\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785734091151},\"Granaillo Grupo\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785728691226},\"Trinidad CAVAM\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785729591202},\"La Raspa\":{\"valor\":34.74,\"sector\":\"1\",\"ts\":1785742191205},\"Las Coronas 1 Abonos Jimenez\":{\"valor\":10.04,\"sector\":\"1\",\"ts\":1785743991233},\"Cerrado de Miura\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785742191205},\"Santo Tomás\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785742191205},\"Grupo El Corzo\":{\"valor\":179.02,\"sector\":\"2\",\"ts\":1785743993141},\"Casavacas 1\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743993141},\"MatAmarilla Tubarro\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785732293140},\"Torre Nueva\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743093167},\"El Toril Fernando\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785735893130},\"La Algabarra\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785742193132},\"Los Angeles Baldisema\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785726893130},\"Lasarte\":{\"valor\":37.59,\"sector\":\"2\",\"ts\":1785743093167},\"Casavacas 2\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743093167},\"Carmona 1 Puerto\":{\"valor\":3.66,\"sector\":\"2\",\"ts\":1785743993141},\"Algodonales\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743993141},\"La Cabaña Gravedad Marqués\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785736793134},\"Los rubios Jarema\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743997157},\"T-II-1-1-3\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743097169},\"A-IV-3\":{\"valor\":54.37,\"sector\":\"3\",\"ts\":1785742197158},\"La corchuela\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785728697146},\"V Rancho López Gómez\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785742197158},\"T-II-1-2\":{\"valor\":309.24,\"sector\":\"3\",\"ts\":1785731397146},\"T-II-1-1\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785727797143},\"Cisman (T) - MD\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785735897156},\"Grupo Arenoso\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785726897154},\"Las Crucetas\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785742197158},\"San Fernando\":{\"valor\":107.08,\"sector\":\"4\",\"ts\":1785743999175},\"T-VII-6 Tubería\":{\"valor\":50.93,\"sector\":\"4\",\"ts\":1785742199176},\"Rubio Angel\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743099180},\"Juan Gómez (T) - 1\":{\"valor\":120.36,\"sector\":\"4\",\"ts\":1785743099180},\"T-VII-2\":{\"valor\":38.75,\"sector\":\"4\",\"ts\":1785728699177},\"Gilito\":{\"valor\":36.89,\"sector\":\"4\",\"ts\":1785734099170},\"T-VII-7A Acequia\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743099180},\"Los Becerros\":{\"valor\":138.41,\"sector\":\"4\",\"ts\":1785742199176},\"Juan Gomez (10) - 2\":{\"valor\":146.02,\"sector\":\"4\",\"ts\":1785732299169},\"Pinto Agrícola\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785736799173},\"Cortijo Guadajoz\":{\"valor\":1.18,\"sector\":\"1\",\"ts\":1785743991233},\"Presa La Gitana desembalse\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785731391202},\"Real Tesoro\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785743991233},\"Campanero\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785734091151},\"El Corredero\":{\"valor\":13.64,\"sector\":\"1\",\"ts\":1785742191205},\"Carmona 2\":{\"valor\":94.39,\"sector\":\"1\",\"ts\":1785743991233},\"El Alcachofar - 1\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785742191205},\"El Cerro\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785735893130},\"Los Angeles Parias\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785733193125},\"El Toril II\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785742193132},\"La Cabaña MG\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743093167},\"Jarilla\":{\"valor\":359.5,\"sector\":\"2\",\"ts\":1785711593127},\"Grupo Algabarra\":{\"valor\":72.37,\"sector\":\"2\",\"ts\":1785736793134},\"Matas Verdes\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785736793134},\"Diputación\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785716093130},\"Sortes y la botija\":{\"valor\":68.71,\"sector\":\"3\",\"ts\":1785736797151},\"Real Club de Golf\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743097169},\"La Española\":{\"valor\":23.7,\"sector\":\"3\",\"ts\":1785743097169},\"B-II FLUME GATE\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785736797151},\"Ayala Arenoso\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743097169},\"V Rancho Crucetas\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785728697146},\"A-V-5\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743999175},\"T-VII-7\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785736799173},\"A-V-3 Mejorada\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785734999172},\"Cisman y los Frailes\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743099180},\"T-VII-4\":{\"valor\":98.5,\"sector\":\"4\",\"ts\":1785717899170},\"Jaime Perez - Izquierda\":{\"valor\":77.34,\"sector\":\"4\",\"ts\":1785743999175},\"El Marchante\":{\"valor\":184.89,\"sector\":\"0\",\"ts\":1785743091243},\"Mochales\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785736791198},\"Trinidad Nufri\":{\"valor\":71.99,\"sector\":\"0\",\"ts\":1785736791198},\"Presa-El Rosario Bombeo\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785743091243},\"Presa La Restinga Eco\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785743091243},\"Casilla Villegas\":{\"valor\":40.62,\"sector\":\"1\",\"ts\":1785743091243},\"Alamo Alto EM\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785735891215},\"Presa-El Rosario Eco\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785734091151},\"Casavacas Santa Adela\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785704393127},\"Crespo Camino\":{\"valor\":275.5,\"sector\":\"2\",\"ts\":1785734093153},\"La Algabarrilla\":{\"valor\":139.65,\"sector\":\"2\",\"ts\":1785735893130},\"Carmona 1 La Chacona\":{\"valor\":95.41,\"sector\":\"2\",\"ts\":1785743993141},\"Carmona 1 Bernal\":{\"valor\":28.96,\"sector\":\"2\",\"ts\":1785743093167},\"V Rancho, Barrón\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743997157},\"Los rubios Carlos\":{\"valor\":11.13,\"sector\":\"3\",\"ts\":1785743997157},\"T-IV-6\":{\"valor\":334.61,\"sector\":\"3\",\"ts\":1785735897156},\"V Rancho Cerezuela\":{\"valor\":5.27,\"sector\":\"3\",\"ts\":1785735897156},\"A-V-3\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785733199176},\"T-VII-4-2\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785728699177},\"El Alcachofar - 2\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785742191205},\"Barrera\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785725091244},\"Hacienda Nueva San José\":{\"valor\":69.71,\"sector\":\"1\",\"ts\":1785743991233},\"La Cabaña Marqués\":{\"valor\":163.76,\"sector\":\"2\",\"ts\":1785735893130},\"El Toril I\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785731393134},\"El Serafín\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785691793123},\"T-II-1-4\":{\"valor\":750.59,\"sector\":\"3\",\"ts\":1785743997157},\"La Española Desembalse\":{\"valor\":28.28,\"sector\":\"3\",\"ts\":1785743097169},\"A-IV-6-1-BIS\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785742197158},\"V Rancho, Peseta\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785742197158},\"A IV-4  Bertedona Doña Ana\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785735897156},\"Tamarán\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785734099170},\"A-VII-9\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785732299169},\"Ulloa\":{\"valor\":98.03,\"sector\":\"4\",\"ts\":1785734999172},\"A-VII-8\":{\"valor\":373.92,\"sector\":\"4\",\"ts\":1785729599122},\"Presa La Gitana Eco\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785734091151},\"Trinidad L. Rojas\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785722391235},\"Oidor\":{\"valor\":110.12,\"sector\":\"1\",\"ts\":1785742191205},\"Granaillo Leonardo\":{\"valor\":31.46,\"sector\":\"1\",\"ts\":1785743991233},\"Crespo Recuerda\":{\"valor\":27.25,\"sector\":\"2\",\"ts\":1785735893130},\"La Florida\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785742193132},\"A IV-4  Zambruno\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743997157},\"Hacienda Romana  2 (BALSA)\":{\"valor\":252.05,\"sector\":\"4\",\"ts\":1785723299170},\"Pinto ANSAR\":{\"valor\":279.79,\"sector\":\"4\",\"ts\":1785743999175},\"Jaime Pérez - Derecha (T)\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785734999172},\"T-VII-6 Acequia\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785733199176},\"Presa La Restinga Bombeo\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785732291199},\"Presa La Gitana Bombeo\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785742191205},\"Carmona 3\":{\"valor\":176.03,\"sector\":\"1\",\"ts\":1785727791199},\"Melitón\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785735893130},\"La Jurada\":{\"valor\":0.78,\"sector\":\"2\",\"ts\":1785716993127},\"Grupo Almonazar\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785733193125},\"Hacienda Hornillo\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785724197144},\"A-V-2\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785734997152},\"A-V-1\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785736797151},\"A-IV-6-1\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743097169},\"A-IV-4\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785716997144},\"A-VII-1-1 - 1\":{\"valor\":41.87,\"sector\":\"4\",\"ts\":1785735899169},\"A-VII-3 (Molinillo)\":{\"valor\":36,\"sector\":\"4\",\"ts\":1785735899169},\"Presa La Restinga desembalse\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785736791198},\"Legua Leal\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785728691226},\"Casilla San Germán\":{\"valor\":65.77,\"sector\":\"1\",\"ts\":1785733191200},\"Grupo Cesaro\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785723293129},\"Huerta Escobedo\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743999175},\"A-VII-1-1 - 2\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785727799173},\"SAT la Romana\":{\"valor\":46.86,\"sector\":\"4\",\"ts\":1785743999175},\"Torremarismas CD3\":{\"valor\":6.49,\"sector\":\"4\",\"ts\":1785735899169},\"Trinidad Cañaveral\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785728691226},\"Grupo MatAmarilla\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785734993086},\"A-IV-5\":{\"valor\":65.19,\"sector\":\"3\",\"ts\":1785734097152},\"Los rubios Guayba\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743097169},\"El Toruño\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785734999172},\"La Gitana\":{\"valor\":0,\"sector\":\"0\",\"ts\":1785731391202},\"Presa-El Rosario Desembalse\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785730491307},\"Secano de la Motilla\":{\"valor\":4.55,\"sector\":\"1\",\"ts\":1785733191200},\"La Cabaña Gravedad INAGRO\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743993141},\"Torres Gómez\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743997157},\"Los Cabreros\":{\"valor\":68.75,\"sector\":\"3\",\"ts\":1785711597138},\"La Famosa\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785730491307},\"Carmona 1 Los Lares\":{\"valor\":177.79,\"sector\":\"2\",\"ts\":1785743993141},\"Grupo Buitrago\":{\"valor\":3.92,\"sector\":\"2\",\"ts\":1785736793134},\"T-II-1-2-1\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785743997157},\"Liebanas\":{\"valor\":6.94,\"sector\":\"3\",\"ts\":1785735897156},\"Grupo Cismán\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785732297145},\"Hacienda Romana canal\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743099180},\"Hacienda Oran\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743099180},\"El Cuzco\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785742199176},\"SAT Dehesilla\":{\"valor\":49.84,\"sector\":\"4\",\"ts\":1785730499173},\"San Rafael\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743093167},\"Frutansa\":{\"valor\":172.43,\"sector\":\"2\",\"ts\":1785733193125},\"A-IV-3 Bujalmoro MD\":{\"valor\":0,\"sector\":\"3\",\"ts\":1785733197146},\"Los Llanos\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785742199176},\"A-V-4\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785743999175},\"RV AGRO\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785734091151},\"Santana\":{\"valor\":110.11,\"sector\":\"1\",\"ts\":1785743091243},\"Bujalmoro\":{\"valor\":92.66,\"sector\":\"3\",\"ts\":1785736797151},\"V Rancho Cabezuelo\":{\"valor\":19.32,\"sector\":\"3\",\"ts\":1785743997157},\"T-VII-5\":{\"valor\":31.29,\"sector\":\"4\",\"ts\":1785735899169},\"Granaillo La Milana\":{\"valor\":64.22,\"sector\":\"1\",\"ts\":1785736791198},\"A-VII-10 (T)\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785732299169},\"Las Coronas 2\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785736791198},\"Trinidad A. Rojas\":{\"valor\":65.72,\"sector\":\"0\",\"ts\":1785743991233},\"Alamo Alto MD\":{\"valor\":47.43,\"sector\":\"0\",\"ts\":1785731391202},\"Torre Arana\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743993141},\"San Juan\":{\"valor\":30.99,\"sector\":\"4\",\"ts\":1785733199176},\"Los Santos\":{\"valor\":53,\"sector\":\"1\",\"ts\":1785712491225},\"La Cabaña Inagro\":{\"valor\":163.76,\"sector\":\"2\",\"ts\":1785735893130},\"El Bodegón\":{\"valor\":0.11,\"sector\":\"2\",\"ts\":1785725993136},\"Casablanquilla\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785743093167},\"Las Coronas 1 Casilla León\":{\"valor\":0,\"sector\":\"1\",\"ts\":1785717891216},\"Antonio López\":{\"valor\":0,\"sector\":\"4\",\"ts\":1785721499171},\"El Pinganillo\":{\"valor\":320.2,\"sector\":\"4\",\"ts\":1785743999175},\"La Encina\":{\"valor\":0,\"sector\":\"2\",\"ts\":1785732293140},\"Grupo Espartales\":{\"valor\":263.2,\"sector\":\"2\",\"ts\":1785734093153},\"El Pino\":{\"valor\":26.13,\"sector\":\"1\",\"ts\":1785736791198},\"T-VII-7A Tubería\":{\"valor\":49.09,\"sector\":\"4\",\"ts\":1785734099170}}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_3",
+      "lastUpdateTs" : 1794385799877,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_3_bujalmoro_md",
+      "lastUpdateTs" : 1792390499311,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1792390498718}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_4",
+      "lastUpdateTs" : 1794385799914,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_4_bertedona_dona_ana",
+      "lastUpdateTs" : 1792390499041,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1792390498718}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_4_zambruno",
+      "lastUpdateTs" : 1789735498214,
+      "longValue" : null,
+      "strValue" : "{\"valor\":5.62,\"sector\":\"3\",\"ts\":1789735497966}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_5",
+      "lastUpdateTs" : 1794385799914,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_6_1",
+      "lastUpdateTs" : 1794385799878,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_iv_6_1_bis",
+      "lastUpdateTs" : 1794385799777,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_v_1",
+      "lastUpdateTs" : 1794385799879,
+      "longValue" : null,
+      "strValue" : "{\"valor\":1.64,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_v_2",
+      "lastUpdateTs" : 1794385799681,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_v_3",
+      "lastUpdateTs" : 1794385802114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_v_3_mejorada",
+      "lastUpdateTs" : 1794385801965,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_v_4",
+      "lastUpdateTs" : 1794385802113,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_v_5",
+      "lastUpdateTs" : 1794385801842,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_vii_10_t",
+      "lastUpdateTs" : 1794385802066,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_vii_1_1_1",
+      "lastUpdateTs" : 1794385802087,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_vii_1_1_2",
+      "lastUpdateTs" : 1794385802068,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_vii_3_molinillo",
+      "lastUpdateTs" : 1794385802112,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_vii_8",
+      "lastUpdateTs" : 1794385802113,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_vii_9",
+      "lastUpdateTs" : 1794385802070,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_x_1",
+      "lastUpdateTs" : 1794385804194,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_x_2",
+      "lastUpdateTs" : 1794385804290,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_x_3",
+      "lastUpdateTs" : 1794385804204,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0.02,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_x_3_bis",
+      "lastUpdateTs" : 1794385804290,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_a_x_5",
+      "lastUpdateTs" : 1794385804290,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_agro_montujar",
+      "lastUpdateTs" : 1794385804290,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_alamo_alto_em",
+      "lastUpdateTs" : 1794385793987,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_alamo_alto_md",
+      "lastUpdateTs" : 1794385793882,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_algodonales",
+      "lastUpdateTs" : 1794385796163,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_almedrillos_altos_canal",
+      "lastUpdateTs" : 1794385804226,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_almendrillos_altos_marismillas",
+      "lastUpdateTs" : 1794385804064,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_almendrillos_puchal",
+      "lastUpdateTs" : 1794385804194,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_antonio_lopez",
+      "lastUpdateTs" : 1794385802067,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_ayala_arenoso",
+      "lastUpdateTs" : 1794385799774,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_b_ii_flume_gate",
+      "lastUpdateTs" : 1794385799633,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_barrera",
+      "lastUpdateTs" : 1794385794076,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_bertedona_dona_ana",
+      "lastUpdateTs" : 1794385799593,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_bujalmoro",
+      "lastUpdateTs" : 1794385799788,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_bujalmoro_md",
+      "lastUpdateTs" : 1794385799914,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_campanero",
+      "lastUpdateTs" : 1794385794070,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_carmona_1_bernal",
+      "lastUpdateTs" : 1794385796066,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_carmona_1_la_chacona",
+      "lastUpdateTs" : 1794385796376,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_carmona_1_los_lares",
+      "lastUpdateTs" : 1794385796124,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_carmona_1_puerto",
+      "lastUpdateTs" : 1794385796064,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_carmona_2",
+      "lastUpdateTs" : 1794385794164,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_carmona_3",
+      "lastUpdateTs" : 1794385794058,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_casablanquilla",
+      "lastUpdateTs" : 1794385796218,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_casavacas_1",
+      "lastUpdateTs" : 1794385796237,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_casavacas_2",
+      "lastUpdateTs" : 1794385796974,
+      "longValue" : null,
+      "strValue" : "{\"valor\":1.78,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_casavacas_santa_adela",
+      "lastUpdateTs" : 1794385796224,
+      "longValue" : null,
+      "strValue" : "{\"valor\":1,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_casilla_san_german",
+      "lastUpdateTs" : 1794385794163,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_casilla_villegas",
+      "lastUpdateTs" : 1794385794057,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_cerrado_de_miura",
+      "lastUpdateTs" : 1794385794165,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_cisman_t_md",
+      "lastUpdateTs" : 1794385799879,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_cisman_y_los_frailes",
+      "lastUpdateTs" : 1794385803658,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_cordobilla_carlos",
+      "lastUpdateTs" : 1794385804167,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_cordobilla_cordero",
+      "lastUpdateTs" : 1794385804187,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_cordobilla_tulio",
+      "lastUpdateTs" : 1794385804288,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_cortijo_guadajoz",
+      "lastUpdateTs" : 1794385793785,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_crespo_camino",
+      "lastUpdateTs" : 1794385796377,
+      "longValue" : null,
+      "strValue" : "{\"valor\":2,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_crespo_recuerda",
+      "lastUpdateTs" : 1794385796130,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_diputacion",
+      "lastUpdateTs" : 1794385796268,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_don_alberto",
+      "lastUpdateTs" : 1794385804169,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_don_bartolome",
+      "lastUpdateTs" : 1794385804097,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_alcachofar_1",
+      "lastUpdateTs" : 1794385794074,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_alcachofar_2",
+      "lastUpdateTs" : 1794385793924,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_bodegon",
+      "lastUpdateTs" : 1794385796117,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_cerro",
+      "lastUpdateTs" : 1794385796267,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_corredero",
+      "lastUpdateTs" : 1794385794218,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_cuzco",
+      "lastUpdateTs" : 1794385802027,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_judio",
+      "lastUpdateTs" : 1794385804290,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_marchante",
+      "lastUpdateTs" : 1794385793984,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_millonario",
+      "lastUpdateTs" : 1794385804170,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_pinganillo",
+      "lastUpdateTs" : 1794385802114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_pino",
+      "lastUpdateTs" : 1794385794075,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_rancho_hermana",
+      "lastUpdateTs" : 1794385804097,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_rancho_marcelino",
+      "lastUpdateTs" : 1794385804171,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_rosal",
+      "lastUpdateTs" : 1794385804187,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_rosario",
+      "lastUpdateTs" : 1794385793859,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_serafin",
+      "lastUpdateTs" : 1794385796226,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_torbiscal",
+      "lastUpdateTs" : 1794385804172,
+      "longValue" : null,
+      "strValue" : "{\"valor\":1050.34,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_toril_fernando",
+      "lastUpdateTs" : 1794385796258,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_toril_i",
+      "lastUpdateTs" : 1794385796268,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_toril_ii",
+      "lastUpdateTs" : 1794385796974,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_el_toruno",
+      "lastUpdateTs" : 1794385802115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_frutansa",
+      "lastUpdateTs" : 1794385796226,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_gilito",
+      "lastUpdateTs" : 1794385802065,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_gomez_aparicio",
+      "lastUpdateTs" : 1794385793987,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_granaillo_grupo",
+      "lastUpdateTs" : 1794385793981,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_granaillo_la_milana",
+      "lastUpdateTs" : 1794385794073,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_granaillo_leonardo",
+      "lastUpdateTs" : 1794385794163,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_algabarra",
+      "lastUpdateTs" : 1794385796224,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_almonazar",
+      "lastUpdateTs" : 1794385796225,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_arenoso",
+      "lastUpdateTs" : 1794385799875,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_buitrago",
+      "lastUpdateTs" : 1794385796268,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_cesaro",
+      "lastUpdateTs" : 1794385796224,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_cisman",
+      "lastUpdateTs" : 1794385799877,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_el_corzo",
+      "lastUpdateTs" : 1794385796269,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_espartales",
+      "lastUpdateTs" : 1794385796269,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_matamarilla",
+      "lastUpdateTs" : 1794385796268,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_grupo_palmilla",
+      "lastUpdateTs" : 1794385804126,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hacienda_hornillo",
+      "lastUpdateTs" : 1794385799809,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hacienda_nueva_san_jose",
+      "lastUpdateTs" : 1794385793968,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hacienda_oran",
+      "lastUpdateTs" : 1794385802067,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hacienda_romana_2_balsa",
+      "lastUpdateTs" : 1794385801926,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hacienda_romana_canal",
+      "lastUpdateTs" : 1794385802022,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hnos_baena",
+      "lastUpdateTs" : 1794385804171,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hnos_bastos",
+      "lastUpdateTs" : 1794385804174,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_hornillo_gilete",
+      "lastUpdateTs" : 1794385804205,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_huerta_escobedo",
+      "lastUpdateTs" : 1794385802021,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_jaime_perez_derecha_t",
+      "lastUpdateTs" : 1794385802208,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_jaime_perez_izquierda",
+      "lastUpdateTs" : 1794385802115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_jarilla",
+      "lastUpdateTs" : 1794385796377,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_juan_gomez_10_2",
+      "lastUpdateTs" : 1794385802208,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_juan_gomez_t_1",
+      "lastUpdateTs" : 1794385801965,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_algabarra",
+      "lastUpdateTs" : 1794385796402,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_algabarrilla",
+      "lastUpdateTs" : 1794385797080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_cabana_gravedad_inagro",
+      "lastUpdateTs" : 1794385797081,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_cabana_gravedad_marques",
+      "lastUpdateTs" : 1794385796237,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_cabana_inagro",
+      "lastUpdateTs" : 1794385796376,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_cabana_marques",
+      "lastUpdateTs" : 1794385796973,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_cabana_mg",
+      "lastUpdateTs" : 1794385796401,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_condesa",
+      "lastUpdateTs" : 1794385804205,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_corchuela",
+      "lastUpdateTs" : 1794385799789,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_encina",
+      "lastUpdateTs" : 1794385797081,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_espanola",
+      "lastUpdateTs" : 1794385799755,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_espanola_desembalse",
+      "lastUpdateTs" : 1790271898405,
+      "longValue" : null,
+      "strValue" : "{\"valor\":28.2,\"sector\":\"3\",\"ts\":1790271898107}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_famosa",
+      "lastUpdateTs" : 1794385794219,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_florida",
+      "lastUpdateTs" : 1794385796237,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_gitana",
+      "lastUpdateTs" : 1794385793984,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_jurada",
+      "lastUpdateTs" : 1794385796376,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_raspa",
+      "lastUpdateTs" : 1794385794076,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_la_vega",
+      "lastUpdateTs" : 1794385804125,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0.01,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_las_arcas",
+      "lastUpdateTs" : 1794385804291,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_las_coronas_1_abonos_jimenez",
+      "lastUpdateTs" : 1794385794219,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_las_coronas_1_casilla_leon",
+      "lastUpdateTs" : 1794385794078,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_las_coronas_2",
+      "lastUpdateTs" : 1794385793986,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_las_crucetas",
+      "lastUpdateTs" : 1794385799879,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_las_lebreras",
+      "lastUpdateTs" : 1794385803992,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_lasarte",
+      "lastUpdateTs" : 1794385797080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_legua_leal",
+      "lastUpdateTs" : 1794385794218,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_liebanas",
+      "lastUpdateTs" : 1794385799777,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_almendrillos",
+      "lastUpdateTs" : 1794385804285,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_angeles_baldisema",
+      "lastUpdateTs" : 1794385796377,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_angeles_parias",
+      "lastUpdateTs" : 1794385796974,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_becerros",
+      "lastUpdateTs" : 1794385802159,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_cabreros",
+      "lastUpdateTs" : 1794385799793,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_huertos",
+      "lastUpdateTs" : 1794385804291,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_llanos",
+      "lastUpdateTs" : 1794385802066,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_rubios_carlos",
+      "lastUpdateTs" : 1794385799873,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_rubios_guayba",
+      "lastUpdateTs" : 1794385799874,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_rubios_jarema",
+      "lastUpdateTs" : 1794385799717,
+      "longValue" : null,
+      "strValue" : "{\"valor\":14.85,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_los_santos",
+      "lastUpdateTs" : 1794385794164,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_matamarilla_tubarro",
+      "lastUpdateTs" : 1794385796130,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_matas_verdes",
+      "lastUpdateTs" : 1794385796226,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_melendo",
+      "lastUpdateTs" : 1794385804168,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_meliton",
+      "lastUpdateTs" : 1794385796226,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_merlina_meango",
+      "lastUpdateTs" : 1794385804171,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_merlina_piva",
+      "lastUpdateTs" : 1794385804194,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_mochales",
+      "lastUpdateTs" : 1794385793984,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_montera",
+      "lastUpdateTs" : 1794385804194,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_oidor",
+      "lastUpdateTs" : 1794385796965,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_palmilla_carlos",
+      "lastUpdateTs" : 1794385804285,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_palmilla_ican",
+      "lastUpdateTs" : 1794385804173,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_penon_indesa",
+      "lastUpdateTs" : 1794385804173,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_penon_maestre_indesa",
+      "lastUpdateTs" : 1794385804035,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_pinto_agricola",
+      "lastUpdateTs" : 1794385802159,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_pinto_ansar",
+      "lastUpdateTs" : 1794385802014,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_el_rosario_bombeo",
+      "lastUpdateTs" : 1794385793973,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_el_rosario_desembalse",
+      "lastUpdateTs" : 1794385794164,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_el_rosario_eco",
+      "lastUpdateTs" : 1794385794055,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_la_gitana_bombeo",
+      "lastUpdateTs" : 1794385794077,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_la_gitana_desembalse",
+      "lastUpdateTs" : 1794385794071,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_la_gitana_eco",
+      "lastUpdateTs" : 1794385796965,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_la_restinga_bombeo",
+      "lastUpdateTs" : 1794385794073,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_la_restinga_desembalse",
+      "lastUpdateTs" : 1794385796965,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_presa_la_restinga_eco",
+      "lastUpdateTs" : 1794385794053,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_ranchillo_baena",
+      "lastUpdateTs" : 1794385804184,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_ranchillo_grupo",
+      "lastUpdateTs" : 1794385804290,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_ranchillo_tulio",
+      "lastUpdateTs" : 1794385804205,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_real_club_de_golf",
+      "lastUpdateTs" : 1794385799717,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_real_tesoro",
+      "lastUpdateTs" : 1794385794219,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_rosario_nunez",
+      "lastUpdateTs" : 1794385804288,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_rubio_angel",
+      "lastUpdateTs" : 1794385801985,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_rv_agro",
+      "lastUpdateTs" : 1794385794163,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_salinillas",
+      "lastUpdateTs" : 1794385804174,
+      "longValue" : null,
+      "strValue" : "{\"valor\":48.97,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_salinillas_marcelino",
+      "lastUpdateTs" : 1794385804193,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_san_fernando",
+      "lastUpdateTs" : 1794385802067,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_san_juan",
+      "lastUpdateTs" : 1794385802069,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_san_rafael",
+      "lastUpdateTs" : 1794385797080,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_santa_maria_adrian",
+      "lastUpdateTs" : 1794385804190,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_santa_maria_roalon",
+      "lastUpdateTs" : 1794385804096,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_santana",
+      "lastUpdateTs" : 1794385794165,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_santo_tomas",
+      "lastUpdateTs" : 1794385794165,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_sat_dehesilla",
+      "lastUpdateTs" : 1794385802114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_sat_la_romana",
+      "lastUpdateTs" : 1794385802076,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_secano_de_la_motilla",
+      "lastUpdateTs" : 1794385794164,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"1\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_sortes_y_la_botija",
+      "lastUpdateTs" : 1794385799717,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_ii_1_1",
+      "lastUpdateTs" : 1794385799681,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_ii_1_1_3",
+      "lastUpdateTs" : 1794385799718,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_ii_1_2",
+      "lastUpdateTs" : 1794385799855,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_ii_1_2_1",
+      "lastUpdateTs" : 1794385799878,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_ii_1_4",
+      "lastUpdateTs" : 1794385799913,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_iv_6",
+      "lastUpdateTs" : 1794385799878,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_2",
+      "lastUpdateTs" : 1794385802022,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_4",
+      "lastUpdateTs" : 1794385802115,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_4_2",
+      "lastUpdateTs" : 1794385802021,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_5",
+      "lastUpdateTs" : 1794385802016,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_6_acequia",
+      "lastUpdateTs" : 1794385802112,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_6_tuberia",
+      "lastUpdateTs" : 1794385802087,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_7",
+      "lastUpdateTs" : 1794385803758,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_7a_acequia",
+      "lastUpdateTs" : 1794385802114,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_t_vii_7a_tuberia",
+      "lastUpdateTs" : 1794385802208,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_tamaran",
+      "lastUpdateTs" : 1794385802027,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_torre_arana",
+      "lastUpdateTs" : 1794385796377,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_torre_nueva",
+      "lastUpdateTs" : 1794385796014,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"2\",\"ts\":1794385795805}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_torremarismas",
+      "lastUpdateTs" : 1794385804085,
+      "longValue" : null,
+      "strValue" : "{\"valor\":6.56,\"sector\":\"5\",\"ts\":1794385803602}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_torremarismas_cd3",
+      "lastUpdateTs" : 1794385802111,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_torres_gomez",
+      "lastUpdateTs" : 1794385799793,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_trinidad_a_rojas",
+      "lastUpdateTs" : 1794385794051,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_trinidad_canaveral",
+      "lastUpdateTs" : 1794385794077,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_trinidad_cavam",
+      "lastUpdateTs" : 1794385793988,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_trinidad_l_rojas",
+      "lastUpdateTs" : 1794385794076,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_trinidad_nufri",
+      "lastUpdateTs" : 1794385793988,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"0\",\"ts\":1794385793569}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_ulloa",
+      "lastUpdateTs" : 1794385802086,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"4\",\"ts\":1794385801607}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_v_rancho_barron",
+      "lastUpdateTs" : 1794385799777,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_v_rancho_cabezuelo",
+      "lastUpdateTs" : 1794385799913,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_v_rancho_cerezuela",
+      "lastUpdateTs" : 1794385799878,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_v_rancho_crucetas",
+      "lastUpdateTs" : 1794385799913,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_v_rancho_lopez_gomez",
+      "lastUpdateTs" : 1794385799789,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_v_rancho_peseta",
+      "lastUpdateTs" : 1794385799913,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mp_zambruno",
+      "lastUpdateTs" : 1794385799683,
+      "longValue" : null,
+      "strValue" : "{\"valor\":0,\"sector\":\"3\",\"ts\":1794385799376}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "pendiente_count",
+      "lastUpdateTs" : 1785190501283,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "pendiente_dia",
+      "lastUpdateTs" : 1785190501283,
+      "longValue" : -1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "pendiente_suma",
+      "lastUpdateTs" : 1785190501283,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "periodos_agua_2026",
+      "lastUpdateTs" : 1791290436520,
+      "longValue" : null,
+      "strValue" : "[{\"inicio\":\"2026-04-01\",\"fin\":\"2026-04-05\",\"tipo\":\"E\"},{\"inicio\":\"2026-10-01\",\"fin\":\"2026-10-09\",\"tipo\":\"E\"}]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_contador_s0",
+      "lastUpdateTs" : 1785742191249,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_contador_s1",
+      "lastUpdateTs" : 1785742191249,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_contador_s2",
+      "lastUpdateTs" : 1785742193220,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_contador_s3",
+      "lastUpdateTs" : 1785742197199,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_contador_s4",
+      "lastUpdateTs" : 1785742199215,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_contador_s5",
+      "lastUpdateTs" : 1785742201261,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_dia_s0",
+      "lastUpdateTs" : 1785741291346,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_dia_s1",
+      "lastUpdateTs" : 1785741291346,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_dia_s2",
+      "lastUpdateTs" : 1785741291346,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_dia_s3",
+      "lastUpdateTs" : 1785741291346,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_dia_s4",
+      "lastUpdateTs" : 1785741291346,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_dia_s5",
+      "lastUpdateTs" : 1785741291346,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_last4_s0",
+      "lastUpdateTs" : 1785742191249,
+      "longValue" : null,
+      "strValue" : "433,387"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_last4_s1",
+      "lastUpdateTs" : 1785742191249,
+      "longValue" : null,
+      "strValue" : "798,830"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_last4_s2",
+      "lastUpdateTs" : 1785742193220,
+      "longValue" : null,
+      "strValue" : "2259,2280"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_last4_s3",
+      "lastUpdateTs" : 1785742197199,
+      "longValue" : null,
+      "strValue" : "1752,1822"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_last4_s4",
+      "lastUpdateTs" : 1785742199215,
+      "longValue" : null,
+      "strValue" : "2502,2403"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_last4_s5",
+      "lastUpdateTs" : 1785742201261,
+      "longValue" : null,
+      "strValue" : "2221,2175"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_suma_s0",
+      "lastUpdateTs" : 1785742191249,
+      "longValue" : 820,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_suma_s1",
+      "lastUpdateTs" : 1785742191249,
+      "longValue" : 1628,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_suma_s2",
+      "lastUpdateTs" : 1785742193220,
+      "longValue" : 4539,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_suma_s3",
+      "lastUpdateTs" : 1785742197199,
+      "longValue" : 3574,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_suma_s4",
+      "lastUpdateTs" : 1785742199215,
+      "longValue" : 4905,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "proy_suma_s5",
+      "lastUpdateTs" : 1785742201261,
+      "longValue" : 4396,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rs_state_s0",
+      "lastUpdateTs" : 1790749803570,
+      "longValue" : null,
+      "strValue" : "{\"suma\":66703.62000000024,\"cuenta\":352,\"dia\":\"2026-09-30\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rs_state_s1",
+      "lastUpdateTs" : 1790749803570,
+      "longValue" : null,
+      "strValue" : "{\"suma\":460389.5700000003,\"cuenta\":351,\"dia\":\"2026-09-30\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rs_state_s2",
+      "lastUpdateTs" : 1790749803570,
+      "longValue" : null,
+      "strValue" : "{\"suma\":428529.29999999993,\"cuenta\":350,\"dia\":\"2026-09-30\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rs_state_s3",
+      "lastUpdateTs" : 1790749803570,
+      "longValue" : null,
+      "strValue" : "{\"suma\":250222.5600000004,\"cuenta\":349,\"dia\":\"2026-09-30\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rs_state_s4",
+      "lastUpdateTs" : 1790749803570,
+      "longValue" : null,
+      "strValue" : "{\"suma\":307207.84,\"cuenta\":356,\"dia\":\"2026-09-30\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rs_state_s5",
+      "lastUpdateTs" : 1790749803570,
+      "longValue" : null,
+      "strValue" : "{\"suma\":3293607.9900000067,\"cuenta\":351,\"dia\":\"2026-09-30\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rs_state_total",
+      "lastUpdateTs" : 1790749803570,
+      "longValue" : null,
+      "strValue" : "{\"suma\":4717951.659999998,\"cuenta\":360,\"dia\":\"2026-09-30\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultima_media_proy_s0",
+      "lastUpdateTs" : 1785483893667,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultima_media_proy_s1",
+      "lastUpdateTs" : 1785483893667,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultima_media_proy_s2",
+      "lastUpdateTs" : 1785483897556,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultima_media_proy_s3",
+      "lastUpdateTs" : 1785483899689,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultima_media_proy_s4",
+      "lastUpdateTs" : 1785483901782,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 2531.7,
+      "jsonValue" : null,
+      "key" : "ultima_media_proy_s5",
+      "lastUpdateTs" : 1785483901782,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,838 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "a5f02bc0-899c-11f1-9a1a-412768cf7861"
+    },
+    "name" : "Lisímetros - AgZoom",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 17,
+      "type" : "vigente"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 22,
+      "type" : "renovar"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 16,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 14,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 16,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 12,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 13,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 16,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 23,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 20,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 21,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 19,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "TRAS IMPORTAR: abrir el nodo y seleccionar el dispositivo AGZOOM_Poller como originator",
+        "layoutX" : 40,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 3600,
+        "scriptLang" : "JS",
+        "jsScript" : "return { msg: {}, metadata: {}, msgType: \"AGZOOM_TICK\" };",
+        "tbelScript" : "return { msg: {}, metadata: {}, msgType: \"AGZOOM_TICK\" };",
+        "originatorId" : "e3cd1b80-8805-11f1-9a1a-412768cf7861",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6291610-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Tick AgZoom (60 min)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Credenciales como atributos de servidor: nunca en la configuracion del nodo",
+        "layoutX" : 240,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "az_client_id", "az_client_secret", "az_username", "az_password", "az_token", "az_token_exp", "az_lisimetros", "az_mapa_default", "az_prefijo" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "tellFailureIfAbsent" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6291611-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Cargar credenciales + token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 440,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var exp = metadata.az_token_exp ? parseInt(metadata.az_token_exp) : 0;\nif (metadata.az_token && exp > Date.now() + 300000) {\n    return [\"vigente\"];\n}\nreturn [\"renovar\"];\n",
+        "tbelScript" : "var exp = metadata.az_token_exp ? parseInt(metadata.az_token_exp) : 0;\nif (metadata.az_token && exp > Date.now() + 300000) {\n    return [\"vigente\"];\n}\nreturn [\"renovar\"];\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6291612-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "¿Token vigente?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 440,
+        "layoutY" : 400
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "${token_url}",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 30000,
+        "maxParallelRequestsCount" : 0,
+        "headers" : { },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6293d20-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Obtener token OAuth2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 640,
+        "layoutY" : 400
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if (!msg.access_token) {\n    throw new Error(\"Sin access_token: \" + (msg.error_description || msg.error || \"respuesta inesperada\"));\n}\nvar expiraEn = msg.expires_in ? parseInt(msg.expires_in) : 3600;\nvar expTs = Date.now() + (expiraEn * 1000);\nmetadata.az_token = msg.access_token;\nmetadata.ss_az_token = msg.access_token;\nmetadata.az_token_exp = \"\" + expTs;\nreturn {\n    msg: { az_token: msg.access_token, az_token_exp: expTs },\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};\n",
+        "tbelScript" : "if (!msg.access_token) {\n    throw new Error(\"Sin access_token: \" + (msg.error_description || msg.error || \"respuesta inesperada\"));\n}\nvar expiraEn = msg.expires_in ? parseInt(msg.expires_in) : 3600;\nvar expTs = Date.now() + (expiraEn * 1000);\nmetadata.az_token = msg.access_token;\nmetadata.ss_az_token = msg.access_token;\nmetadata.az_token_exp = \"\" + expTs;\nreturn {\n    msg: { az_token: msg.access_token, az_token_exp: expTs },\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6293d21-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Guardar token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 840,
+        "layoutY" : 400
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6293d22-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Persistir token (SERVER)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Cada lisimetro guarda su propio cursor: sin condiciones de carrera",
+        "layoutX" : 1440,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "az_id", "az_mapa", "az_ultima_fecha", "az_dias_backfill", "az_ventana_max_dias" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "tellFailureIfAbsent" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785748932081,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6293d23-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Cargar id, cursor y mapa",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Cursor por fecha con solape de 30 min y ventana maxima configurable",
+        "layoutX" : 1640,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function gm(k) {\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v;\n}\n// ===== Ventana temporal de consulta (cursor por fecha) =====\n// El campo mrid llega siempre a 0 en las respuestas reales, asi que el cursor\n// es la ultima fecha ingerida. La escritura de series temporales en ThingsBoard\n// es idempotente por (entidad, clave, ts), de modo que el solape no duplica nada.\nvar SOLAPE_MS = 1800000;                       // 30 min de solape de seguridad\nvar ahora = Date.now();\nvar ultima = gm(\"az_ultima_fecha\") ? parseInt(gm(\"az_ultima_fecha\")) : 0;\nvar diasBackfill = gm(\"az_dias_backfill\") ? parseFloat(gm(\"az_dias_backfill\")) : 0.5;\nvar ventanaMax = (gm(\"az_ventana_max_dias\") ? parseFloat(gm(\"az_ventana_max_dias\")) : 0.5) * 86400000;\n\nvar ini = (ultima > 0) ? (ultima - SOLAPE_MS) : (ahora - diasBackfill * 86400000);\nvar fin = ini + ventanaMax;\nif (fin > ahora) { fin = ahora; }\nif (fin <= ini) { fin = ahora; }\n\nfunction fmt(t) {\n    var d = new Date(t);\n    function p(n) { return (\"0\" + n).slice(-2); }\n    return \"\" + d.getUTCFullYear() + p(d.getUTCMonth() + 1) + p(d.getUTCDate()) +\n           p(d.getUTCHours()) + p(d.getUTCMinutes()) + p(d.getUTCSeconds());\n}\n\n// Ojo al orden de la URL de ag-zoom: /date/<FECHA_FIN>/<FECHA_INICIO>\nmetadata.az_fecha_ini = fmt(ini);\nmetadata.az_fecha_fin = fmt(fin);\nmetadata.az_ventana_h = \"\" + Math.round((fin - ini) / 3600000);\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "function gm(k) {\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v;\n}\n// ===== Ventana temporal de consulta (cursor por fecha) =====\n// El campo mrid llega siempre a 0 en las respuestas reales, asi que el cursor\n// es la ultima fecha ingerida. La escritura de series temporales en ThingsBoard\n// es idempotente por (entidad, clave, ts), de modo que el solape no duplica nada.\nvar SOLAPE_MS = 1800000;                       // 30 min de solape de seguridad\nvar ahora = Date.now();\nvar ultima = gm(\"az_ultima_fecha\") ? parseInt(gm(\"az_ultima_fecha\")) : 0;\nvar diasBackfill = gm(\"az_dias_backfill\") ? parseFloat(gm(\"az_dias_backfill\")) : 0.5;\nvar ventanaMax = (gm(\"az_ventana_max_dias\") ? parseFloat(gm(\"az_ventana_max_dias\")) : 0.5) * 86400000;\n\nvar ini = (ultima > 0) ? (ultima - SOLAPE_MS) : (ahora - diasBackfill * 86400000);\nvar fin = ini + ventanaMax;\nif (fin > ahora) { fin = ahora; }\nif (fin <= ini) { fin = ahora; }\n\nfunction fmt(t) {\n    var d = new Date(t);\n    function p(n) { return (\"0\" + n).slice(-2); }\n    return \"\" + d.getUTCFullYear() + p(d.getUTCMonth() + 1) + p(d.getUTCDate()) +\n           p(d.getUTCHours()) + p(d.getUTCMinutes()) + p(d.getUTCSeconds());\n}\n\n// Ojo al orden de la URL de ag-zoom: /date/<FECHA_FIN>/<FECHA_INICIO>\nmetadata.az_fecha_ini = fmt(ini);\nmetadata.az_fecha_fin = fmt(fin);\nmetadata.az_ventana_h = \"\" + Math.round((fin - ini) / 3600000);\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6293d24-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Preparar ventana de fechas",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Orden de la URL: /date/[FIN]/[INICIO]",
+        "layoutX" : 1840,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://visor.ag-zoom.com/api/getsensordata/${ss_az_id}/date/${az_fecha_fin}/${az_fecha_ini}",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 120000,
+        "maxParallelRequestsCount" : 4,
+        "headers" : {
+          "Authorization" : "Bearer ${ss_az_token}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6293d25-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "getsensordata (por fecha)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2040,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ===== ag-zoom -> telemetria ThingsBoard (v2, ajustado a la respuesta real) =====\n// Entrada: respuesta de /api/getsensordata/<id>/date/<fin>/<inicio>\n// Metadata: az_mapa (JSON), az_ultima_fecha (epoch ms), tb_device\n//\n// Diferencias respecto al manual del fabricante, verificadas sobre datos reales:\n//   - \"device\" es un OBJETO, no un array\n//   - los sensores NO traen \"depth\": la clave de mapeo es <puerto>|<idVariable>\n//   - \"mrid\" llega siempre a 0 -> el cursor es por fecha, no por mrid\n//   - \"date\" es ISO-8601 en UTC (2026-05-28T23:45:06Z)\n\n// Helper: atributos del lisímetro llegan con prefijo ss_ en esta instancia\nfunction gm(k) {\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v;\n}\nvar MAX_PUNTOS = 5000;   // corta payloads desmesurados en un backfill\n\nfunction parseFechaUtc(s) {\n    if (!s) { return null; }\n    var t = \"\" + s;\n    var y, mo, d, h, mi, se;\n    if (t.indexOf(\"-\") > 0) {\n        y = parseInt(t.substr(0, 4)); mo = parseInt(t.substr(5, 2)); d = parseInt(t.substr(8, 2));\n        h = parseInt(t.substr(11, 2) || \"0\"); mi = parseInt(t.substr(14, 2) || \"0\"); se = parseInt(t.substr(17, 2) || \"0\");\n    } else {\n        y = parseInt(t.substr(0, 4)); mo = parseInt(t.substr(4, 2)); d = parseInt(t.substr(6, 2));\n        h = parseInt(t.substr(8, 2) || \"0\"); mi = parseInt(t.substr(10, 2) || \"0\"); se = parseInt(t.substr(12, 2) || \"0\");\n    }\n    if (isNaN(y) || isNaN(mo) || isNaN(d)) { return null; }\n    return Date.UTC(y, mo - 1, d, h || 0, mi || 0, se || 0);\n}\n\nvar resp = msg;\nif (resp.status !== undefined && (\"\" + resp.status) !== \"0\") {\n    throw new Error(\"API ag-zoom status=\" + resp.status +\n                    \" error=\" + (resp.errorMsg || resp.error || \"?\"));\n}\n\nvar mapa = {};\nvar _mapaRaw = gm(\"az_mapa\");\n    if (_mapaRaw) {\n    try { mapa = JSON.parse(_mapaRaw); } catch (e) { mapa = {}; }\n}\n\n// \"device\" puede venir como objeto (real) o como array (manual)\nvar devs = resp.device;\nif (!devs) { devs = []; }\nif (!Array.isArray(devs)) { devs = [devs]; }\n\nvar porTs = {};\nvar nOk = 0, nFuera = 0, nIgnoradas = 0;\nvar sinMapear = {};\nvar fueraRango = {};\nvar _uf = gm(\"az_ultima_fecha\");\n    var ultimaFecha = _uf ? parseInt(_uf) : 0;\nvar maxTs = ultimaFecha;\n\nfor (var i = 0; i < devs.length; i++) {\n    var sensores = devs[i].sensors || [];\n    for (var j = 0; j < sensores.length; j++) {\n        var s = sensores[j];\n        var puerto = (s.port !== undefined && s.port !== null) ? s.port : \"x\";\n        var vars = s.variables || [];\n        for (var k = 0; k < vars.length; k++) {\n            var v = vars[k];\n            var idx = puerto + \"|\" + v.id;\n            var cfg = mapa[idx];\n\n            if (cfg === false || (cfg && cfg.ignorar === true)) { nIgnoradas++; continue; }\n\n            var clave, factor = 1, vmin = null, vmax = null, guardarRaw = false;\n            if (typeof cfg === \"string\") {\n                clave = cfg;\n            } else if (cfg && cfg.k) {\n                clave = cfg.k;\n                if (cfg.f !== undefined) { factor = parseFloat(cfg.f); }\n                if (cfg.min !== undefined) { vmin = parseFloat(cfg.min); }\n                if (cfg.max !== undefined) { vmax = parseFloat(cfg.max); }\n                guardarRaw = (cfg.raw === true);\n            } else {\n                clave = \"p\" + puerto + \"_v\" + v.id;      // fallback: nada se pierde\n                sinMapear[idx] = clave + \" (\" + (v.type || \"?\") + \")\";\n            }\n\n            var bruto = parseFloat(v.data);\n            if (isNaN(bruto)) { continue; }\n            // Centinela de \"sin dato\" de los dataloggers ag-zoom\n            if (bruto <= -9990) { continue; }\n            var valor = bruto * factor;\n\n            var ts = parseFechaUtc(v.date);\n            if (ts === null) { continue; }\n            if (!porTs[ts]) { porTs[ts] = {}; }\n\n            var valido = true;\n            if (vmin !== null && valor < vmin) { valido = false; }\n            if (vmax !== null && valor > vmax) { valido = false; }\n\n            if (valido) {\n                porTs[ts][clave] = valor;\n                nOk++;\n            } else {\n                // fuera de rango fisico: no ensucia la clave limpia, pero queda trazado\n                porTs[ts][clave + \"_raw\"] = valor;\n                fueraRango[clave] = valor;\n                nFuera++;\n            }\n            if (guardarRaw && valido) { porTs[ts][clave + \"_raw\"] = bruto; }\n\n            if (ts > maxTs) { maxTs = ts; }\n        }\n    }\n}\n\nvar tss = [];\nfor (var t in porTs) { if (porTs.hasOwnProperty(t)) { tss.push(parseInt(t)); } }\ntss.sort(function (a, b) { return a - b; });\nif (tss.length > MAX_PUNTOS) { tss = tss.slice(tss.length - MAX_PUNTOS); }\n\nvar salida = [];\n\nif (tss.length > 0) {\n    var puntos = [];\n    for (var p = 0; p < tss.length; p++) {\n        puntos.push({ ts: tss[p], values: porTs[tss[p]] });\n    }\n    var metaTel = {};\n    for (var mk in metadata) { if (metadata.hasOwnProperty(mk)) { metaTel[mk] = metadata[mk]; } }\n    salida.push({ msg: puntos, metadata: metaTel, msgType: \"POST_TELEMETRY_REQUEST\" });\n}\n\n// Cursor por fecha (el mrid llega a 0 y no sirve como cursor)\nvar attrs = {\n    az_ultima_fecha: maxTs,\n    az_ultima_sincro: Date.now(),\n    az_puntos_ultima_sincro: tss.length,\n    az_valores_ok: nOk,\n    az_valores_fuera_rango: nFuera\n};\nvar pend = [];\nfor (var sm in sinMapear) { if (sinMapear.hasOwnProperty(sm)) { pend.push(sm + \" -> \" + sinMapear[sm]); } }\nattrs.az_sin_mapear = pend.length ? pend.join(\" | \") : \"\";\nsalida.push({ msg: attrs, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" });\n\n// Aviso de sensor fuera de rango (dispara alarma aguas abajo)\nif (nFuera > 0) {\n    var det = [];\n    for (var fr in fueraRango) { if (fueraRango.hasOwnProperty(fr)) { det.push(fr + \"=\" + fueraRango[fr]); } }\n    var metaAl = {};\n    for (var mk2 in metadata) { if (metadata.hasOwnProperty(mk2)) { metaAl[mk2] = metadata[mk2]; } }\n    metaAl.sensores_ko = det.join(\", \");\n    metaAl.n_fuera_rango = \"\" + nFuera;\n    salida.push({ msg: { lisimetro: metadata.tb_device || \"\", sensores: det.join(\", \"), muestras: nFuera },\n                  metadata: metaAl, msgType: \"AGZOOM_SENSOR_KO\" });\n}\n\nreturn salida;\n",
+        "tbelScript" : "// ===== ag-zoom -> telemetria ThingsBoard (v2, ajustado a la respuesta real) =====\n// Entrada: respuesta de /api/getsensordata/<id>/date/<fin>/<inicio>\n// Metadata: az_mapa (JSON), az_ultima_fecha (epoch ms), tb_device\n//\n// Diferencias respecto al manual del fabricante, verificadas sobre datos reales:\n//   - \"device\" es un OBJETO, no un array\n//   - los sensores NO traen \"depth\": la clave de mapeo es <puerto>|<idVariable>\n//   - \"mrid\" llega siempre a 0 -> el cursor es por fecha, no por mrid\n//   - \"date\" es ISO-8601 en UTC (2026-05-28T23:45:06Z)\n\n// Helper: atributos del lisímetro llegan con prefijo ss_ en esta instancia\nfunction gm(k) {\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v;\n}\nvar MAX_PUNTOS = 5000;   // corta payloads desmesurados en un backfill\n\nfunction parseFechaUtc(s) {\n    if (!s) { return null; }\n    var t = \"\" + s;\n    var y, mo, d, h, mi, se;\n    if (t.indexOf(\"-\") > 0) {\n        y = parseInt(t.substr(0, 4)); mo = parseInt(t.substr(5, 2)); d = parseInt(t.substr(8, 2));\n        h = parseInt(t.substr(11, 2) || \"0\"); mi = parseInt(t.substr(14, 2) || \"0\"); se = parseInt(t.substr(17, 2) || \"0\");\n    } else {\n        y = parseInt(t.substr(0, 4)); mo = parseInt(t.substr(4, 2)); d = parseInt(t.substr(6, 2));\n        h = parseInt(t.substr(8, 2) || \"0\"); mi = parseInt(t.substr(10, 2) || \"0\"); se = parseInt(t.substr(12, 2) || \"0\");\n    }\n    if (isNaN(y) || isNaN(mo) || isNaN(d)) { return null; }\n    return Date.UTC(y, mo - 1, d, h || 0, mi || 0, se || 0);\n}\n\nvar resp = msg;\nif (resp.status !== undefined && (\"\" + resp.status) !== \"0\") {\n    throw new Error(\"API ag-zoom status=\" + resp.status +\n                    \" error=\" + (resp.errorMsg || resp.error || \"?\"));\n}\n\nvar mapa = {};\nvar _mapaRaw = gm(\"az_mapa\");\n    if (_mapaRaw) {\n    try { mapa = JSON.parse(_mapaRaw); } catch (e) { mapa = {}; }\n}\n\n// \"device\" puede venir como objeto (real) o como array (manual)\nvar devs = resp.device;\nif (!devs) { devs = []; }\nif (!Array.isArray(devs)) { devs = [devs]; }\n\nvar porTs = {};\nvar nOk = 0, nFuera = 0, nIgnoradas = 0;\nvar sinMapear = {};\nvar fueraRango = {};\nvar _uf = gm(\"az_ultima_fecha\");\n    var ultimaFecha = _uf ? parseInt(_uf) : 0;\nvar maxTs = ultimaFecha;\n\nfor (var i = 0; i < devs.length; i++) {\n    var sensores = devs[i].sensors || [];\n    for (var j = 0; j < sensores.length; j++) {\n        var s = sensores[j];\n        var puerto = (s.port !== undefined && s.port !== null) ? s.port : \"x\";\n        var vars = s.variables || [];\n        for (var k = 0; k < vars.length; k++) {\n            var v = vars[k];\n            var idx = puerto + \"|\" + v.id;\n            var cfg = mapa[idx];\n\n            if (cfg === false || (cfg && cfg.ignorar === true)) { nIgnoradas++; continue; }\n\n            var clave, factor = 1, vmin = null, vmax = null, guardarRaw = false;\n            if (typeof cfg === \"string\") {\n                clave = cfg;\n            } else if (cfg && cfg.k) {\n                clave = cfg.k;\n                if (cfg.f !== undefined) { factor = parseFloat(cfg.f); }\n                if (cfg.min !== undefined) { vmin = parseFloat(cfg.min); }\n                if (cfg.max !== undefined) { vmax = parseFloat(cfg.max); }\n                guardarRaw = (cfg.raw === true);\n            } else {\n                clave = \"p\" + puerto + \"_v\" + v.id;      // fallback: nada se pierde\n                sinMapear[idx] = clave + \" (\" + (v.type || \"?\") + \")\";\n            }\n\n            var bruto = parseFloat(v.data);\n            if (isNaN(bruto)) { continue; }\n            // Centinela de \"sin dato\" de los dataloggers ag-zoom\n            if (bruto <= -9990) { continue; }\n            var valor = bruto * factor;\n\n            var ts = parseFechaUtc(v.date);\n            if (ts === null) { continue; }\n            if (!porTs[ts]) { porTs[ts] = {}; }\n\n            var valido = true;\n            if (vmin !== null && valor < vmin) { valido = false; }\n            if (vmax !== null && valor > vmax) { valido = false; }\n\n            if (valido) {\n                porTs[ts][clave] = valor;\n                nOk++;\n            } else {\n                // fuera de rango fisico: no ensucia la clave limpia, pero queda trazado\n                porTs[ts][clave + \"_raw\"] = valor;\n                fueraRango[clave] = valor;\n                nFuera++;\n            }\n            if (guardarRaw && valido) { porTs[ts][clave + \"_raw\"] = bruto; }\n\n            if (ts > maxTs) { maxTs = ts; }\n        }\n    }\n}\n\nvar tss = [];\nfor (var t in porTs) { if (porTs.hasOwnProperty(t)) { tss.push(parseInt(t)); } }\ntss.sort(function (a, b) { return a - b; });\nif (tss.length > MAX_PUNTOS) { tss = tss.slice(tss.length - MAX_PUNTOS); }\n\nvar salida = [];\n\nif (tss.length > 0) {\n    var puntos = [];\n    for (var p = 0; p < tss.length; p++) {\n        puntos.push({ ts: tss[p], values: porTs[tss[p]] });\n    }\n    var metaTel = {};\n    for (var mk in metadata) { if (metadata.hasOwnProperty(mk)) { metaTel[mk] = metadata[mk]; } }\n    salida.push({ msg: puntos, metadata: metaTel, msgType: \"POST_TELEMETRY_REQUEST\" });\n}\n\n// Cursor por fecha (el mrid llega a 0 y no sirve como cursor)\nvar attrs = {\n    az_ultima_fecha: maxTs,\n    az_ultima_sincro: Date.now(),\n    az_puntos_ultima_sincro: tss.length,\n    az_valores_ok: nOk,\n    az_valores_fuera_rango: nFuera\n};\nvar pend = [];\nfor (var sm in sinMapear) { if (sinMapear.hasOwnProperty(sm)) { pend.push(sm + \" -> \" + sinMapear[sm]); } }\nattrs.az_sin_mapear = pend.length ? pend.join(\" | \") : \"\";\nsalida.push({ msg: attrs, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" });\n\n// Aviso de sensor fuera de rango (dispara alarma aguas abajo)\nif (nFuera > 0) {\n    var det = [];\n    for (var fr in fueraRango) { if (fueraRango.hasOwnProperty(fr)) { det.push(fr + \"=\" + fueraRango[fr]); } }\n    var metaAl = {};\n    for (var mk2 in metadata) { if (metadata.hasOwnProperty(mk2)) { metaAl[mk2] = metadata[mk2]; } }\n    metaAl.sensores_ko = det.join(\", \");\n    metaAl.n_fuera_rango = \"\" + nFuera;\n    salida.push({ msg: { lisimetro: metadata.tb_device || \"\", sensores: det.join(\", \"), muestras: nFuera },\n                  metadata: metaAl, msgType: \"AGZOOM_SENSOR_KO\" });\n}\n\nreturn salida;\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6293d26-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Aplanar y mapear",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2240,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6296430-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Enrutar por tipo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "useServerTs=false: se respeta el ts UTC original de cada lectura",
+        "layoutX" : 2460,
+        "layoutY" : 120
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6296431-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Guardar telemetría lisímetro",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2460,
+        "layoutY" : 260
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6296432-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Guardar cursor y estado",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Se dispara p.ej. con humedades negativas: el valor se guarda en [clave]_raw",
+        "layoutX" : 2460,
+        "layoutY" : 400
+      },
+      "configuration" : {
+        "alarmType" : "Sensor lisímetro fuera de rango",
+        "severity" : "WARNING",
+        "propagate" : false,
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : true,
+        "dynamicSeverity" : false,
+        "scriptLang" : "JS",
+        "jsScript" : "var d = {}; d.lisimetro = msg.lisimetro || ''; d.sensores = msg.sensores || ''; d.muestras = msg.muestras || 0; return d;",
+        "tbelScript" : "return {};",
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "relationTypes" : [ ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6296433-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Alarma: sensor fuera de rango",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1840,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var code = metadata.statusCode ? parseInt(metadata.statusCode) : 0;\nif (code === 401 || code === 403) {\n    return { msg: { az_token: \"\", az_token_exp: 0 }, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };\n}\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "var code = metadata.statusCode ? parseInt(metadata.statusCode) : 0;\nif (code === 401 || code === 403) {\n    return { msg: { az_token: \"\", az_token_exp: 0 }, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };\n}\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6296434-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "¿401? invalidar token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1840,
+        "layoutY" : 600
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6296435-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Persistir token invalidado",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2040,
+        "layoutY" : 460
+      },
+      "configuration" : {
+        "alarmType" : "Fallo API ag-zoom",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : true,
+        "dynamicSeverity" : false,
+        "scriptLang" : "JS",
+        "jsScript" : "var d = {}; d.codigo = metadata.statusCode || ''; d.motivo = metadata.statusReason || metadata.error || ''; d.lisimetro = metadata.tb_device || ''; return d;",
+        "tbelScript" : "return {};",
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "relationTypes" : [ ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6296436-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Alarma: fallo API ag-zoom",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Lista todos los dispositivos de la cuenta ag-zoom en cada ciclo",
+        "layoutX" : 1040,
+        "layoutY" : 60
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://visor.ag-zoom.com/api/userdevices",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "readTimeoutMs" : 30000,
+        "maxParallelRequestsCount" : 0,
+        "headers" : {
+          "Authorization" : "Bearer ${ss_az_token}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6298b40-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "getuserdevices",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Un mensaje por dispositivo; filtro opcional por az_prefijo",
+        "layoutX" : 1040,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ===== Autodescubrimiento de lisímetros desde /api/userdevices =====\n// Recorre costumers -> fincas -> devices y emite un mensaje por dispositivo.\n// Filtro opcional por prefijo de nombre (atributo az_prefijo, p.ej. \"AGD\").\nif (msg.status !== undefined && (\"\" + msg.status) !== \"0\") {\n    throw new Error(\"userdevices status=\" + msg.status + \" error=\" + (msg.errorMsg || msg.error || \"?\"));\n}\nvar prefijo = metadata.az_prefijo || \"\";\nvar salida = [];\nvar vistos = {};\nvar costumers = msg.costumers || [];\nfor (var c = 0; c < costumers.length; c++) {\n    var fincas = costumers[c].fincas || [];\n    for (var f = 0; f < fincas.length; f++) {\n        var devices = fincas[f].devices || [];\n        for (var d = 0; d < devices.length; d++) {\n            var dev = devices[d];\n            if (dev.id === undefined || dev.id === null || !dev.name) { continue; }\n            if (prefijo && (\"\" + dev.name).indexOf(prefijo) !== 0) { continue; }\n            var tbName = \"LIS-\" + dev.name;\n            if (vistos[tbName]) { continue; }\n            vistos[tbName] = true;\n            var meta = {};\n            for (var k in metadata) { if (metadata.hasOwnProperty(k)) { meta[k] = metadata[k]; } }\n            meta.tb_device = tbName;\n            meta.az_id_descubierto = \"\" + dev.id;\n            meta.az_finca = fincas[f].name || \"\";\n            meta.az_alias = dev.alias || dev.name;\n            salida.push({\n                msg: { tb_device: tbName, az_id: dev.id, alias: dev.alias || dev.name },\n                metadata: meta,\n                msgType: \"AGZOOM_DEVICE\"\n            });\n        }\n    }\n}\nif (!salida.length) {\n    throw new Error(\"userdevices no devolvio dispositivos\" + (prefijo ? \" con prefijo \" + prefijo : \"\"));\n}\nreturn salida;\n",
+        "tbelScript" : "// ===== Autodescubrimiento de lisímetros desde /api/userdevices =====\n// Recorre costumers -> fincas -> devices y emite un mensaje por dispositivo.\n// Filtro opcional por prefijo de nombre (atributo az_prefijo, p.ej. \"AGD\").\nif (msg.status !== undefined && (\"\" + msg.status) !== \"0\") {\n    throw new Error(\"userdevices status=\" + msg.status + \" error=\" + (msg.errorMsg || msg.error || \"?\"));\n}\nvar prefijo = metadata.az_prefijo || \"\";\nvar salida = [];\nvar vistos = {};\nvar costumers = msg.costumers || [];\nfor (var c = 0; c < costumers.length; c++) {\n    var fincas = costumers[c].fincas || [];\n    for (var f = 0; f < fincas.length; f++) {\n        var devices = fincas[f].devices || [];\n        for (var d = 0; d < devices.length; d++) {\n            var dev = devices[d];\n            if (dev.id === undefined || dev.id === null || !dev.name) { continue; }\n            if (prefijo && (\"\" + dev.name).indexOf(prefijo) !== 0) { continue; }\n            var tbName = \"LIS-\" + dev.name;\n            if (vistos[tbName]) { continue; }\n            vistos[tbName] = true;\n            var meta = {};\n            for (var k in metadata) { if (metadata.hasOwnProperty(k)) { meta[k] = metadata[k]; } }\n            meta.tb_device = tbName;\n            meta.az_id_descubierto = \"\" + dev.id;\n            meta.az_finca = fincas[f].name || \"\";\n            meta.az_alias = dev.alias || dev.name;\n            salida.push({\n                msg: { tb_device: tbName, az_id: dev.id, alias: dev.alias || dev.name },\n                metadata: meta,\n                msgType: \"AGZOOM_DEVICE\"\n            });\n        }\n    }\n}\nif (!salida.length) {\n    throw new Error(\"userdevices no devolvio dispositivos\" + (prefijo ? \" con prefijo \" + prefijo : \"\"));\n}\nreturn salida;\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785748932081,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6298b41-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Descubrir lisímetros",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Cambia el originator al dispositivo ya creado",
+        "layoutX" : 1240,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "$[tb_device]",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785748932081,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6298b42-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Cambiar a Lisímetro",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Fija az_id/finca; az_mapa y cursor solo si faltan",
+        "layoutX" : 1240,
+        "layoutY" : 380
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Siembra az_id, finca, az_mapa y cursor en el lisímetro recién creado.\n// Los atributos del orquestador llegan con prefijo ss_ en esta instancia; se\n// contemplan ambas formas (con y sin prefijo) para ser robustos.\nfunction g(k) {\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v;\n}\nvar attrs = {};\n\n// az_id y finca: siempre refrescados desde el descubrimiento\nvar idDesc = metadata.az_id_descubierto || metadata.ss_az_id_descubierto;\nif (idDesc) { attrs.az_id = parseInt(idDesc); }\nvar finca = metadata.az_finca || metadata.ss_az_finca;\nif (finca) { attrs.finca = finca; }\n\n// az_mapa: sembrar desde az_mapa_default del orquestador SOLO si el lisímetro no tiene ya uno.\n// (az_mapa del lisímetro aún no está en metadata aquí, así que sembramos siempre el default;\n//  como el default es el mismo para todos, no rompe nada, y si el lisímetro tuviera un mapa\n//  propio, este nodo se puede saltar con az_no_sembrar_mapa=true.)\nvar mapaDefault = g(\"az_mapa_default\");\nvar noSembrar = g(\"az_no_sembrar_mapa\");\nif (mapaDefault && noSembrar !== \"true\" && noSembrar !== true) {\n    attrs.az_mapa = mapaDefault;\n}\n\n// Cursor: inicializar a 0 solo si no existe\nvar cursor = g(\"az_ultima_fecha\");\nif (cursor === undefined || cursor === null || cursor === \"\") {\n    attrs.az_ultima_fecha = 0;\n}\n\nreturn { msg: attrs, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };\n",
+        "tbelScript" : "// Siembra az_id, finca, az_mapa y cursor en el lisímetro recién creado.\n// Los atributos del orquestador llegan con prefijo ss_ en esta instancia; se\n// contemplan ambas formas (con y sin prefijo) para ser robustos.\nfunction g(k) {\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v;\n}\nvar attrs = {};\n\n// az_id y finca: siempre refrescados desde el descubrimiento\nvar idDesc = metadata.az_id_descubierto || metadata.ss_az_id_descubierto;\nif (idDesc) { attrs.az_id = parseInt(idDesc); }\nvar finca = metadata.az_finca || metadata.ss_az_finca;\nif (finca) { attrs.finca = finca; }\n\n// az_mapa: sembrar desde az_mapa_default del orquestador SOLO si el lisímetro no tiene ya uno.\n// (az_mapa del lisímetro aún no está en metadata aquí, así que sembramos siempre el default;\n//  como el default es el mismo para todos, no rompe nada, y si el lisímetro tuviera un mapa\n//  propio, este nodo se puede saltar con az_no_sembrar_mapa=true.)\nvar mapaDefault = g(\"az_mapa_default\");\nvar noSembrar = g(\"az_no_sembrar_mapa\");\nif (mapaDefault && noSembrar !== \"true\" && noSembrar !== true) {\n    attrs.az_mapa = mapaDefault;\n}\n\n// Cursor: inicializar a 0 solo si no existe\nvar cursor = g(\"az_ultima_fecha\");\nif (cursor === undefined || cursor === null || cursor === \"\") {\n    attrs.az_ultima_fecha = 0;\n}\n\nreturn { msg: attrs, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785748932081,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6298b43-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Sembrar config lisímetro",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1440,
+        "layoutY" : 380
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6298b44-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Guardar config lisímetro",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Arma la URL del token para evitar el URL-encoding del nodo REST",
+        "layoutX" : 440,
+        "layoutY" : 320
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Construye la URL de token con los valores crudos de la metadata.\n// Evita el URL-encoding que el nodo REST aplica a cada ${variable}.\nfunction g(k) {\n    // los atributos de servidor llegan con prefijo ss_ en metadata\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v === undefined || v === null ? \"\" : (\"\" + v);\n}\nvar base = \"https://visor.ag-zoom.com/oauth/v2/token\";\nvar url = base +\n    \"?grant_type=password\" +\n    \"&client_id=\" + g(\"az_client_id\") +\n    \"&client_secret=\" + g(\"az_client_secret\") +\n    \"&username=\" + g(\"az_username\") +\n    \"&password=\" + g(\"az_password\");\nmetadata.token_url = url;\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "// Construye la URL de token con los valores crudos de la metadata.\n// Evita el URL-encoding que el nodo REST aplica a cada ${variable}.\nfunction g(k) {\n    // los atributos de servidor llegan con prefijo ss_ en metadata\n    var v = metadata[\"ss_\" + k];\n    if (v === undefined || v === null) { v = metadata[k]; }\n    return v === undefined || v === null ? \"\" : (\"\" + v);\n}\nvar base = \"https://visor.ag-zoom.com/oauth/v2/token\";\nvar url = base +\n    \"?grant_type=password\" +\n    \"&client_id=\" + g(\"az_client_id\") +\n    \"&client_secret=\" + g(\"az_client_secret\") +\n    \"&username=\" + g(\"az_username\") +\n    \"&password=\" + g(\"az_password\");\nmetadata.token_url = url;\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6298b45-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Construir URL token",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Crea el dispositivo tipo Lisimetro por nombre si no existe",
+        "layoutX" : 1140,
+        "layoutY" : 100
+      },
+      "configuration" : {
+        "direction" : "TO",
+        "relationType" : "Contains",
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "$[tb_device]",
+        "entityTypePattern" : "Lisimetro",
+        "createEntityIfNotExists" : true,
+        "removeCurrentRelations" : false,
+        "changeOriginatorToRelatedEntity" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785748932081,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a6298b46-899c-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Crear Lisímetro si no existe",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

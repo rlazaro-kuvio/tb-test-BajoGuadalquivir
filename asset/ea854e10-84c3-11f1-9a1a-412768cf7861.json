@@ -1,0 +1,283 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : { },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "cc836b90-84c3-11f1-9a1a-412768cf7861"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "ea854e10-84c3-11f1-9a1a-412768cf7861"
+    },
+    "label" : null,
+    "name" : "El Cerro",
+    "ownerId" : null,
+    "type" : "Grupo_Riego"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea854e10-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "af17b420-84fb-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Forma_parte_de",
+    "typeGroup" : "COMMON",
+    "version" : 8610454
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "ea854e10-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "0a1a99d0-9633-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Maneja",
+    "typeGroup" : "COMMON",
+    "version" : 3000383
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "443ca3f0-84c3-11f1-9a1a-412768cf7861"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "ea854e10-84c3-11f1-9a1a-412768cf7861"
+    },
+    "type" : "Esta",
+    "typeGroup" : "COMMON",
+    "version" : 1740944
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Guarda",
+      "lastUpdateTs" : 1786528316962,
+      "longValue" : null,
+      "strValue" : "Fran"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Sector",
+      "lastUpdateTs" : 1786528316962,
+      "longValue" : null,
+      "strValue" : "S-2"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ajuste_resta_otro_grupo",
+      "lastUpdateTs" : 1789371894527,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ajuste_resta_otro_grupo_diario_m3",
+      "lastUpdateTs" : 1789371894527,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cf_state",
+      "lastUpdateTs" : 1794385796262,
+      "longValue" : null,
+      "strValue" : "{\"ultimoValor\":0,\"ultimoTs\":1794385795805,\"sumaPonderada\":0,\"tiempoAcumulado\":33300015,\"dia\":\"2026-11-11\"}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clave_parcela_catastro",
+      "lastUpdateTs" : 1788432628079,
+      "longValue" : null,
+      "strValue" : "EL CERRO"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "contador",
+      "lastUpdateTs" : 1794385796083,
+      "longValue" : 36,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cultivo_dominante",
+      "lastUpdateTs" : 1788432628079,
+      "longValue" : null,
+      "strValue" : "Citricos"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dia",
+      "lastUpdateTs" : 1794353397328,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "estado_revision",
+      "lastUpdateTs" : 1788432628079,
+      "longValue" : null,
+      "strValue" : "confirmado"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "geometry",
+      "lastUpdateTs" : 1784611241354,
+      "longValue" : null,
+      "strValue" : "[[37.54827014342469, -5.826146269985322], [37.54813636564142, -5.825062145605333], [37.54714680229574, -5.8255000069191], [37.54315293908355, -5.827372734816676], [37.54315610381305, -5.826389722447232], [37.54310087648233, -5.825753442168986], [37.54309470378674, -5.824969786231204], [37.54319330664033, -5.824391221545904], [37.54334900627305, -5.823887192282218], [37.54353873123681, -5.822227961156573], [37.5432023906511, -5.821491733038792], [37.54288390768149, -5.820550405612805], [37.5424839794963, -5.820516664274762], [37.54023499515095, -5.82131540794027], [37.53992669838081, -5.819308698524984], [37.54159219248832, -5.817996884994232], [37.54114855401226, -5.817200142396515], [37.54002441321185, -5.815226661773016], [37.54007162324927, -5.814470167211032], [37.53996581371246, -5.813659468151819], [37.53980644805498, -5.812818869131108], [37.54068045458777, -5.812217765948471], [37.54089506040145, -5.812408919690135], [37.54359506714592, -5.811120297054267], [37.54650895100323, -5.813412514538291], [37.54686653498732, -5.813448696092843], [37.54679681670256, -5.8127167379079], [37.54675469329788, -5.810839506607004], [37.54666697759567, -5.809109880280241], [37.54650463459578, -5.808116970109857], [37.54656147175432, -5.807368501030473], [37.54690810271801, -5.806997489029533], [37.54743604951441, -5.806558016927942], [37.54763475708712, -5.806520848556401], [37.5480875673434, -5.806997514098549], [37.54813764185732, -5.808431717519543], [37.54821466049572, -5.810158143724289], [37.54842904839713, -5.812428494608202], [37.54881070768048, -5.813170322629863], [37.55061422452216, -5.814904843293411], [37.55127456846771, -5.814852527316311], [37.55162588523792, -5.814563375192156], [37.55225808035621, -5.815095203476099], [37.55150361491754, -5.815604722598632], [37.55096262273732, -5.815881844381993], [37.55069011096638, -5.815886112183105], [37.55053038166592, -5.81602995730318], [37.55033072387086, -5.816252864902989], [37.5501126108079, -5.816587824117714], [37.54894536911075, -5.817844709512966], [37.54815349397251, -5.818986343622463], [37.54792848946125, -5.819853396841685], [37.5481494237168, -5.820985305681323], [37.54886714787887, -5.822330260945304], [37.54927469286825, -5.823399369648151], [37.54926633224969, -5.824083063863852], [37.54882135586306, -5.825584872517268], [37.54857006445039, -5.826427829724634], [37.54827014342469, -5.826146269985322]]"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 178.1711,
+      "jsonValue" : null,
+      "key" : "ha",
+      "lastUpdateTs" : 1784611241354,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "indice",
+      "lastUpdateTs" : 1784611241354,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "indice 2",
+      "lastUpdateTs" : 1784611241354,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inicio_ventana",
+      "lastUpdateTs" : 1784611241354,
+      "longValue" : 1778569247038,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "last_4",
+      "lastUpdateTs" : 1794356097020,
+      "longValue" : null,
+      "strValue" : "0,0,0,0"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones",
+      "lastUpdateTs" : 1791591295110,
+      "longValue" : null,
+      "strValue" : "{\"CAU-35-3\":0}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones_anual",
+      "lastUpdateTs" : 1791590395054,
+      "longValue" : null,
+      "strValue" : "{\"CAU-35-3\":551566.052}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones_diario",
+      "lastUpdateTs" : 1791670495102,
+      "longValue" : null,
+      "strValue" : "{\"CAU-35-3\":0}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mapa_caudal_operaciones_total_m3",
+      "lastUpdateTs" : 1791590395054,
+      "longValue" : null,
+      "strValue" : "{\"CAU-35-3\":551566.052}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n_parcelas_catastro",
+      "lastUpdateTs" : 1788432628079,
+      "longValue" : 21,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "posicion",
+      "lastUpdateTs" : 1784611241354,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "posicion_memoria",
+      "lastUpdateTs" : 1784611241354,
+      "longValue" : 3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "suma",
+      "lastUpdateTs" : 1791670495110,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 25.28,
+      "jsonValue" : null,
+      "key" : "superficie_ha_estimada",
+      "lastUpdateTs" : 1788432628079,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 2528.0,
+      "jsonValue" : null,
+      "key" : "superficie_raw_suma",
+      "lastUpdateTs" : 1788432628079,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimo_ts_contado",
+      "lastUpdateTs" : 1794385796083,
+      "longValue" : 1794385795805,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

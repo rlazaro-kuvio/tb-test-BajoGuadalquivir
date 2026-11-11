@@ -1,0 +1,1338 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "datos",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "dc74cdee-7ce9-bf95-a85b-b5d71aa92e1b" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1788340236937,
+                  "endTimeMs" : 1788426636937
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "useRowStyleFunction" : false,
+              "entitiesTitle" : "Entities"
+            },
+            "title" : "Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a202d690-4f4e-c0f9-6544-3a3a42f064e8",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Nombre",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.39483030437013567
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Tipo",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.871310620541962,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "basic",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dc74cdee-7ce9-bf95-a85b-b5d71aa92e1b"
+        },
+        "e0ba4d6f-6fe8-d809-0c1d-134215a949d0" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1788340484325,
+                  "endTimeMs" : 1788426884325
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "useRowStyleFunction" : false,
+              "entitiesTitle" : "Entities"
+            },
+            "title" : "Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "7859b1f3-e255-f288-5887-50a94a298b3a",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Nombre",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5241812154657061
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Tipo",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5680866251429472,
+                "decimals" : 0
+              }, {
+                "name" : "geometry",
+                "type" : "attribute",
+                "label" : "geometry",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.5084600790830878,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "basic",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e0ba4d6f-6fe8-d809-0c1d-134215a949d0"
+        },
+        "8abfa8c6-e58b-b923-4e69-3895e6d56cdc" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1788342974302,
+                  "endTimeMs" : 1788429374302
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "useRowStyleFunction" : false,
+              "entitiesTitle" : "Entities"
+            },
+            "title" : "Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "0fa39343-09f5-cf00-9002-f5de3c450e09",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Nombre",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.27866862203585874
+              }, {
+                "name" : "grupo_v4",
+                "type" : "attribute",
+                "label" : "grupo_v4",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.913045170579939,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "basic",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8abfa8c6-e58b-b923-4e69-3895e6d56cdc"
+        },
+        "547f60f1-3a74-0c44-272c-a345cb8d5568" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1788347093157,
+                  "endTimeMs" : 1788433493157
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "useRowStyleFunction" : false,
+              "entitiesTitle" : "Entities"
+            },
+            "title" : "Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "d6d21c4a-b28e-8f76-5bdf-13782b951b97",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Nombre",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6639069247581946
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Tipo",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.34975988283427406,
+                "decimals" : 0
+              }, {
+                "name" : "zona",
+                "type" : "attribute",
+                "label" : "zona",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.2335897528183668,
+                "decimals" : 0
+              }, {
+                "name" : "sigpac",
+                "type" : "attribute",
+                "label" : "sigpac",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.8928048623582957,
+                "decimals" : 0
+              }, {
+                "name" : "qampo_nodeid",
+                "type" : "attribute",
+                "label" : "qampo_nodeid",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.5361339171193595,
+                "decimals" : 0
+              }, {
+                "name" : "marco",
+                "type" : "attribute",
+                "label" : "marco",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.3095771784741006,
+                "decimals" : 0
+              }, {
+                "name" : "longitude",
+                "type" : "attribute",
+                "label" : "longitude",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.40972419508913327,
+                "decimals" : 0
+              }, {
+                "name" : "latitude",
+                "type" : "attribute",
+                "label" : "latitude",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.11365791384480495,
+                "decimals" : 0
+              }, {
+                "name" : "az_id",
+                "type" : "attribute",
+                "label" : "az_id",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.15274249065419776,
+                "decimals" : 0
+              }, {
+                "name" : "az_mapa",
+                "type" : "attribute",
+                "label" : "az_mapa",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.9337069959049568,
+                "decimals" : 0
+              }, {
+                "name" : "az_puntos_ultima_sincro",
+                "type" : "attribute",
+                "label" : "az_puntos_ultima_sincro",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.8943772442112017,
+                "decimals" : 0
+              }, {
+                "name" : "az_sin_mapear",
+                "type" : "attribute",
+                "label" : "az_sin_mapear",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.19997675948958882,
+                "decimals" : 0
+              }, {
+                "name" : "az_ultima_fecha",
+                "type" : "attribute",
+                "label" : "az_ultima_fecha",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.8536862915837232,
+                "decimals" : 0
+              }, {
+                "name" : "az_ultima_sincro",
+                "type" : "attribute",
+                "label" : "az_ultima_sincro",
+                "color" : "#cddc39",
+                "settings" : { },
+                "_hash" : 0.6096992427889059,
+                "decimals" : 0
+              }, {
+                "name" : "az_valores_fuera_rango",
+                "type" : "attribute",
+                "label" : "az_valores_fuera_rango",
+                "color" : "#cddc39",
+                "settings" : { },
+                "_hash" : 0.41940239312534866,
+                "decimals" : 0
+              }, {
+                "name" : "az_valores_ok",
+                "type" : "attribute",
+                "label" : "az_valores_ok",
+                "color" : "#cddc39",
+                "settings" : { },
+                "_hash" : 0.7233178335153774,
+                "decimals" : 0
+              }, {
+                "name" : "consumo_inicial",
+                "type" : "attribute",
+                "label" : "consumo_inicial",
+                "color" : "#cddc39",
+                "settings" : { },
+                "_hash" : 0.5419026100006102,
+                "decimals" : 0
+              }, {
+                "name" : "cultivo",
+                "type" : "attribute",
+                "label" : "cultivo",
+                "color" : "#ff5722",
+                "settings" : { },
+                "_hash" : 0.697940310107724,
+                "decimals" : 0
+              }, {
+                "name" : "finca",
+                "type" : "attribute",
+                "label" : "finca",
+                "color" : "#ff5722",
+                "settings" : { },
+                "_hash" : 0.9746251592864904,
+                "decimals" : 0
+              }, {
+                "name" : "funcion",
+                "type" : "attribute",
+                "label" : "funcion",
+                "color" : "#ff5722",
+                "settings" : { },
+                "_hash" : 0.9358873001119892,
+                "decimals" : 0
+              }, {
+                "name" : "hectareas",
+                "type" : "attribute",
+                "label" : "hectareas",
+                "color" : "#00c853",
+                "settings" : { },
+                "_hash" : 0.18329754594504455,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "basic",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "547f60f1-3a74-0c44-272c-a345cb8d5568"
+        },
+        "2642cb5a-fdfb-37a9-d0ee-53b733e879d1" : {
+          "typeFullFqn" : "system.cards.timeseries_table",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "1ba6cc1a-6080-d178-4a85-8244e28fe6f2",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "no3_mg_l",
+                "type" : "timeseries",
+                "label" : "no3_mg_l",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.2157372757875281,
+                "decimals" : 0
+              }, {
+                "name" : "n_no3_mg_l",
+                "type" : "timeseries",
+                "label" : "n_no3_mg_l",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.7208329961672381,
+                "decimals" : 0
+              }, {
+                "name" : "battery",
+                "type" : "timeseries",
+                "label" : "battery",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.21467821842138235,
+                "decimals" : 0
+              }, {
+                "name" : "sqi",
+                "type" : "timeseries",
+                "label" : "sqi",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.08364085905362673,
+                "decimals" : 0
+              }, {
+                "name" : "ref_c",
+                "type" : "timeseries",
+                "label" : "ref_c",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.8400658105839488,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Nombre",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2569821980380812,
+                "decimals" : 0
+              } ]
+            } ],
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 2592000000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 259200000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1789934580000,
+                  "endTimeMs" : 1790031720000
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showTimestamp" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true
+            },
+            "title" : "Timeseries table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : true,
+            "configMode" : "basic",
+            "titleFont" : null,
+            "titleColor" : null,
+            "titleIcon" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2642cb5a-fdfb-37a9-d0ee-53b733e879d1"
+        },
+        "6eff7197-5d11-c2cc-00a7-3a1b2d305036" : {
+          "typeFullFqn" : "system.cards.timeseries_table",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "1673c526-0311-0bfd-31f9-6ac40e42838d",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "caudal_Sum_v2",
+                "type" : "timeseries",
+                "label" : "caudal_Sum_v2",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.46204102926554613,
+                "decimals" : 0
+              }, {
+                "name" : "caudal_Sum",
+                "type" : "timeseries",
+                "label" : "caudal_Sum",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7547336102624428,
+                "decimals" : 0
+              }, {
+                "name" : "caudal_total_diario_m3",
+                "type" : "timeseries",
+                "label" : "caudal_total_diario_m3",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.34187154932307995,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1788260640000,
+                  "endTimeMs" : 1788433440000
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showTimestamp" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true
+            },
+            "title" : "Timeseries table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : true,
+            "configMode" : "basic",
+            "titleFont" : null,
+            "titleColor" : null,
+            "titleIcon" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6eff7197-5d11-c2cc-00a7-3a1b2d305036"
+        },
+        "51f39159-c409-9ac9-e2b2-1dc52977b251" : {
+          "typeFullFqn" : "system.cards.timeseries_table",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "c37b9be5-d2c0-1410-25b5-24478a18a252",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "caudal_s0",
+                "type" : "timeseries",
+                "label" : "caudal_s0",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.4810101806835403,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 1800000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : null,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showTimestamp" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true
+            },
+            "title" : "Timeseries table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : true,
+            "configMode" : "basic",
+            "titleFont" : null,
+            "titleColor" : null,
+            "titleIcon" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "51f39159-c409-9ac9-e2b2-1dc52977b251"
+        },
+        "ffef4755-77c0-ae20-c76b-4cd4ede39388" : {
+          "typeFullFqn" : "tenant.poner_telemetria",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>HTML code here</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ffef4755-77c0-ae20-c76b-4cd4ede39388"
+        },
+        "1feb4359-482d-0e9d-4cd0-d99754938b6a" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1792320415274,
+                  "endTimeMs" : 1792406815274
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "useRowStyleFunction" : false,
+              "entitiesTitle" : "Entities"
+            },
+            "title" : "Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "a202d690-4f4e-c0f9-6544-3a3a42f064e8",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Nombre",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.582375442634872
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Tipo",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.06953443374314161,
+                "decimals" : 0
+              }, {
+                "name" : "latitude",
+                "type" : "attribute",
+                "label" : "latitude",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.4627569192241857,
+                "decimals" : 8
+              }, {
+                "name" : "longitude",
+                "type" : "attribute",
+                "label" : "longitude",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.6719379764414912,
+                "decimals" : 8
+              }, {
+                "name" : "sigpac",
+                "type" : "attribute",
+                "label" : "sigpac",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.8998587546181653,
+                "decimals" : 0
+              }, {
+                "name" : "finca",
+                "type" : "attribute",
+                "label" : "finca",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.731572434979033,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "basic",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1feb4359-482d-0e9d-4cd0-d99754938b6a"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "datos",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "dc74cdee-7ce9-bf95-a85b-b5d71aa92e1b" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "e0ba4d6f-6fe8-d809-0c1d-134215a949d0" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 8
+                },
+                "8abfa8c6-e58b-b923-4e69-3895e6d56cdc" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 6,
+                  "col" : 0
+                },
+                "547f60f1-3a74-0c44-272c-a345cb8d5568" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 12,
+                  "col" : 0
+                },
+                "2642cb5a-fdfb-37a9-d0ee-53b733e879d1" : {
+                  "sizeX" : 11,
+                  "sizeY" : 11,
+                  "row" : 9,
+                  "col" : 9
+                },
+                "6eff7197-5d11-c2cc-00a7-3a1b2d305036" : {
+                  "sizeX" : 8,
+                  "sizeY" : 6,
+                  "row" : 18,
+                  "col" : 0
+                },
+                "51f39159-c409-9ac9-e2b2-1dc52977b251" : {
+                  "sizeX" : 8,
+                  "sizeY" : 6,
+                  "row" : 24,
+                  "col" : 0
+                },
+                "ffef4755-77c0-ae20-c76b-4cd4ede39388" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 30,
+                  "col" : 0
+                },
+                "1feb4359-482d-0e9d-4cd0-d99754938b6a" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 33,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "a202d690-4f4e-c0f9-6544-3a3a42f064e8" : {
+          "id" : "a202d690-4f4e-c0f9-6544-3a3a42f064e8",
+          "alias" : "Dispositivos",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "Estacion agroclimatica", "Estacion meteorologica", "Lisimetro", "Sensores_electricos", "Sonda de humedad de suelo" ],
+            "deviceNameFilter" : ""
+          }
+        },
+        "100ecd12-5708-cdce-8b55-e22792e644f2" : {
+          "id" : "100ecd12-5708-cdce-8b55-e22792e644f2",
+          "alias" : "Activos",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET"
+          }
+        },
+        "0fa39343-09f5-cf00-9002-f5de3c450e09" : {
+          "id" : "0fa39343-09f5-cf00-9002-f5de3c450e09",
+          "alias" : "Pilas de datos",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "Pila_de_datos" ],
+            "deviceNameFilter" : ""
+          }
+        },
+        "d6d21c4a-b28e-8f76-5bdf-13782b951b97" : {
+          "id" : "d6d21c4a-b28e-8f76-5bdf-13782b951b97",
+          "alias" : "Estaciones",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "Estacion agroclimatica", "Estacion meteorologica", "Lisimetro", "Sensores_electricos", "Sonda de humedad de suelo" ],
+            "deviceNameFilter" : ""
+          }
+        },
+        "24822cc5-9cfa-3025-f826-d5ac1a8497a2" : {
+          "id" : "24822cc5-9cfa-3025-f826-d5ac1a8497a2",
+          "alias" : "Marchante",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "ea8a5720-84c3-11f1-9a1a-412768cf7861"
+            }
+          }
+        },
+        "1673c526-0311-0bfd-31f9-6ac40e42838d" : {
+          "id" : "1673c526-0311-0bfd-31f9-6ac40e42838d",
+          "alias" : "Grupos Primos",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET",
+            "entityList" : [ "eaf797e0-84c3-11f1-9a1a-412768cf7861", "eaf80d10-84c3-11f1-9a1a-412768cf7861", "eaf8a950-84c3-11f1-9a1a-412768cf7861" ]
+          }
+        },
+        "c37b9be5-d2c0-1410-25b5-24478a18a252" : {
+          "id" : "c37b9be5-d2c0-1410-25b5-24478a18a252",
+          "alias" : "crbg",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "174c9a40-84d6-11f1-9a1a-412768cf7861"
+            }
+          }
+        },
+        "1ba6cc1a-6080-d178-4a85-8244e28fe6f2" : {
+          "id" : "1ba6cc1a-6080-d178-4a85-8244e28fe6f2",
+          "alias" : "sondas",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "RS485-CS" ],
+            "deviceNameFilter" : ""
+          }
+        },
+        "7859b1f3-e255-f288-5887-50a94a298b3a" : {
+          "id" : "7859b1f3-e255-f288-5887-50a94a298b3a",
+          "alias" : "Grupo de riego",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "Grupo_Riego" ],
+            "assetNameFilter" : ""
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1788340233967,
+            "endTimeMs" : 1788426633967
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "datos",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "51d5d0f0-a777-11f1-96bd-cdc983098999"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

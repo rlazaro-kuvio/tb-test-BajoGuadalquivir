@@ -1,0 +1,41 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4OCIgaGVpZ2h0PSIxMzAiIHZpZXdCb3g9IjAgMCA4OCAxMzAiPgogIDxwb2x5Z29uIHBvaW50cz0iMjAsNzQgNjgsNzQgNDQsMTE2IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiNiYmRlZmIiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxjaXJjbGUgY3g9IjQ0IiBjeT0iNDAiIHI9IjQwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiNiYmRlZmIiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjgsOC44KSBzY2FsZSgyLjYpIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgPHBhdGggZD0iTTEyIDJ2MiIvPgogICAgPHBhdGggZD0ibTQuOTMgNC45MyAxLjQxIDEuNDEiLz4KICAgIDxwYXRoIGQ9Ik0yMCAxMmgyIi8+CiAgICA8cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz4KICAgIDxwYXRoIGQ9Ik0xNS45NDcgMTIuNjVhNCA0IDAgMCAwLTUuOTI1LTQuMTI4Ii8+CiAgICA8cGF0aCBkPSJNMTMgMjJIN2E1IDUgMCAxIDEgNC45LTZIMTNhMyAzIDAgMCAxIDAgNloiLz4KICA8L2c+Cjwvc3ZnPgo=",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 88,
+      "height" : 130,
+      "size" : 653,
+      "etag" : "6521f94e11d5cf83b9a6977ea3857fa52e5d59be609a808805b6ef5cff8d2abb",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 88,
+        "height" : 130,
+        "size" : 653,
+        "etag" : "6521f94e11d5cf83b9a6977ea3857fa52e5d59be609a808805b6ef5cff8d2abb"
+      }
+    },
+    "etag" : "6521f94e11d5cf83b9a6977ea3857fa52e5d59be609a808805b6ef5cff8d2abb",
+    "externalId" : null,
+    "fileName" : "bocadillo-meteorologia_1.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "8d25af50-90ba-11f1-9a1a-412768cf7861"
+    },
+    "link" : "/api/images/tenant/bocadillo-meteorologia_1.svg",
+    "name" : "bocadillo-meteorologia_1.svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/P0iPPGPM6K134pjxDYeSHC1YYvm6FBXh",
+    "publicResourceKey" : "P0iPPGPM6K134pjxDYeSHC1YYvm6FBXh",
+    "resourceKey" : "bocadillo-meteorologia_1.svg",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "bocadillo-meteorologia_1.svg"
+  }
+}

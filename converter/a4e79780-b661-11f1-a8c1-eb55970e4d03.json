@@ -1,0 +1,36 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "scriptLang" : "JS",
+      "decoder" : "// Decode an uplink message from a buffer\r\n// payload - array of bytes\r\n// metadata - key/value object\r\n\r\n/** Decoder **/\r\n\r\n// decode payload to string\r\nvar payloadStr = decodeToString(payload);\r\nvar data = decodeToJson(payload);\r\n//SDI-12-NS: Sonda salinidad\r\n//WQS-NB: Calidad de Agua\r\n//WSC2-N: Meteorológica\r\n\r\nvar deviceName = data.IMEI;\r\nvar deviceType = data.Model;\r\nvar customerName = 'Customer C';\r\nvar groupName = 'thermostat devices';\r\nvar manufacturer = 'Example corporation';\r\n// use assetName and assetType instead of deviceName and deviceType\r\n// to automatically create assets instead of devices.\r\n// var assetName = 'Asset A';\r\n// var assetType = 'building';\r\n\r\n// Result object with device/asset attributes/telemetry data\r\nvar result = {\r\n// Use deviceName and deviceType or assetName and assetType, but not both.\r\n   deviceName: deviceName,\r\n   deviceType: deviceType,\r\n// assetName: assetName,\r\n// assetType: assetType,\r\n// customerName: customerName,\r\n// groupName: groupName,\r\n//   attributes: {\r\n//       model: 'Model A',\r\n//       serialNumber: 'SN111',\r\n//       integrationName: metadata['integrationName'],\r\n//       manufacturer: manufacturer\r\n//   },\r\n   telemetry: {\r\n       rawData: payloadStr\r\n   }\r\n};\r\n\r\n/** Helper functions **/\r\n\r\nfunction decodeToString(payload) {\r\n   return String.fromCharCode.apply(String, payload);\r\n}\r\n\r\nfunction decodeToJson(payload) {\r\n   // covert payload to string.\r\n   var str = decodeToString(payload);\r\n\r\n   // parse string to JSON\r\n   var data = JSON.parse(str);\r\n   return data;\r\n}\r\n\r\nreturn result;",
+      "tbelDecoder" : "// Decode an uplink message from a buffer\n// payload - array of bytes\n// metadata - key/value object\n\n/** Decoder **/\n\n// decode payload to string\nvar payloadStr = decodeToString(payload);\n\n// decode payload to JSON\n// var data = decodeToJson(payload);\n\nvar deviceName = 'Device A';\nvar deviceType = 'thermostat';\nvar customerName = 'Customer C';\nvar groupName = 'thermostat devices';\nvar manufacturer = 'Example corporation';\n// use assetName and assetType instead of deviceName and deviceType\n// to automatically create assets instead of devices.\n// var assetName = 'Asset A';\n// var assetType = 'building';\n\n// Result object with device/asset attributes/telemetry data\nvar result = {\n// Use deviceName and deviceType or assetName and assetType, but not both.\n   deviceName: deviceName,\n   deviceType: deviceType,\n// assetName: assetName,\n// assetType: assetType,\n// customerName: customerName,\n   groupName: groupName,\n   attributes: {\n       model: 'Model A',\n       serialNumber: 'SN111',\n       integrationName: metadata['integrationName'],\n       manufacturer: manufacturer\n   },\n   telemetry: {\n       temperature: 42,\n       humidity: 80,\n       rawData: payloadStr\n   }\n};\n\n/** Helper functions 'decodeToString' and 'decodeToJson' are already built-in **/\n\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer" ]
+    },
+    "converterVersion" : 1,
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1791797018459,
+      "failuresEnabled" : true
+    },
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "a4e79780-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "integrationType" : "MQTT",
+    "name" : "Convertidor de datos Uplink para Integración MQTT",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

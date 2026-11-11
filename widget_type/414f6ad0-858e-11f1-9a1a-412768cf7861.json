@@ -1,0 +1,33 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "tarjeta_modificar2",
+    "name" : "tarjeta-modificar2",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "timeseries",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div style=\"padding: 0 12px; font-family: Roboto, sans-serif; display: flex; align-items: center; justify-content: center; height: 100%; box-sizing: border-box; background: #ffffff; border: 1px solid #cfd8dc; border-radius: 4px; color: #333; gap: 10px;\">\r\n    <span style=\"font-size: 12px; color: #78909c; font-weight: bold; white-space: nowrap; flex-shrink: 0;\">CAUDAL L/s:</span>\r\n    <input type=\"number\" id=\"input-caudal\" style=\"padding: 5px 6px; width: 72px; border: 1px solid #b0bec5; border-radius: 4px; font-size: 15px; text-align: center; outline: none; box-sizing: border-box; font-weight: bold; flex-shrink: 0;\">\r\n    <button id=\"btn-guardar\" style=\"padding: 6px 14px; background-color: #455a64; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;\">\r\n        Guardar\r\n    </button>\r\n    <span id=\"msg-estado\" style=\"font-size: 11px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; min-width: 0; max-width: 140px;\"></span>\r\n</div>",
+      "templateCss" : "",
+      "controllerScript" : "self.onInit = function() {\r\n    const $ctx = self.ctx;\r\n    const $container = $ctx.$container;\r\n    setTimeout(function() {\r\n        const assetId = localStorage.getItem('riego_asset_id');\r\n        const currentCaudal = localStorage.getItem('riego_caudal');\r\n        if (currentCaudal && currentCaudal !== \"null\" && currentCaudal !== \"\") {\r\n            $container.find('#input-caudal').val(currentCaudal);\r\n        }\r\n\r\n        $container.find('#btn-guardar').off('click').on('click', function() {\r\n            const newVal = $container.find('#input-caudal').val();\r\n            const $msg = $container.find('#msg-estado');\r\n\r\n            if (!assetId || assetId === \"null\") {\r\n                $msg.text(\"⚠ Selecciona una entidad.\").css('color', '#d32f2f');\r\n                return;\r\n            }\r\n            if (newVal === \"\") {\r\n                $msg.text(\"⚠ Valor vacío.\").css('color', '#d32f2f');\r\n                return;\r\n            }\r\n\r\n            // Rango de tiempo que se está viendo AHORA en el widget/dashboard\r\n            const tw = $ctx.timeWindow;\r\n            let start, end;\r\n            if (tw && tw.minTime && tw.maxTime) {\r\n                start = tw.minTime;\r\n                end = tw.maxTime - 1000; // un segundo antes del final, para que quede dentro del rango visible\r\n            } else {\r\n                // Fallback por si el datasource aún no ha resuelto el timewindow\r\n                start = end = new Date().getTime();\r\n            }\r\n\r\n            const valor = parseFloat(newVal);\r\n            $msg.text(\"Guardando...\").css('color', '#1976d2');\r\n\r\n            const puntos = (start === end)\r\n                ? [{ ts: start, values: { caudal_manual: valor } }]\r\n                : [\r\n                    { ts: start, values: { caudal_manual: valor } },\r\n                    { ts: end,   values: { caudal_manual: valor } }\r\n                  ];\r\n\r\n            let pendientes = puntos.length;\r\n            let huboError = false;\r\n\r\n            puntos.forEach(function(payload) {\r\n                $ctx.http.post(\"/api/plugins/telemetry/ASSET/\" + assetId + \"/timeseries/ANY\", payload).subscribe(\r\n                    function() {\r\n                        pendientes--;\r\n                        if (pendientes === 0) {\r\n                            if (huboError) {\r\n                                $msg.text(\"Guardado parcial.\").css('color', '#f57c00');\r\n                            } else {\r\n                                $msg.text(\"¡Guardado!\").css('color', '#388e3c');\r\n                                localStorage.setItem('riego_caudal', newVal);\r\n                            }\r\n                            setTimeout(() => $msg.text(\"\"), 3000);\r\n                        }\r\n                    },\r\n                    function(err) {\r\n                        huboError = true;\r\n                        pendientes--;\r\n                        if (pendientes === 0) {\r\n                            $msg.text(\"Error.\").css('color', '#d32f2f');\r\n                        }\r\n                    }\r\n                );\r\n            });\r\n        });\r\n    }, 150);\r\n};",
+      "settingsDirective" : "tb-html-card-widget-settings",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"cardHtml\":\"<div class='card'>HTML code here</div>\",\"cardCss\":\".card {\\n    font-weight: bold;\\n    font-size: 32px;\\n    color: #999;\\n    width: 100%;\\n    height: 100%;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n}\"},\"title\":\"HTML Card\",\"dropShadow\":true}"
+    },
+    "externalId" : null,
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "414f6ad0-858e-11f1-9a1a-412768cf7861"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

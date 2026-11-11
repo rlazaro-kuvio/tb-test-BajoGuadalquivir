@@ -1,0 +1,126 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "c1f7ec30-c877-11f1-a8c1-eb55970e4d03"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "92181a00-c091-11f1-a8c1-eb55970e4d03"
+    },
+    "name" : "RS485-CS",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "True"
+    } ],
+    "firstNodeIndex" : 2,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 757,
+        "layoutY" : 181
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1791796949720,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "92197990-c091-11f1-a8c1-eb55970e4d03"
+      },
+      "name" : "Save Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 539,
+        "layoutY" : 313
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// 1. Convertimos el string JSON de rawData a un objeto JavaScript\r\nvar data = JSON.parse(msg.rawData);\r\nvar outputMessages = [];\r\n\r\n// 2. Función para convertir de Hexadecimal a Float32 (Big-Endian)\r\nfunction hexToFloat(hex) {\r\n    if (hex.toLowerCase() === \"ffffffff\") return \"\"; // Manejo de lecturas vacías/timeout\r\n    \r\n    var int = parseInt(hex, 16);\r\n    if (int === 0) return 0.0;\r\n    \r\n    var sign = (int >>> 31) ? -1 : 1;\r\n    var exp = (int >>> 23 & 0xff) - 127;\r\n    var mantissa = ((int & 0x7fffff) + 0x800000).toString(2);\r\n    var float32 = 0;\r\n    \r\n    for (var i = 0; i < mantissa.length; i += 1) {\r\n        float32 += parseInt(mantissa[i]) ? Math.pow(2, exp) : 0;\r\n        exp--;\r\n    }\r\n    // Redondear a 4 decimales\r\n    return Math.round(sign * float32 * 10000) / 10000;\r\n}\r\n\r\n// 3. Función que trocea el Payload hexadecimal y extrae las 9 variables\r\nfunction procesarPayload(payloadStr) {\r\n    var out = {};\r\n    \r\n    // Comprobamos que el string exista y tenga el tamaño esperado (74 caracteres)\r\n    if (!payloadStr || payloadStr.length < 74) {\r\n        return out;\r\n    }\r\n\r\n    // Descartar el byte inicial del Dragino (01 o 81)\r\n    var dataHex = payloadStr.substring(2);\r\n\r\n    // Mapeo del mapa Modbus del NICO según la documentación\r\n    out.n_no3_mg_l = hexToFloat(dataHex.substring(0, 8));\r\n    out.no3_mg_l   = hexToFloat(dataHex.substring(8, 16));\r\n    out.sqi        = hexToFloat(dataHex.substring(16, 24));\r\n    out.ref_a      = hexToFloat(dataHex.substring(24, 32));\r\n    out.ref_b      = hexToFloat(dataHex.substring(32, 40));\r\n    out.ref_c      = hexToFloat(dataHex.substring(40, 48));\r\n    out.ref_d      = hexToFloat(dataHex.substring(48, 56));\r\n    out.n_nox_mg_l = hexToFloat(dataHex.substring(56, 64));\r\n    out.nox_mg_l   = hexToFloat(dataHex.substring(64, 72));\r\n\r\n    return out;\r\n}\r\n\r\n// 4. Procesamiento de la lectura actual\r\nif (data.Payload && data.time) {\r\n    var mainValues = procesarPayload(data.Payload);\r\n    \r\n    // Añadir métricas del propio gateway (batería y señal)\r\n    if (data.battery !== undefined) mainValues.battery = data.battery;\r\n    if (data.signal !== undefined) mainValues.signal = data.signal;\r\n    \r\n    outputMessages.push({\r\n        msg: {\r\n            ts: new Date(data.time).getTime(),\r\n            values: mainValues\r\n        },\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    });\r\n}\r\n\r\nfunction payloadHistoricoValido(payload) {\r\n    if (!payload || !/^(01|81)[0-9A-Fa-f]{72}$/.test(payload)) {\r\n        return false;\r\n    }\r\n\r\n    var datos = payload.substring(2).toUpperCase();\r\n\r\n    for (var i = 0; i < 72; i += 8) {\r\n        if (datos.substring(i, i + 8) === \"FFFFFFFF\") {\r\n            return false;\r\n        }\r\n    }\r\n\r\n    return true;\r\n}\r\n\r\n// 5. Bucle para procesar datos históricos (si el Dragino perdió cobertura y envía el buffer)\r\nfor (var key in data) {\r\n    if (!isNaN(key) && Array.isArray(data[key])) {\r\n        var payloadHistorico = data[key][0];\r\n        var tiempoHistorico = data[key][1];\r\n\r\n        if (payloadHistoricoValido(payloadHistorico) && tiempoHistorico) {\r\n            outputMessages.push({\r\n                msg: {\r\n                    ts: new Date(tiempoHistorico).getTime(),\r\n                    values: procesarPayload(payloadHistorico)\r\n                },\r\n                metadata: metadata,\r\n                msgType: msgType\r\n            });\r\n        }\r\n    }\r\n}\r\n\r\nreturn outputMessages;\r\n\r\nreturn outputMessages;",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1791803047007,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "78e668f0-c0ac-11f1-a8c1-eb55970e4d03"
+      },
+      "name" : "decode",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 236,
+        "layoutY" : 330
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var data;\r\n\r\ntry {\r\n    data = JSON.parse(msg.rawData);\r\n} catch (e) {\r\n    return false;\r\n}\r\n\r\nvar p = String(data.Payload || \"\")\r\n    .replace(/\\s/g, \"\")\r\n    .toUpperCase();\r\n\r\n// 1 byte inicial + 9 valores de 4 bytes = 74 caracteres hexadecimales\r\nif (!/^(01|81)[0-9A-F]{72}$/.test(p)) {\r\n    return false;\r\n}\r\n\r\n// Descartar si los 9 valores son FFFFFFFF\r\nif (/^(01|81)F{72}$/.test(p)) {\r\n    return false;\r\n}\r\n\r\nreturn true;",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1792660010611,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c1f7ec30-c877-11f1-a8c1-eb55970e4d03"
+      },
+      "name" : "filtro fff",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

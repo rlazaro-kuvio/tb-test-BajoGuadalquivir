@@ -1,0 +1,162 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "app.kuvio.tech",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "protocolVersion" : "MQTT_3_1_1",
+        "credentials" : {
+          "type" : "basic",
+          "username" : "kuvio",
+          "password" : "kuvio.1"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "nico/lectura",
+        "qos" : 0
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1791446451939,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "a4e79780-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a4f88770-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "name" : "Sondas nico",
+    "remote" : false,
+    "routingKey" : "42595729-983d-1b07-0d68-dffb11e4e7af",
+    "secret" : "lisjevhwvlrtngzjcj1a",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a4f88770-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "8b360340-c09c-11f1-a8c1-eb55970e4d03"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 6377986
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a4f88770-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "96f25430-c0c5-11f1-a8c1-eb55970e4d03"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 6390556
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a4f88770-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "ac9cf0e0-b663-11f1-a8c1-eb55970e4d03"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 5612458
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a4f88770-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "14128f50-c0aa-11f1-a8c1-eb55970e4d03"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 6382326
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a4f88770-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5e7822c0-c0d3-11f1-a8c1-eb55970e4d03"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 6394254
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a4f88770-b661-11f1-a8c1-eb55970e4d03"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "75241ab0-c0b5-11f1-a8c1-eb55970e4d03"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 6385517
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_10df97a0c7f6",
+      "lastUpdateTs" : 1790841651952,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_6842b64b53aa",
+      "lastUpdateTs" : 1792861945693,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_c200ebce85df",
+      "lastUpdateTs" : 1792861179229,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

@@ -1,0 +1,1468 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "ae5abbe1-b020-11f1-96bd-cdc983098999"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "ae4474c0-b020-11f1-96bd-cdc983098999"
+    },
+    "name" : "Grupo_riego",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "Attributes Updated"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "Entity Updated"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 4,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 4,
+      "type" : "Timeseries Updated"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 16,
+      "type" : "Attributes Updated"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 16,
+      "type" : "Entity Updated"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 20,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 20,
+      "type" : "Timeseries Updated"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 32,
+      "type" : "Attributes Updated"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 2,
+      "type" : "False"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "True"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 14,
+      "type" : "True"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 6,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 19,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 2,
+      "type" : "False"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 21,
+      "type" : "True"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 23,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 24,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 24,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 26,
+      "type" : "True"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 27,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 28,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 30,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 30,
+      "toIndex" : 31,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 33,
+      "type" : "True"
+    }, {
+      "fromIndex" : 33,
+      "toIndex" : 34,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 34,
+      "toIndex" : 35,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 35,
+      "toIndex" : 36,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 37,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 38,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 38,
+      "toIndex" : 39,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 1,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 827,
+        "layoutY" : 144
+      },
+      "configuration" : {
+        "direction" : "TO",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "$[Sector]",
+        "entityTypePattern" : null,
+        "relationType" : "Esta",
+        "createEntityIfNotExists" : false,
+        "removeCurrentRelations" : false,
+        "changeOriginatorToRelatedEntity" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1773047327328,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5abbe0-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Sector",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 316,
+        "layoutY" : 149
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1774871066827,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5abbe1-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 538,
+        "layoutY" : 345
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Esta_en_Grupo_Riego",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1779944360196,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5abbe2-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Esta_en_Grupo_Riego",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 934,
+        "layoutY" : 329
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : "1",
+          "filters" : [ {
+            "relationType" : "Esta_en_Balsa",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786424815083,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5abbe3-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Esta_en_Balsa",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 325,
+        "layoutY" : 428
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function extraerManual(msg) {\n    if (msg.caudal_manual !== undefined && msg.caudal_manual !== null) {\n        return { valor: msg.caudal_manual, ts: null };\n    }\n    if (Array.isArray(msg.timeseries)) {\n        for (var i = 0; i < msg.timeseries.length; i++) {\n            var p = msg.timeseries[i];\n            if (p && p.values && p.values.caudal_manual !== undefined && p.values.caudal_manual !== null) {\n                return { valor: p.values.caudal_manual, ts: p.ts };\n            }\n        }\n    }\n    return null;\n}\n\nreturn extraerManual(msg) !== null;",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786424805622,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5abbe4-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Filtro: caudal_manual",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 390,
+        "layoutY" : 595
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "gr_nombre"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f0-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Nombre del Grupo_Riego",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 917,
+        "layoutY" : 475
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function extraerManual(msg) {\n    if (msg.caudal_manual !== undefined && msg.caudal_manual !== null) {\n        return { valor: msg.caudal_manual, ts: null };\n    }\n    if (Array.isArray(msg.timeseries)) {\n        for (var i = 0; i < msg.timeseries.length; i++) {\n            var p = msg.timeseries[i];\n            if (p && p.values && p.values.caudal_manual !== undefined && p.values.caudal_manual !== null) {\n                return { valor: p.values.caudal_manual, ts: p.ts };\n            }\n        }\n    }\n    return null;\n}\n\nfunction madridOffsetMs(t) {\n    function lastSundayUtc1(y, m) {\n        var last = new Date(Date.UTC(y, m + 1, 0));\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\n    }\n    var y = new Date(t).getUTCFullYear();\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\n}\n\nfunction fechaLocal(t) {\n    var d = new Date(t + madridOffsetMs(t));\n    return d.getUTCFullYear() + \"-\" +\n        (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" +\n        (\"0\" + d.getUTCDate()).slice(-2);\n}\n\nvar extraido = extraerManual(msg);\nif (extraido === null) {\n    return { msg: msg, metadata: metadata, msgType: msgType };\n}\n\nvar valor = parseFloat(extraido.valor);\nvar tsValor = extraido.ts ? parseInt(extraido.ts) : (metadata.ts ? parseInt(metadata.ts) : new Date().getTime());\nvar ahora = new Date().getTime();\n\nvar fechaValor = fechaLocal(tsValor);\nvar fechaHoy   = fechaLocal(ahora);\n\n// Solo activa el override si el punto guardado cae en el dia de HOY (fecha\n// completa, no solo el numero de dia, para que no se reactive un mes despues).\nif (fechaValor !== fechaHoy) {\n    return { msg: msg, metadata: metadata, msgType: msgType };\n}\n\nmetadata.gr_valor_manual = valor.toString();\nmetadata.gr_dia_manual = fechaHoy;\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f1-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar override manual (tz Madrid)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1119,
+        "layoutY" : 594
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return metadata.gr_valor_manual !== undefined && metadata.gr_valor_manual !== null;",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f2-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "¿Manual valido para hoy?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1454,
+        "layoutY" : 472
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "CRBG_Resumen_Caudales",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f3-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cambia a Resumen (escribir manuales)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1568,
+        "layoutY" : 623
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "manuales_activos_hoy" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f4-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar manuales_activos_hoy actual",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1672,
+        "layoutY" : 512
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function parseObj(v) {\n    if (!v) { return {}; }\n    if (typeof v === \"string\") { try { return JSON.parse(v); } catch (e) { return {}; } }\n    if (typeof v === \"object\") { return v; }\n    return {};\n}\nvar mapa = parseObj(metadata.ss_manuales_activos_hoy);\nvar dia = metadata.gr_dia_manual;\n\n// Limpieza: descarta del mapa cualquier entrada que no sea de hoy (comparando\n// fecha completa AAAA-MM-DD), aunque no llegue ningun manual nuevo justo al\n// cambiar de dia.\nvar mapaLimpio = {};\nfor (var k in mapa) {\n    if (mapa.hasOwnProperty(k) && mapa[k].dia === dia) {\n        mapaLimpio[k] = mapa[k];\n    }\n}\n\nmapaLimpio[metadata.gr_nombre] = {\n    valor: parseFloat(metadata.gr_valor_manual),\n    dia: dia,\n    sector: metadata.gr_sector ? String(metadata.gr_sector).replace(/[^0-9]/g, \"\") : metadata.gr_sector\n};\n\nreturn {\n    msg: { manuales_activos_hoy: JSON.stringify(mapaLimpio) },\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f5-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Actualizar mapa manuales_activos_hoy",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1848,
+        "layoutY" : 602
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785834679783,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f6-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar manuales_activos_hoy",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Va del Grupo_Riego al Sector con el que tiene la relacion 'Esta', para poder leer su nombre y guardarlo en el manual de hoy.",
+        "layoutX" : 553,
+        "layoutY" : 489
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Esta",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f7-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Ir a Sector (relación Esta)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 775,
+        "layoutY" : 666
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "gr_sector"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f8-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Nombre del Sector",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1183,
+        "layoutY" : 478
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function madridOffsetMs(t) {\r\n    function lastSundayUtc1(y, m) {\r\n        var last = new Date(Date.UTC(y, m + 1, 0));\r\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\r\n    }\r\n    var y = new Date(t).getUTCFullYear();\r\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\r\n}\r\n\r\nvar ahora = new Date().getTime();\r\nvar off = madridOffsetMs(ahora);\r\nvar d = new Date(ahora + off);\r\nd.setUTCHours(0, 0, 0, 0);\r\nvar inicio_dia = d.getTime() - off;\r\nvar MS_DIA = 86400000;\r\n// Fin del dia de HOY (23:59:59.999 hora Madrid), igual formula que ya usa\r\n// 'Generar Proyeccion Futura' en la Pila -- el campo calculado de ThingsBoard\r\n// solo tiene que comparar este numero contra la hora actual, sin tener que\r\n// entender fechas ni zonas horarias por su cuenta.\r\nvar manual_expira_ts = inicio_dia + MS_DIA - 1;\r\n\r\nreturn {\r\n    msg: {\r\n        manual_valor: parseFloat(metadata.gr_valor_manual),\r\n        manual_expira_ts: manual_expira_ts\r\n    },\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2f9-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar atributos manual (por grupo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1328,
+        "layoutY" : 630
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2fa-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar manual en el propio grupo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Cuando se actualiza el atributo de servidor 'Guarda' en un Grupo_Riego, crea la relacion Guarda -[Maneja]-> Grupo_Riego. El valor del atributo debe coincidir EXACTAMENTE con el nombre del activo Guarda. removeCurrentRelations=true para que, si se reasigna el guarda, se borre la relacion 'Maneja' anterior de ese grupo antes de crear la nueva.",
+        "layoutX" : 889,
+        "layoutY" : 241
+      },
+      "configuration" : {
+        "direction" : "FROM",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "$[Guarda]",
+        "entityTypePattern" : null,
+        "relationType" : "Maneja",
+        "createEntityIfNotExists" : false,
+        "removeCurrentRelations" : true,
+        "changeOriginatorToRelatedEntity" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2fb-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guarda",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2277,
+        "layoutY" : 200
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "mp_el_torbiscal", "mp_torremarismas", "mp_montera", "mp_don_bartolome", "mp_a_x_1", "mp_santa_maria_adrian", "mp_santa_maria_roalon", "mp_la_vega", "mp_las_lebreras", "mp_penon_maestre_indesa", "mp_penon_indesa", "mp_a_x_2", "mp_las_arcas", "mp_salinillas_marcelino", "mp_salinillas", "mp_el_rancho_marcelino", "mp_el_rancho_hermana", "mp_el_rosal", "mp_a_x_3", "mp_cordobilla_carlos", "mp_cordobilla_tulio", "mp_ranchillo_tulio", "mp_ranchillo_baena", "mp_ranchillo_grupo", "mp_a_x_3_bis", "mp_los_almendrillos", "mp_cordobilla_cordero", "mp_almendrillos_puchal", "mp_hnos_baena", "mp_almedrillos_altos_canal", "mp_almendrillos_altos_marismillas", "mp_agro_montujar", "mp_grupo_palmilla", "mp_palmilla_carlos", "mp_el_millonario", "mp_palmilla_ican", "mp_hnos_bastos", "mp_el_judio", "mp_a_x_5", "mp_la_condesa", "mp_hornillo_gilete", "mp_don_alberto", "mp_rosario_nunez", "mp_merlina_meango", "mp_merlina_piva", "mp_los_huertos", "mp_melendo", "mp_el_rosario", "mp_gomez_aparicio", "mp_granaillo_grupo", "mp_trinidad_cavam", "mp_la_raspa", "mp_las_coronas_1_abonos_jimenez", "mp_cerrado_de_miura", "mp_santo_tomas", "mp_grupo_el_corzo", "mp_casavacas_1", "mp_matamarilla_tubarro", "mp_torre_nueva", "mp_el_toril_fernando", "mp_la_algabarra", "mp_los_angeles_baldisema", "mp_lasarte", "mp_casavacas_2", "mp_carmona_1_puerto", "mp_algodonales", "mp_la_cabana_gravedad_marques", "mp_los_rubios_jarema", "mp_t_ii_1_1_3", "mp_a_iv_3", "mp_la_corchuela", "mp_v_rancho_lopez_gomez", "mp_t_ii_1_2", "mp_t_ii_1_1", "mp_cisman_t_md", "mp_grupo_arenoso", "mp_las_crucetas", "mp_san_fernando", "mp_t_vii_6_tuberia", "mp_rubio_angel", "mp_juan_gomez_t_1", "mp_t_vii_2", "mp_gilito", "mp_t_vii_7a_acequia", "mp_los_becerros", "mp_juan_gomez_10_2", "mp_pinto_agricola", "mp_cortijo_guadajoz", "mp_presa_la_gitana_desembalse", "mp_real_tesoro", "mp_campanero", "mp_el_corredero", "mp_carmona_2", "mp_el_alcachofar_1", "mp_el_cerro", "mp_los_angeles_parias", "mp_el_toril_ii", "mp_la_cabana_mg", "mp_jarilla", "mp_grupo_algabarra", "mp_matas_verdes", "mp_diputacion", "mp_sortes_y_la_botija", "mp_real_club_de_golf", "mp_la_espanola", "mp_b_ii_flume_gate", "mp_ayala_arenoso", "mp_v_rancho_crucetas", "mp_a_v_5", "mp_t_vii_7", "mp_a_v_3_mejorada", "mp_cisman_y_los_frailes", "mp_t_vii_4", "mp_jaime_perez_izquierda", "mp_el_marchante", "mp_mochales", "mp_trinidad_nufri", "mp_presa_el_rosario_bombeo", "mp_presa_la_restinga_eco", "mp_casilla_villegas", "mp_alamo_alto_em", "mp_presa_el_rosario_eco", "mp_casavacas_santa_adela", "mp_crespo_camino", "mp_la_algabarrilla", "mp_carmona_1_la_chacona", "mp_carmona_1_bernal", "mp_v_rancho_barron", "mp_los_rubios_carlos", "mp_t_iv_6", "mp_v_rancho_cerezuela", "mp_a_v_3", "mp_t_vii_4_2", "mp_el_alcachofar_2", "mp_barrera", "mp_hacienda_nueva_san_jose", "mp_la_cabana_marques", "mp_el_toril_i", "mp_el_serafin", "mp_t_ii_1_4", "mp_la_espanola_desembalse", "mp_a_iv_6_1_bis", "mp_v_rancho_peseta", "mp_a_iv_4_bertedona_dona_ana", "mp_tamaran", "mp_a_vii_9", "mp_ulloa", "mp_a_vii_8", "mp_presa_la_gitana_eco", "mp_trinidad_l_rojas", "mp_oidor", "mp_granaillo_leonardo", "mp_crespo_recuerda", "mp_la_florida", "mp_a_iv_4_zambruno", "mp_hacienda_romana_2_balsa", "mp_pinto_ansar", "mp_jaime_perez_derecha_t", "mp_t_vii_6_acequia", "mp_presa_la_restinga_bombeo", "mp_presa_la_gitana_bombeo", "mp_carmona_3", "mp_meliton", "mp_la_jurada", "mp_grupo_almonazar", "mp_hacienda_hornillo", "mp_a_v_2", "mp_a_v_1", "mp_a_iv_6_1", "mp_a_iv_4", "mp_a_vii_1_1_1", "mp_a_vii_3_molinillo", "mp_presa_la_restinga_desembalse", "mp_legua_leal", "mp_casilla_san_german", "mp_grupo_cesaro", "mp_huerta_escobedo", "mp_a_vii_1_1_2", "mp_sat_la_romana", "mp_torremarismas_cd3", "mp_trinidad_canaveral", "mp_grupo_matamarilla", "mp_a_iv_5", "mp_los_rubios_guayba", "mp_el_toruno", "mp_la_gitana", "mp_presa_el_rosario_desembalse", "mp_secano_de_la_motilla", "mp_la_cabana_gravedad_inagro", "mp_torres_gomez", "mp_los_cabreros", "mp_la_famosa", "mp_carmona_1_los_lares", "mp_grupo_buitrago", "mp_t_ii_1_2_1", "mp_liebanas", "mp_grupo_cisman", "mp_hacienda_romana_canal", "mp_hacienda_oran", "mp_el_cuzco", "mp_sat_dehesilla", "mp_san_rafael", "mp_frutansa", "mp_a_iv_3_bujalmoro_md", "mp_los_llanos", "mp_a_v_4", "mp_rv_agro", "mp_santana", "mp_bujalmoro", "mp_v_rancho_cabezuelo", "mp_t_vii_5", "mp_granaillo_la_milana", "mp_a_vii_10_t", "mp_las_coronas_2", "mp_trinidad_a_rojas", "mp_alamo_alto_md", "mp_torre_arana", "mp_san_juan", "mp_los_santos", "mp_la_cabana_inagro", "mp_el_bodegon", "mp_casablanquilla", "mp_las_coronas_1_casilla_leon", "mp_antonio_lopez", "mp_el_pinganillo", "mp_la_encina", "mp_grupo_espartales", "mp_el_pino", "mp_t_vii_7a_tuberia", "cu_el_torbiscal", "cu_torremarismas", "cu_montera", "cu_don_bartolome", "cu_a_x_1", "cu_santa_maria_adrian", "cu_santa_maria_roalon", "cu_la_vega", "cu_las_lebreras", "cu_penon_maestre_indesa", "cu_penon_indesa", "cu_a_x_2", "cu_las_arcas", "cu_salinillas_marcelino", "cu_salinillas", "cu_el_rancho_marcelino", "cu_el_rancho_hermana", "cu_el_rosal", "cu_a_x_3", "cu_cordobilla_carlos", "cu_cordobilla_tulio", "cu_ranchillo_tulio", "cu_ranchillo_baena", "cu_ranchillo_grupo", "cu_a_x_3_bis", "cu_los_almendrillos", "cu_cordobilla_cordero", "cu_almendrillos_puchal", "cu_hnos_baena", "cu_almedrillos_altos_canal", "cu_almendrillos_altos_marismillas", "cu_agro_montujar", "cu_grupo_palmilla", "cu_palmilla_carlos", "cu_el_millonario", "cu_palmilla_ican", "cu_hnos_bastos", "cu_el_judio", "cu_a_x_5", "cu_la_condesa", "cu_hornillo_gilete", "cu_don_alberto", "cu_rosario_nunez", "cu_merlina_meango", "cu_merlina_piva", "cu_los_huertos", "cu_melendo", "cu_el_rosario", "cu_gomez_aparicio", "cu_granaillo_grupo", "cu_trinidad_cavam", "cu_la_raspa", "cu_las_coronas_1_abonos_jimenez", "cu_cerrado_de_miura", "cu_santo_tomas", "cu_grupo_el_corzo", "cu_casavacas_1", "cu_matamarilla_tubarro", "cu_torre_nueva", "cu_el_toril_fernando", "cu_la_algabarra", "cu_los_angeles_baldisema", "cu_lasarte", "cu_casavacas_2", "cu_carmona_1_puerto", "cu_algodonales", "cu_la_cabana_gravedad_marques", "cu_los_rubios_jarema", "cu_t_ii_1_1_3", "cu_a_iv_3", "cu_la_corchuela", "cu_v_rancho_lopez_gomez", "cu_t_ii_1_2", "cu_t_ii_1_1", "cu_cisman_t_md", "cu_grupo_arenoso", "cu_las_crucetas", "cu_san_fernando", "cu_t_vii_6_tuberia", "cu_rubio_angel", "cu_juan_gomez_t_1", "cu_t_vii_2", "cu_gilito", "cu_t_vii_7a_acequia", "cu_los_becerros", "cu_juan_gomez_10_2", "cu_pinto_agricola", "cu_cortijo_guadajoz", "cu_presa_la_gitana_desembalse", "cu_real_tesoro", "cu_campanero", "cu_el_corredero", "cu_carmona_2", "cu_el_alcachofar_1", "cu_el_cerro", "cu_los_angeles_parias", "cu_el_toril_ii", "cu_la_cabana_mg", "cu_jarilla", "cu_grupo_algabarra", "cu_matas_verdes", "cu_diputacion", "cu_sortes_y_la_botija", "cu_real_club_de_golf", "cu_la_espanola", "cu_b_ii_flume_gate", "cu_ayala_arenoso", "cu_v_rancho_crucetas", "cu_a_v_5", "cu_t_vii_7", "cu_a_v_3_mejorada", "cu_cisman_y_los_frailes", "cu_t_vii_4", "cu_jaime_perez_izquierda", "cu_el_marchante", "cu_mochales", "cu_trinidad_nufri", "cu_presa_el_rosario_bombeo", "cu_presa_la_restinga_eco", "cu_casilla_villegas", "cu_alamo_alto_em", "cu_presa_el_rosario_eco", "cu_casavacas_santa_adela", "cu_crespo_camino", "cu_la_algabarrilla", "cu_carmona_1_la_chacona", "cu_carmona_1_bernal", "cu_v_rancho_barron", "cu_los_rubios_carlos", "cu_t_iv_6", "cu_v_rancho_cerezuela", "cu_a_v_3", "cu_t_vii_4_2", "cu_el_alcachofar_2", "cu_barrera", "cu_hacienda_nueva_san_jose", "cu_la_cabana_marques", "cu_el_toril_i", "cu_el_serafin", "cu_t_ii_1_4", "cu_la_espanola_desembalse", "cu_a_iv_6_1_bis", "cu_v_rancho_peseta", "cu_a_iv_4_bertedona_dona_ana", "cu_tamaran", "cu_a_vii_9", "cu_ulloa", "cu_a_vii_8", "cu_presa_la_gitana_eco", "cu_trinidad_l_rojas", "cu_oidor", "cu_granaillo_leonardo", "cu_crespo_recuerda", "cu_la_florida", "cu_a_iv_4_zambruno", "cu_hacienda_romana_2_balsa", "cu_pinto_ansar", "cu_jaime_perez_derecha_t", "cu_t_vii_6_acequia", "cu_presa_la_restinga_bombeo", "cu_presa_la_gitana_bombeo", "cu_carmona_3", "cu_meliton", "cu_la_jurada", "cu_grupo_almonazar", "cu_hacienda_hornillo", "cu_a_v_2", "cu_a_v_1", "cu_a_iv_6_1", "cu_a_iv_4", "cu_a_vii_1_1_1", "cu_a_vii_3_molinillo", "cu_presa_la_restinga_desembalse", "cu_legua_leal", "cu_casilla_san_german", "cu_grupo_cesaro", "cu_huerta_escobedo", "cu_a_vii_1_1_2", "cu_sat_la_romana", "cu_torremarismas_cd3", "cu_trinidad_canaveral", "cu_grupo_matamarilla", "cu_a_iv_5", "cu_los_rubios_guayba", "cu_el_toruno", "cu_la_gitana", "cu_presa_el_rosario_desembalse", "cu_secano_de_la_motilla", "cu_la_cabana_gravedad_inagro", "cu_torres_gomez", "cu_los_cabreros", "cu_la_famosa", "cu_carmona_1_los_lares", "cu_grupo_buitrago", "cu_t_ii_1_2_1", "cu_liebanas", "cu_grupo_cisman", "cu_hacienda_romana_canal", "cu_hacienda_oran", "cu_el_cuzco", "cu_sat_dehesilla", "cu_san_rafael", "cu_frutansa", "cu_a_iv_3_bujalmoro_md", "cu_los_llanos", "cu_a_v_4", "cu_rv_agro", "cu_santana", "cu_bujalmoro", "cu_v_rancho_cabezuelo", "cu_t_vii_5", "cu_granaillo_la_milana", "cu_a_vii_10_t", "cu_las_coronas_2", "cu_trinidad_a_rojas", "cu_alamo_alto_md", "cu_torre_arana", "cu_san_juan", "cu_los_santos", "cu_la_cabana_inagro", "cu_el_bodegon", "cu_casablanquilla", "cu_las_coronas_1_casilla_leon", "cu_antonio_lopez", "cu_el_pinganillo", "cu_la_encina", "cu_grupo_espartales", "cu_el_pino", "cu_t_vii_7a_tuberia", "manuales_activos_hoy", "guardas_activos_hoy" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5ae2fc-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar mp_* + manuales (instantaneo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2477,
+        "layoutY" : 200
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function sanitizeKey(nombre) {\n    var desde = \"áéíóúÁÉÍÓÚüÜñÑàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛäëïöÄËÏÖ\";\n    var hasta = \"aeiouAEIOUuUnNaeiouAEIOUaeiouAEIOUaeioAEIO\";\n    var out = \"\";\n    var str = String(nombre);\n    for (var i = 0; i < str.length; i++) {\n        var ch = str.charAt(i);\n        var idx = desde.indexOf(ch);\n        out += (idx !== -1) ? hasta.charAt(idx) : ch;\n    }\n    out = out.toLowerCase();\n    var limpio = \"\";\n    for (var j = 0; j < out.length; j++) {\n        var c = out.charAt(j);\n        if ((c >= \"a\" && c <= \"z\") || (c >= \"0\" && c <= \"9\")) {\n            limpio += c;\n        } else {\n            limpio += \"_\";\n        }\n    }\n    // colapsar guiones bajos multiples\n    while (limpio.indexOf(\"__\") !== -1) { limpio = limpio.replace(\"__\", \"_\"); }\n    // quitar guiones al principio/final\n    while (limpio.charAt(0) === \"_\") { limpio = limpio.slice(1); }\n    while (limpio.charAt(limpio.length - 1) === \"_\") { limpio = limpio.slice(0, -1); }\n    return \"mp_\" + limpio;\n}\n\n// NUEVO (cu_): misma sanitizacion pero con prefijo \"cu_\", para leer el\n// caudal real instantaneo de cada grupo (lo escribe Pila_de_Datos en cada\n// trama, en \"calcular_resumen (s/z)\"), en vez de la media proyectada.\nfunction sanitizeKeyCu(nombre) {\n    var desde = \"áéíóúÁÉÍÓÚüÜñÑàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛäëïöÄËÏÖ\";\n    var hasta = \"aeiouAEIOUuUnNaeiouAEIOUaeiouAEIOUaeioAEIO\";\n    var out = \"\";\n    var str = String(nombre);\n    for (var i = 0; i < str.length; i++) {\n        var ch = str.charAt(i);\n        var idx = desde.indexOf(ch);\n        out += (idx !== -1) ? hasta.charAt(idx) : ch;\n    }\n    out = out.toLowerCase();\n    var limpio = \"\";\n    for (var j = 0; j < out.length; j++) {\n        var c = out.charAt(j);\n        if ((c >= \"a\" && c <= \"z\") || (c >= \"0\" && c <= \"9\")) {\n            limpio += c;\n        } else {\n            limpio += \"_\";\n        }\n    }\n    while (limpio.indexOf(\"__\") !== -1) { limpio = limpio.replace(\"__\", \"_\"); }\n    while (limpio.charAt(0) === \"_\") { limpio = limpio.slice(1); }\n    while (limpio.charAt(limpio.length - 1) === \"_\") { limpio = limpio.slice(0, -1); }\n    return \"cu_\" + limpio;\n}\n\nfunction parseObj(v) {\n    if (!v) { return {}; }\n    if (typeof v === \"string\") { try { return JSON.parse(v); } catch (e) { return {}; } }\n    if (typeof v === \"object\") { return v; }\n    return {};\n}\nfunction madridOffsetMs(t) {\n    function lastSundayUtc1(y, m) {\n        var last = new Date(Date.UTC(y, m + 1, 0));\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\n    }\n    var y = new Date(t).getUTCFullYear();\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\n}\nfunction fechaLocal(t) {\n    var off = madridOffsetMs(t);\n    var d = new Date(t + off);\n    return d.getUTCFullYear() + \"-\" + (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" + (\"0\" + d.getUTCDate()).slice(-2);\n}\n\nvar NOMBRES = [\"El Torbiscal\", \"Torremarismas\", \"Montera\", \"Don Bartolomé\", \"A-X-1\", \"Santa María Adrián\", \"Santa María Roalón\", \"La Vega\", \"Las Lebreras\", \"Peñon - Maestre -INDESA\", \"Peñon INDESA\", \"A-X-2\", \"Las Arcas\", \"Salinillas Marcelino\", \"Salinillas\", \"El Rancho Marcelino\", \"El Rancho Hermana\", \"El Rosal\", \"A-X-3\", \"Cordobilla Carlos\", \"Cordobilla Tulio\", \"Ranchillo Tulio\", \"Ranchillo Baena\", \"Ranchillo Grupo\", \"A-X-3-BIS\", \"Los Almendrillos\", \"Cordobilla Cordero\", \"Almendrillos Puchal\", \"Hnos. Baena\", \"Almedrillos Altos canal\", \"Almendrillos Altos Marismillas\", \"Agro Montujar\", \"Grupo Palmilla\", \"Palmilla Carlos\", \"El Millonario\", \"Palmilla ICAN\", \"Hnos. Bastos\", \"El Judío\", \"A-X-5\", \"La Condesa\", \"Hornillo-Gilete\", \"Don Alberto\", \"Rosario Nuñez\", \"Merlina Meango\", \"Merlina Piva\", \"Los Huertos\", \"Melendo\", \"El Rosario\",\"Hacienda Hornillo Lora + Leon\", \"Gomez Aparicio\", \"Granaillo Grupo\", \"Trinidad CAVAM\", \"La Raspa\", \"Las Coronas 1 Abonos Jimenez\", \"Cerrado de Miura\", \"Santo Tomás\", \"Grupo El Corzo\", \"Casavacas 1\", \"MatAmarilla Tubarro\", \"Torre Nueva\", \"El Toril Fernando\", \"La Algabarra\", \"Los Angeles Baldisema\", \"Lasarte\", \"Casavacas 2\", \"Carmona 1 Puerto\", \"Algodonales\", \"La Cabaña Gravedad Marqués\", \"Los rubios Jarema\", \"T-II-1-1-3\", \"A-IV-3\", \"La corchuela\", \"V Rancho López Gómez\", \"T-II-1-2\", \"T-II-1-1\", \"Cisman (T) - MD\", \"Grupo Arenoso\", \"Las Crucetas\", \"San Fernando\", \"T-VII-6 Tubería\", \"Rubio Angel\", \"Juan Gómez (T) - 1\", \"T-VII-2\", \"Gilito\", \"T-VII-7A Acequia\", \"Los Becerros\", \"Juan Gomez (10) - 2\", \"Pinto Agrícola\", \"Cortijo Guadajoz\", \"Presa La Gitana desembalse\", \"Real Tesoro\", \"Campanero\", \"El Corredero\", \"Carmona 2\", \"El Alcachofar - 1\", \"El Cerro\", \"Los Angeles Parias\", \"El Toril II\", \"La Cabaña MG\", \"Jarilla\", \"Grupo Algabarra\", \"Matas Verdes\", \"Diputación\", \"Sortes y la botija\", \"Real Club de Golf\", \"La Española\", \"B-II FLUME GATE\", \"Ayala Arenoso\", \"V Rancho Crucetas\", \"A-V-5\", \"T-VII-7\", \"A-V-3 Mejorada\", \"Cisman y los Frailes\", \"T-VII-4\", \"Jaime Perez - Izquierda\", \"El Marchante\", \"Mochales\", \"Trinidad Nufri\", \"Presa-El Rosario Bombeo\", \"Presa La Restinga Eco\", \"Casilla Villegas\", \"Alamo Alto EM\", \"Presa-El Rosario Eco\", \"Casavacas Santa Adela\", \"Crespo Camino\", \"La Algabarrilla\", \"Carmona 1 La Chacona\", \"Carmona 1 Bernal\", \"V Rancho, Barrón\", \"Los rubios Carlos\", \"T-IV-6\", \"V Rancho Cerezuela\", \"A-V-3\", \"T-VII-4-2\", \"El Alcachofar - 2\", \"Barrera\", \"Hacienda Nueva San José\", \"La Cabaña Marqués\", \"El Toril I\", \"El Serafín\", \"T-II-1-4\", \"La Española Desembalse\", \"A-IV-6-1-BIS\", \"V Rancho, Peseta\", \"A IV-4  Bertedona Doña Ana\", \"Tamarán\", \"A-VII-9\", \"Ulloa\", \"A-VII-8\", \"Presa La Gitana Eco\", \"Trinidad L. Rojas\", \"Oidor\", \"Granaillo Leonardo\", \"Crespo Recuerda\", \"La Florida\", \"A IV-4  Zambruno\", \"Hacienda Romana  2 (BALSA)\", \"Pinto ANSAR\", \"Jaime Pérez - Derecha (T)\", \"T-VII-6 Acequia\", \"Presa La Restinga Bombeo\", \"Presa La Gitana Bombeo\", \"Carmona 3\", \"Melitón\", \"La Jurada\", \"Grupo Almonazar\", \"Hacienda Hornillo\", \"A-V-2\", \"A-V-1\", \"A-IV-6-1\", \"A-IV-4\", \"A-VII-1-1 - 1\", \"A-VII-3 (Molinillo)\", \"Presa La Restinga desembalse\", \"Legua Leal\", \"Casilla San Germán\", \"Grupo Cesaro\", \"Huerta Escobedo\", \"A-VII-1-1 - 2\", \"SAT la Romana\", \"Torremarismas CD3\", \"Trinidad Cañaveral\", \"Grupo MatAmarilla\", \"A-IV-5\", \"Los rubios Guayba\", \"El Toruño\", \"La Gitana\", \"Presa-El Rosario Desembalse\", \"Secano de la Motilla\", \"La Cabaña Gravedad INAGRO\", \"Torres Gómez\", \"Los Cabreros\", \"La Famosa\", \"Carmona 1 Los Lares\", \"Grupo Buitrago\", \"T-II-1-2-1\", \"Liebanas\", \"Grupo Cismán\", \"Hacienda Romana canal\", \"Hacienda Oran\", \"El Cuzco\", \"SAT Dehesilla\", \"San Rafael\", \"Frutansa\", \"A-IV-3 Bujalmoro MD\", \"Los Llanos\", \"A-V-4\", \"RV AGRO\", \"Santana\", \"Bujalmoro\", \"V Rancho Cabezuelo\", \"T-VII-5\", \"Granaillo La Milana\", \"A-VII-10 (T)\", \"Las Coronas 2\", \"Trinidad A. Rojas\", \"Alamo Alto MD\", \"Torre Arana\", \"San Juan\", \"Los Santos\", \"La Cabaña Inagro\", \"El Bodegón\", \"Casablanquilla\", \"Las Coronas 1 Casilla León\", \"Antonio López\", \"El Pinganillo\", \"La Encina\", \"Grupo Espartales\", \"El Pino\", \"T-VII-7A Tubería\"];\n\nvar diaHoy = fechaLocal(new Date().getTime());\nvar manuales = parseObj(metadata.ss_manuales_activos_hoy);\nvar guardas = parseObj(metadata.ss_guardas_activos_hoy);\n\nvar totales = { \"0\": 0, \"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0 };\nvar conteos = { \"0\": 0, \"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0 };\nvar debugDesfasados = { \"0\": [], \"1\": [], \"2\": [], \"3\": [], \"4\": [], \"5\": [] };\n\n// NUEVO: totales para \"Consumo actual por sector\" (caudal_sX). Misma\n// prioridad que caudal_sX en \"calcular_resumen (s/z)\" (Pila): manual si\n// esta activo hoy, si no automatico de hoy -- SIN guarda (el guarda solo\n// entra en la media proyectada, nunca en el consumo actual). Se recalculan\n// aqui, en el mismo ciclo instantaneo, para que un manual recien guardado\n// se refleje al momento tambien en \"Consumo actual por sector\" y no solo\n// en \"Media proyectada\", igual que se pidió.\nvar totalesConsumo = { \"0\": 0, \"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0 };\nvar conteosConsumo = { \"0\": 0, \"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0 };\n\nfor (var i = 0; i < NOMBRES.length; i++) {\n    var nombre = NOMBRES[i];\n    var clave = \"ss_\" + sanitizeKey(nombre);\n    var m = parseObj(metadata[clave]);\n\n    var manual = manuales[nombre];\n    var manualActivo = (manual !== undefined && manual.dia === diaHoy);\n    var guarda = guardas[nombre];\n    var guardaActivo = (guarda !== undefined && guarda.dia === diaHoy);\n    var automaticoHoyValido = (m.valor !== undefined && parseFloat(m.valor) > 0 && m.ts !== undefined && fechaLocal(parseInt(m.ts)) === diaHoy);\n\n    // --- Media proyectada (con guarda como ultimo recurso) ---\n    // Prioridad: 1) manual  2) caudal automatico (de hoy)  3) guarda -- solo\n    // se usa el guarda cuando NI el manual NI el automatico tienen dato valido.\n    var valor, sector;\n    if (manualActivo) {\n        valor = parseFloat(manual.valor) || 0;\n        sector = manual.sector;\n    } else if (automaticoHoyValido) {\n        // OJO: se exige > 0 a proposito -- los caudalimetros SIEMPRE reportan\n        // algo (aunque sea 0), asi que sin este chequeo el guarda nunca\n        // llegaria a activarse (casi siempre habria un \"automatico\" presente).\n        valor = parseFloat(m.valor) || 0;\n        sector = m.sector;\n    } else if (guardaActivo) {\n        valor = parseFloat(guarda.valor) || 0;\n        sector = guarda.sector;\n    } else {\n        // Ni manual, ni automatico de hoy, ni guarda -- no cuenta.\n        var sKeyDebug = m.sector !== undefined ? String(m.sector).replace(/[^0-9]/g, \"\") : \"\";\n        if (debugDesfasados[sKeyDebug] !== undefined) {\n            debugDesfasados[sKeyDebug].push(nombre + \"(\" + (m.ts ? fechaLocal(parseInt(m.ts)) : \"sin_ts\") + \")\");\n        }\n        valor = undefined;\n        sector = undefined;\n    }\n\n    if (valor !== undefined) {\n        var sKey = sector !== undefined ? String(sector).replace(/[^0-9]/g, \"\") : \"\";\n        if (sKey !== \"\" && totales[sKey] !== undefined) {\n            totales[sKey] += valor;\n            conteos[sKey] += 1;\n        }\n    }\n\n    // --- Consumo actual (sin guarda), leyendo cu_ (caudal real instantaneo,\n    // el que escribe \"calcular_resumen (s/z)\" en cada trama de la Pila) en\n    // vez de mp_ (que es la media proyectada, no el instante) -- asi este\n    // calculo y el de la propia trama nunca dan un numero distinto y no se\n    // pisan entre si.\n    var claveCu = \"ss_\" + sanitizeKeyCu(nombre);\n    var mc = parseObj(metadata[claveCu]);\n    var automaticoCuHoyValido = (mc.ts !== undefined && fechaLocal(parseInt(mc.ts)) === diaHoy);\n\n    var valorConsumo, sectorConsumo;\n    if (manualActivo) {\n        valorConsumo = parseFloat(manual.valor) || 0;\n        sectorConsumo = manual.sector;\n    } else if (automaticoCuHoyValido) {\n        valorConsumo = parseFloat(mc.valor) || 0;\n        sectorConsumo = mc.sector;\n    } else {\n        continue;\n    }\n\n    var sKeyConsumo = sectorConsumo !== undefined ? String(sectorConsumo).replace(/[^0-9]/g, \"\") : \"\";\n    if (sKeyConsumo === \"\" || totalesConsumo[sKeyConsumo] === undefined) { continue; }\n    totalesConsumo[sKeyConsumo] += valorConsumo;\n    conteosConsumo[sKeyConsumo] += 1;\n}\n\n// Si NINGUN grupo de un sector tiene dato de \"hoy\" todavia (conteo 0), no se\n// emite esa clave -- un sector sin dato es distinto de un sector que vale 0 de\n// verdad, y no debe colarse como una lectura real en el acumulador diario\n// (nodo \"Calcular media diaria (incremental)\"), que interpretaria cualquier\n// numero presente como una muestra valida.\nvar valores = {};\nvar totalProyectado = 0;\nvar totalConteo = 0;\nfor (var s in totales) {\n    if (conteos[s] === 0) { continue; }\n    valores[\"media_proyectada_s\" + s] = Math.round(totales[s] * 100) / 100;\n    if (s !== \"0\") { totalProyectado += totales[s]; totalConteo += conteos[s]; }\n}\nif (totalConteo > 0) {\n    valores[\"media_proyectada_total\"] = Math.round(totalProyectado * 100) / 100;\n}\n\n// NUEVO: emitir tambien caudal_sX (Consumo actual por sector) en este mismo\n// ciclo instantaneo, con el manual ya incluido.\nvar totalConsumo = 0;\nvar totalConteoConsumo = 0;\nfor (var sc in totalesConsumo) {\n    if (conteosConsumo[sc] === 0) { continue; }\n    valores[\"caudal_s\" + sc] = Math.round(totalesConsumo[sc] * 100) / 100;\n    if (sc !== \"0\") { totalConsumo += totalesConsumo[sc]; totalConteoConsumo += conteosConsumo[sc]; }\n}\nif (totalConteoConsumo > 0) {\n    valores[\"caudal_total\"] = Math.round(totalConsumo * 100) / 100;\n}\n\nfor (var sd in debugDesfasados) {\n    valores[\"debug_desfasados_s\" + sd] = debugDesfasados[sd].join(\", \");\n}\n\nreturn { msg: valores, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1790249092042,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a00-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Calcular Totales Sector (instantaneo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2677,
+        "layoutY" : 200
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : true,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786364228523,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a01-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar Media Proyectada Sectores (instantaneo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2277,
+        "layoutY" : 700
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function extraerGuarda(msg) {\n    if (msg.caudal_guarda !== undefined && msg.caudal_guarda !== null) {\n        return { valor: msg.caudal_guarda, ts: null };\n    }\n    if (Array.isArray(msg.timeseries)) {\n        for (var i = 0; i < msg.timeseries.length; i++) {\n            var p = msg.timeseries[i];\n            if (p && p.values && p.values.caudal_guarda !== undefined && p.values.caudal_guarda !== null) {\n                return { valor: p.values.caudal_guarda, ts: p.ts };\n            }\n        }\n    }\n    return null;\n}\n\nreturn extraerGuarda(msg) !== null;",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786424805622,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a02-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Filtro: caudal_guarda",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2477,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "gr_nombre"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a03-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Nombre del Grupo_Riego (guarda)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2677,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Esta",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a04-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Ir a Sector (relación Esta) (guarda)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2877,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "gr_sector"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a05-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Nombre del Sector (guarda)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3077,
+        "layoutY" : 700
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function extraerGuarda(msg) {\n    if (msg.caudal_guarda !== undefined && msg.caudal_guarda !== null) {\n        return { valor: msg.caudal_guarda, ts: null };\n    }\n    if (Array.isArray(msg.timeseries)) {\n        for (var i = 0; i < msg.timeseries.length; i++) {\n            var p = msg.timeseries[i];\n            if (p && p.values && p.values.caudal_guarda !== undefined && p.values.caudal_guarda !== null) {\n                return { valor: p.values.caudal_guarda, ts: p.ts };\n            }\n        }\n    }\n    return null;\n}\n\nfunction madridOffsetMs(t) {\n    function lastSundayUtc1(y, m) {\n        var last = new Date(Date.UTC(y, m + 1, 0));\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\n    }\n    var y = new Date(t).getUTCFullYear();\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\n}\n\nfunction fechaLocal(t) {\n    var d = new Date(t + madridOffsetMs(t));\n    return d.getUTCFullYear() + \"-\" +\n        (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" +\n        (\"0\" + d.getUTCDate()).slice(-2);\n}\n\nvar extraido = extraerGuarda(msg);\nif (extraido === null) {\n    return { msg: msg, metadata: metadata, msgType: msgType };\n}\n\nvar valor = parseFloat(extraido.valor);\nvar tsValor = extraido.ts ? parseInt(extraido.ts) : (metadata.ts ? parseInt(metadata.ts) : new Date().getTime());\nvar ahora = new Date().getTime();\n\nvar fechaValor = fechaLocal(tsValor);\nvar fechaHoy   = fechaLocal(ahora);\n\n// Solo activa el override si el punto guardado cae en el dia de HOY (fecha\n// completa, no solo el numero de dia, para que no se reactive un mes despues).\nif (fechaValor !== fechaHoy) {\n    return { msg: msg, metadata: metadata, msgType: msgType };\n}\n\nmetadata.gr_valor_guarda = valor.toString();\nmetadata.gr_dia_guarda = fechaHoy;\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a06-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar override guarda (tz Madrid)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3277,
+        "layoutY" : 700
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return metadata.gr_valor_guarda !== undefined && metadata.gr_valor_guarda !== null;",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a07-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "¿Guarda valido para hoy?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3477,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function madridOffsetMs(t) {\r\n    function lastSundayUtc1(y, m) {\r\n        var last = new Date(Date.UTC(y, m + 1, 0));\r\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\r\n    }\r\n    var y = new Date(t).getUTCFullYear();\r\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\r\n}\r\n\r\nvar ahora = new Date().getTime();\r\nvar off = madridOffsetMs(ahora);\r\nvar d = new Date(ahora + off);\r\nd.setUTCHours(0, 0, 0, 0);\r\nvar inicio_dia = d.getTime() - off;\r\nvar MS_DIA = 86400000;\r\n// Fin del dia de HOY (23:59:59.999 hora Madrid), igual formula que ya usa\r\n// 'Generar Proyeccion Futura' en la Pila -- el campo calculado de ThingsBoard\r\n// solo tiene que comparar este numero contra la hora actual, sin tener que\r\n// entender fechas ni zonas horarias por su cuenta.\r\nvar guarda_expira_ts = inicio_dia + MS_DIA - 1;\r\n\r\nreturn {\r\n    msg: {\r\n        guarda_valor: parseFloat(metadata.gr_valor_guarda),\r\n        guarda_expira_ts: guarda_expira_ts\r\n    },\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a08-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar atributos guarda (por grupo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3677,
+        "layoutY" : 620
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a09-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar guarda en el propio grupo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3477,
+        "layoutY" : 780
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "CRBG_Resumen_Caudales",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b0a0a-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cambia a Resumen (escribir guardas)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3677,
+        "layoutY" : 780
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "guardas_activos_hoy" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3110-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar guardas_activos_hoy actual",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3877,
+        "layoutY" : 780
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function parseObj(v) {\n    if (!v) { return {}; }\n    if (typeof v === \"string\") { try { return JSON.parse(v); } catch (e) { return {}; } }\n    if (typeof v === \"object\") { return v; }\n    return {};\n}\nvar mapa = parseObj(metadata.ss_guardas_activos_hoy);\nvar dia = metadata.gr_dia_guarda;\n\n// Limpieza: descarta del mapa cualquier entrada que no sea de hoy (comparando\n// fecha completa AAAA-MM-DD), aunque no llegue ningun guarda nuevo justo al\n// cambiar de dia.\nvar mapaLimpio = {};\nfor (var k in mapa) {\n    if (mapa.hasOwnProperty(k) && mapa[k].dia === dia) {\n        mapaLimpio[k] = mapa[k];\n    }\n}\n\nmapaLimpio[metadata.gr_nombre] = {\n    valor: parseFloat(metadata.gr_valor_guarda),\n    dia: dia,\n    sector: metadata.gr_sector ? String(metadata.gr_sector).replace(/[^0-9]/g, \"\") : metadata.gr_sector\n};\n\nreturn {\n    msg: { guardas_activos_hoy: JSON.stringify(mapaLimpio) },\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3111-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Actualizar mapa guardas_activos_hoy",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4077,
+        "layoutY" : 780
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785834679783,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3112-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar guardas_activos_hoy",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 102,
+        "layoutY" : 344
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return typeof msg.operaciones_caudalimetros !== 'undefined';",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789973892287,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3113-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Filtro: cambio de operaciones_caudalimetros (GR)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 42,
+        "layoutY" : 470
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function parseObj(value) {\r\n    if (!value) { return {}; }\r\n    if (typeof value === \"string\") {\r\n        try { return JSON.parse(value); } catch (e) { return {}; }\r\n    }\r\n    if (typeof value === \"object\") { return value; }\r\n    return {};\r\n}\r\nvar mapa = parseObj(msg.operaciones_caudalimetros);\r\nvar lista = [];\r\nfor (var nombre in mapa) {\r\n    if (mapa.hasOwnProperty(nombre)) {\r\n        lista.push({ nombre: nombre, signo: mapa[nombre], mapaCompleto: mapa });\r\n    }\r\n}\r\nreturn { msg: lista, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789973892287,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3114-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Filtro: cambio de operaciones_caudalimetros (GR)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 39,
+        "layoutY" : 569
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789973892287,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3115-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Split entradas operaciones (GR)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 38,
+        "layoutY" : 673
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "$[nombre]",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789973892287,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3116-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cambia al Caudalimetro (por nombre)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 38,
+        "layoutY" : 777
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ "DEVICE" ],
+            "negate" : false
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789973892287,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3117-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Ir a la Pila (relacion inversa Contains)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 41,
+        "layoutY" : 853
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "latestTsKeyNames" : [ ],
+        "serverAttributeNames" : [ "operaciones_caudalimetros_v1" ],
+        "sharedAttributeNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789973892287,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3118-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar operaciones_caudalimetros_v1 actual (Pila)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 43,
+        "layoutY" : 944
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function parseObj(value) {\r\n    if (!value) { return {}; }\r\n    if (typeof value === \"string\") {\r\n        try { return JSON.parse(value); } catch (e) { return {}; }\r\n    }\r\n    if (typeof value === \"object\") { return value; }\r\n    return {};\r\n}\r\nvar mapa = parseObj(metadata.ss_operaciones_caudalimetros_v1);\r\n\r\n// Se vuelca aqui el mapa COMPLETO que llego del widget (todos los\r\n// caudalimetros del grupo). Si alguno no pertenece a esta Pila no hace\r\n// dano, simplemente no se usara luego. Asi, aunque dos caudalimetros del\r\n// mismo grupo lleguen casi a la vez y se \"pisen\" al escribir, el que gane\r\n// la carrera ya trae todo, no se pierde ninguno.\r\nvar completo = (msg.mapaCompleto && typeof msg.mapaCompleto === \"object\") ? msg.mapaCompleto : {};\r\nfor (var k in completo) {\r\n    if (completo.hasOwnProperty(k)) {\r\n        mapa[k] = completo[k];\r\n    }\r\n}\r\nif (msg.nombre) {\r\n    mapa[msg.nombre] = msg.signo;\r\n}\r\n\r\nreturn {\r\n    msg: { operaciones_caudalimetros_v1: JSON.stringify(mapa) },\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789973892287,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b3119-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "Actualizar mapa operaciones_caudalimetros_v1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 373,
+        "layoutY" : 959
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ae5b311a-b020-11f1-96bd-cdc983098999"
+      },
+      "name" : "save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

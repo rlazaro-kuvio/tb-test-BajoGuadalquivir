@@ -1,0 +1,374 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "Caudalímetros Confederación",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "a9ef082b-5ac1-2c0a-69df-94c2bfb3bc18" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1782647747325,
+                  "endTimeMs" : 1782734147325
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "entitiesTitle" : "Cuadalímetros",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
+              "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "pageStepCount" : 3,
+              "pageStepIncrement" : 10,
+              "defaultSortOrder" : "Posicion_f",
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
+            },
+            "title" : "Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "9c1ab34f-8399-3ef9-17bf-cdac19235ead",
+              "filterId" : "0ff6d255-318d-cab2-1ca1-d017ea7aec57",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Nombre",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.07866242131580159
+              }, {
+                "name" : "REM Y POSIC CAU",
+                "type" : "attribute",
+                "label" : "REM Y POSIC CAU",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible",
+                  "disableSorting" : false
+                },
+                "_hash" : 0.4730074603231792,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "caudal",
+                "type" : "timeseries",
+                "label" : "Caudal",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.10592908644328192,
+                "units" : "L/s",
+                "decimals" : 0
+              }, {
+                "name" : "caudal_total_m3",
+                "type" : "timeseries",
+                "label" : "Volumen Total",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.10891955137914833,
+                "aggregationType" : "NONE",
+                "units" : "m³",
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "COORDENADAS",
+                "type" : "attribute",
+                "label" : "COORDENADAS",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.8185686299193552
+              }, {
+                "name" : "Posicion_f",
+                "type" : "attribute",
+                "label" : "Posicion_f",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible",
+                  "disableSorting" : false
+                },
+                "_hash" : 0.6819611943487258,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Confederacion_revisado",
+                "type" : "attribute",
+                "label" : "Confederacion_revisado",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "customTitle" : "",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "",
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible",
+                  "disableSorting" : false
+                },
+                "_hash" : 0.3340844462127014,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "PK",
+                "type" : "attribute",
+                "label" : "PK",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.7873397543564462
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true,
+            "titleTooltip" : "",
+            "borderRadius" : "8px",
+            "widgetStyle" : { },
+            "widgetCss" : ".tb-widget-container{border: 2px solid #5F7F6E;border-radius: 10px;}\n.tb-widget-header{background-color:#33513A}\n.tb-widget-header, .tb-widget-header *{color:#ffffff !important}\n.mat-header-row{background-color:#33513A}\nthead{background-color:#33513A}\n.mat-row, tbody tr{box-sizing:border-box; border-left:4px solid transparent;}\n.mat-row:nth-child(3n+1), tbody tr:nth-child(3n+1){border-left-color:#5F8FC4}\n.mat-row:nth-child(3n+2), tbody tr:nth-child(3n+2){border-left-color:#7E9412}\n.mat-row:nth-child(3n+3), tbody tr:nth-child(3n+3){border-left-color:#5F7F6E}\n.mat-row:nth-child(even), tbody tr:nth-child(even){background-color:#F3F6F0}\n.mat-row:hover, tbody tr:hover{background-color:#EEF3DC}",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a9ef082b-5ac1-2c0a-69df-94c2bfb3bc18"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Caudalímetros Confederación",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "a9ef082b-5ac1-2c0a-69df-94c2bfb3bc18" : {
+                  "sizeX" : 24,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "9c1ab34f-8399-3ef9-17bf-cdac19235ead" : {
+          "id" : "9c1ab34f-8399-3ef9-17bf-cdac19235ead",
+          "alias" : "caus",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "Caudalimetro" ],
+            "deviceNameFilter" : ""
+          }
+        }
+      },
+      "filters" : {
+        "0ff6d255-318d-cab2-1ca1-d017ea7aec57" : {
+          "id" : "0ff6d255-318d-cab2-1ca1-d017ea7aec57",
+          "filter" : "Confederaciones solo",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ATTRIBUTE",
+              "key" : "Confederacion_revisado"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "EQUAL",
+                "value" : {
+                  "defaultValue" : true,
+                  "dynamicValue" : null
+                },
+                "type" : "BOOLEAN"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0,
+                "unit" : ""
+              }
+            } ]
+          } ],
+          "editable" : true
+        }
+      },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1791354440646,
+            "endTimeMs" : 1791440840646
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : false,
+        "showEntitiesSelect" : false,
+        "showDashboardTimewindow" : false,
+        "showDashboardExport" : false,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : false,
+        "showUpdateDashboardImage" : false,
+        "dashboardCss" : ""
+      }
+    },
+    "name" : "Caudalímetros Confederación",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "4f3b42f0-c2e1-11f1-a8c1-eb55970e4d03"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

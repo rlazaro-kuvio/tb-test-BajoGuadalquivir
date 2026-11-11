@@ -1,0 +1,130 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "24cb1e20-8c11-11f1-9a1a-412768cf7861"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b7f3d380-898d-11f1-9a1a-412768cf7861"
+    },
+    "name" : "Sensor electrico",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 2,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 846,
+        "layoutY" : 146
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1755125159744,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b7fbc2c0-898d-11f1-9a1a-412768cf7861"
+      },
+      "name" : "e",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 568,
+        "layoutY" : 159
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var inner;\r\n\r\ntry {\r\n    inner = typeof msg.rawData === \"string\"\r\n        ? JSON.parse(msg.rawData)\r\n        : msg.rawData;\r\n} catch (e) {\r\n    return [];\r\n}\r\n\r\nvar outputMessages = [];\r\n\r\n\r\nvar LECTURA_INICIAL = parseInt(metadata.ss_consumo_inicial);\r\n\r\nfunction timestamp(t) {\r\n    var a = String(t || \"\").match(/\\d+/g);\r\n\r\n    if (!a || a.length < 6) {\r\n        return null;\r\n    }\r\n\r\n    return new Date(\r\n        Number(a[0]),\r\n        Number(a[1]) - 1,\r\n        Number(a[2]),\r\n        Number(a[3]),\r\n        Number(a[4]),\r\n        Number(a[5])\r\n    ).getTime();\r\n}\r\n\r\nfunction signed32(value) {\r\n    return value >= 0x80000000\r\n        ? value - 0x100000000\r\n        : value;\r\n}\r\n\r\nfunction decode(payload) {\r\n    if (typeof payload !== \"string\") {\r\n        return null;\r\n    }\r\n\r\n    payload = payload.replace(/\\s/g, \"\");\r\n\r\n    /*\r\n     * 57 bytes:\r\n     * 1 byte PAYVER + 56 bytes de datos.\r\n     */\r\n    if (!/^[0-9a-f]{114}$/i.test(payload)) {\r\n        return null;\r\n    }\r\n\r\n    var payver = parseInt(payload.substr(0, 2), 16);\r\n\r\n    if (payver !== 1) {\r\n        return null;\r\n    }\r\n\r\n    var v = [];\r\n\r\n    \r\n    for (var i = 0; i < 14; i++) {\r\n        var p = 2 + i * 8;\r\n\r\n        var reordered =\r\n            payload.substr(p + 4, 4) +\r\n            payload.substr(p, 4);\r\n\r\n        v[i] = parseInt(reordered, 16);\r\n    }\r\n\r\n    var pfRaw = signed32(v[13]);\r\n\r\n    return {\r\n        payver: payver,\r\n\r\n        energia_importada_L1_raw: v[0],\r\n        energia_importada_L2_raw: v[1],\r\n        energia_importada_L3_raw: v[2],\r\n\r\n        energia_importada_total_raw: v[3],\r\n        energia_importada_total_suma:\r\n            v[3] + LECTURA_INICIAL,\r\n\r\n        tension_L1_V: v[4],\r\n        tension_L2_V: v[5],\r\n        tension_L3_V: v[6],\r\n\r\n        corriente_L1_raw: v[7],\r\n        corriente_L2_raw: v[8],\r\n        corriente_L3_raw: v[9],\r\n\r\n        potencia_activa_total_raw: signed32(v[10]),\r\n        potencia_reactiva_total_raw: signed32(v[11]),\r\n        potencia_aparente_total_raw: v[12],\r\n\r\n        factor_potencia_total_raw: pfRaw,\r\n        factor_potencia_total: pfRaw / 1000\r\n    };\r\n}\r\n\r\nfunction add(payload, time, actual) {\r\n    var values = decode(payload);\r\n\r\n    if (!values) {\r\n        return;\r\n    }\r\n\r\n    var ts = timestamp(time);\r\n\r\n    if (ts === null) {\r\n        return;\r\n    }\r\n\r\n    if (actual) {\r\n        values.battery = inner.battery;\r\n        values.signal = inner.signal;\r\n    }\r\n\r\n    outputMessages.push({\r\n        msg: {\r\n            ts: ts,\r\n            values: values\r\n        },\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    });\r\n}\r\n\r\n// Lectura actual\r\nadd(inner.Payload, inner.time, true);\r\n\r\n// Lecturas históricas\r\nvar historicalKeys = [];\r\n\r\nfor (var key in inner) {\r\n    if (\r\n        Object.prototype.hasOwnProperty.call(inner, key) &&\r\n        /^\\d+$/.test(key) &&\r\n        Array.isArray(inner[key])\r\n    ) {\r\n        historicalKeys.push(Number(key));\r\n    }\r\n}\r\n\r\nhistoricalKeys.sort(function (a, b) {\r\n    return a - b;\r\n});\r\n\r\nfor (var j = 0; j < historicalKeys.length; j++) {\r\n    var historical = inner[String(historicalKeys[j])];\r\n\r\n    if (historical.length >= 2) {\r\n        add(historical[0], historical[1], false);\r\n    }\r\n}\r\n\r\nreturn outputMessages;",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785499656630,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b7fbc2c1-898d-11f1-9a1a-412768cf7861"
+      },
+      "name" : "transf",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 289,
+        "layoutY" : 162
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "latestTsKeyNames" : [ ],
+        "serverAttributeNames" : [ "consumo_inicial" ],
+        "sharedAttributeNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786018888069,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "24cb1e20-8c11-11f1-9a1a-412768cf7861"
+      },
+      "name" : "consumo inicial",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

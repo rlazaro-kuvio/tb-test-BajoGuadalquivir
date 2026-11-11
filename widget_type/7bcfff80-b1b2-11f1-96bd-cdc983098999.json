@@ -1,0 +1,33 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "inicializador",
+    "name" : "inicializador",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div></div>\r\n",
+      "templateCss" : "div { display: none; }\r\n",
+      "controllerScript" : "self.onInit = function() {\r\n    self._riegoTimewindowHandler = function(e) {\r\n        var ts = parseInt(e.detail.ts);\r\n        if (!ts || isNaN(ts)) return;\r\n\r\n        var start = new Date(ts);\r\n        start.setHours(0, 0, 0, 0);\r\n        var end = new Date(ts);\r\n        end.setDate(end.getDate() + 1);\r\n        end.setHours(0, 0, 1, 0);\r\n\r\n        // Desde el dashboard raíz esto SÍ funciona y afecta a los popups\r\n        self.ctx.dashboard.onUpdateTimewindow(start.getTime(), end.getTime());\r\n    };\r\n\r\n    window.addEventListener('riego-set-timewindow', self._riegoTimewindowHandler);\r\n};\r\n\r\nself.onDestroy = function() {\r\n    if (self._riegoTimewindowHandler) {\r\n        window.removeEventListener('riego-set-timewindow', self._riegoTimewindowHandler);\r\n        self._riegoTimewindowHandler = null;\r\n    }\r\n};\r\n",
+      "settingsDirective" : "tb-html-card-widget-settings",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"cardHtml\":\"<div class='card'>HTML code here</div>\",\"cardCss\":\".card {\\n    font-weight: bold;\\n    font-size: 32px;\\n    color: #999;\\n    width: 100%;\\n    height: 100%;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n}\"},\"title\":\"HTML Card\",\"dropShadow\":true}"
+    },
+    "externalId" : null,
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "7bcfff80-b1b2-11f1-96bd-cdc983098999"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Calcula la referencia catastral (SIGPAC) de los 18 nodos a partir de sus coordenadas reales y la guarda como atributo de servidor. Se ejecuta una sola vez (msgCount=1) porque el dato no cambia; para volver a calcularla, reeditar el nodo Generador y desplegar de nuevo."
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "89bb6e80-8733-11f1-9a1a-412768cf7861"
+    },
+    "name" : "SIGPAC Referencia Catastral",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 6,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 260,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 100000,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var devices = [\n  {nodeid: 10389101, lat: 37.12840, lon: -5.84690},\n  {nodeid: 10389102, lat: 37.55470, lon: -5.81200},\n  {nodeid: 10389201, lat: 37.13540, lon: -5.84660},\n  {nodeid: 10389202, lat: 37.51030, lon: -5.88500},\n  {nodeid: 10390101, lat: 37.12590, lon: -5.85040},\n  {nodeid: 10390102, lat: 37.44500, lon: -5.89260},\n  {nodeid: 10390201, lat: 37.46540, lon: -5.87920},\n  {nodeid: 10390202, lat: 37.01510, lon: -5.92290},\n  {nodeid: 10391101, lat: 37.59280, lon: -5.60200},\n  {nodeid: 10391102, lat: 37.05580, lon: -5.91490},\n  {nodeid: 10391201, lat: 37.21940, lon: -5.96330},\n  {nodeid: 10405101, lat: 37.00970, lon: -5.95550},\n  {nodeid: 10405102, lat: 37.44840, lon: -5.89060},\n  {nodeid: 10405201, lat: 37.59440, lon: -5.60930},\n  {nodeid: 10406101, lat: 37.22490, lon: -5.95820},\n  {nodeid: 10406201, lat: 37.59380, lon: -5.61410},\n  {nodeid: 10406202, lat: 37.00980, lon: -5.95500},\n  {nodeid: 10407102, lat: 37.52290, lon: -5.85740}\n];\n\nvar msg = devices;\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "var devices = [\n  {nodeid: 10389101, lat: 37.12840, lon: -5.84690},\n  {nodeid: 10389102, lat: 37.55470, lon: -5.81200},\n  {nodeid: 10389201, lat: 37.13540, lon: -5.84660},\n  {nodeid: 10389202, lat: 37.51030, lon: -5.88500},\n  {nodeid: 10390101, lat: 37.12590, lon: -5.85040},\n  {nodeid: 10390102, lat: 37.44500, lon: -5.89260},\n  {nodeid: 10390201, lat: 37.46540, lon: -5.87920},\n  {nodeid: 10390202, lat: 37.01510, lon: -5.92290},\n  {nodeid: 10391101, lat: 37.59280, lon: -5.60200},\n  {nodeid: 10391102, lat: 37.05580, lon: -5.91490},\n  {nodeid: 10391201, lat: 37.21940, lon: -5.96330},\n  {nodeid: 10405101, lat: 37.00970, lon: -5.95550},\n  {nodeid: 10405102, lat: 37.44840, lon: -5.89060},\n  {nodeid: 10405201, lat: 37.59440, lon: -5.60930},\n  {nodeid: 10406101, lat: 37.22490, lon: -5.95820},\n  {nodeid: 10406201, lat: 37.59380, lon: -5.61410},\n  {nodeid: 10406202, lat: 37.00980, lon: -5.95500},\n  {nodeid: 10407102, lat: 37.52290, lon: -5.85740}\n];\n\nvar msg = devices;\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "originatorId" : null,
+        "originatorType" : "RULE_NODE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89c9ed70-8733-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Generador 18 nodos (coords reales)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 560,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785484044448,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89ca1480-8733-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Split por nodo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 860,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "metadata.nodeid = String(msg.nodeid);\nmetadata.lat = String(msg.lat);\nmetadata.lon = String(msg.lon);\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89ca1481-8733-11f1-9a1a-412768cf7861"
+      },
+      "name" : "datos a metadatos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1160,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "Nodo_${nodeid}",
+        "relationsQuery" : null
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785484115371,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89ca1482-8733-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Cambia a Nodo_XXXX",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Ojo: el servicio del Catastro solo acepta CoorX/CoorY (no Coordenada_X/Coordenada_Y) en este endpoint .svc/json",
+        "layoutX" : 1460,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "http://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCoordenadas.svc/json/Consulta_RCCOOR?CoorX=$[lon]&CoorY=$[lat]&SRS=EPSG:4326",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : 10000,
+        "maxParallelRequestsCount" : 0,
+        "headers" : { },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "maxInMemoryBufferSizeInKb" : 256
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785484115371,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89ca1483-8733-11f1-9a1a-412768cf7861"
+      },
+      "name" : "REST call Catastro",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1760,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var result = msg.Consulta_RCCOORResult;\r\nvar out = {};\r\nif (result && result.coordenadas && result.coordenadas.coord && result.coordenadas.coord.length > 0) {\r\n  var coord = result.coordenadas.coord[0];\r\n  out.referencia_catastral = coord.pc.pc1 + coord.pc.pc2;\r\n  out.sigpac_desc = coord.ldt;\r\n} else {\r\n  out.sigpac_error = (result && result.lerr && result.lerr[0]) ? result.lerr[0].des : \"respuesta inesperada\";\r\n}\r\nreturn { msg: out, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785484115371,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89ca1484-8733-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Extrae SIGPAC",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2060,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785484487911,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89ca3b90-8733-11f1-9a1a-412768cf7861"
+      },
+      "name" : "Guarda atributo SIGPAC",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

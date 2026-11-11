@@ -1,0 +1,432 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Ingesta Qampo. Patron poller: la apikey se carga de un atributo del dispositivo 'Qampo Poller' (sin secretos en el script). Descubrimiento dinamico via /devices. Creacion NATIVA de dispositivos con nombre q-NODEID (p.ej. q-10391101). Guarda serie histórica completa y escribe lat/lon/owner/funcion como atributos de servidor."
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "2b5261c0-d754-11f1-978c-dfd970d8cc3e"
+    },
+    "name" : "Ingesta Qampo",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "Pon como Originador el dispositivo 'Qampo Poller' (igual que en AgZoom).",
+        "layoutX" : 130,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1800,
+        "scriptLang" : "TBEL",
+        "jsScript" : "return { msg: {}, metadata: {}, msgType: \"QAMPO_TICK\" };\n",
+        "tbelScript" : "return { msg: {}, metadata: {}, msgType: \"QAMPO_TICK\" };\n",
+        "originatorId" : "5b7eb3b0-8b2f-11f1-9a1a-412768cf7861",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b612ed0-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Disparador (cada 30 min)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Lee el atributo de servidor 'qampo_apikey' del poller como ss_qampo_apikey.",
+        "layoutX" : 340,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "qampo_apikey" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false,
+        "tellFailureIfAbsent" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b612ed1-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Cargar apikey Qampo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "GET /devices. La apikey viene del atributo del poller.",
+        "layoutX" : 560,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://api.qampo.es/apiv2/api/devices",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : "30000",
+        "maxParallelRequestsCount" : "4",
+        "headers" : {
+          "Content-Type" : "application/json",
+          "apikey" : "${ss_qampo_apikey}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b6155e0-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Lista dispositivos Qampo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 780,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b617cf0-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Un dispositivo por mensaje",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Nombre del dispositivo: q-NODEID. Perfil segun sensores.",
+        "layoutX" : 1000,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Un dispositivo de /devices. Clasifica por sensores REALMENTE conectados\n// (realm != '-' y sensor != 'Not Connected'); prepara nombre, tipo, coords y ventana.\n// NOMBRE: todos los equipos Qampo se llaman q-NODEID (p.ej. q-10391101).\n// El tipo (perfil de dispositivo) se sigue clasificando por sensores.\nvar dev = msg;\nvar nodeid = String(dev.id);\nvar hasSoil = false, hasWeather = false;\nvar sensors = dev.sensors || [];\nfor (var i = 0; i < sensors.length; i++) {\n  var s = sensors[i];\n  if (!s || s.sensor === 'Not Connected') { continue; }\n  if (s.realm === 'soil') { hasSoil = true; }\n  if (s.realm === 'weather') { hasWeather = true; }\n}\nvar deviceType;\nif (hasSoil && hasWeather) { deviceType = 'Estacion agroclimatica'; }\nelse if (hasWeather) { deviceType = 'Estacion meteorologica'; }\nelse if (hasSoil) { deviceType = 'Sonda de humedad de suelo'; }\nelse { deviceType = 'Dispositivo Qampo'; }\n\nmetadata.nodeid = nodeid;\nmetadata.deviceType = deviceType;\nmetadata.deviceName = 'q-' + nodeid;\n\nvar coords = dev.coordinates || {};\nmetadata.lat = (coords.latitude != null) ? String(coords.latitude) : '';\nmetadata.lon = (coords.longitude != null) ? String(coords.longitude) : '';\nmetadata.owner = dev.owner || '';\n\nvar windowHours = 6;\nvar now = Date.now();\nmetadata.ts_end = String(now);\nmetadata.ts_start = String(now - windowHours * 60 * 60 * 1000);\n\nreturn { msg: {}, metadata: metadata, msgType: 'POST_TELEMETRY_REQUEST' };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b617cf1-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Clasifica + ventana",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Todas las variables; Qampo devuelve solo las del nodo.",
+        "layoutX" : 1220,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://api.qampo.es/apiv2/api/getValues?nodeid=${nodeid}&ts_start=${ts_start}&ts_end=${ts_end}&sensors=agroan_coldhours,agroan_deltat,agroan_frozenhours,agroan_hothours,agroan_itday,agroan_prmed,agroan_tef,agroan_th,eto_pm,exthum,exttemp,irrigation_1_1,irrigsumday,rain_1,soil_ce_4,soil_hum_1,soil_hum_2,soil_hum_3,soil_temp_5,solar_radiation_1,vpd,water_ce_2,weather_accsr,weather_coldcompensatedh,weather_hrmax,weather_hrmed,weather_hrmin,weather_sumrain,weather_tmax,weather_tmed,weather_wpred,weather_wsmax,weather_wsmed,wind_direction_3,wind_speed_2&utc=true",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : true,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : "30000",
+        "maxParallelRequestsCount" : "4",
+        "headers" : {
+          "Content-Type" : "application/json",
+          "apikey" : "${ss_qampo_apikey}"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "maxInMemoryBufferSizeInKb" : 25000
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b617cf2-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "getValues Qampo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1440,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// getValues { sensor:[{value,timestamp}] } -> telemetria TB [{ts,values}] (historico completo).\n//\n// CORRECCION DE HORA: con utc=true, Qampo entrega los timestamps asumiendo UTC+1 fijo\n// (hora estandar de Espana, SIN horario de verano). En verano (CEST) eso queda 1h\n// adelantado respecto al UTC real y TB lo mostraria 1h en el futuro. Restamos el\n// desfase de DST de Europe/Madrid: 1h en verano, 0h en invierno. Robusto todo el anio.\nfunction madridOffsetHours(ts) {\n  var d = new Date(ts);\n  var y = d.getUTCFullYear();\n  function lastSundayUtc(year, month) {\n    var last = new Date(Date.UTC(year, month + 1, 0));\n    var dom = last.getUTCDate() - last.getUTCDay();\n    return Date.UTC(year, month, dom, 1, 0, 0);\n  }\n  var dstStart = lastSundayUtc(y, 2);\n  var dstEnd = lastSundayUtc(y, 9);\n  return (ts >= dstStart && ts < dstEnd) ? 2 : 1;\n}\n\nvar resp = msg;\nvar keys = Object.keys(resp);\nvar byTs = {};\nfor (var k = 0; k < keys.length; k++) {\n  var arr = resp[keys[k]];\n  if (!Array.isArray(arr) || arr.length === 0) { continue; }\n  for (var j = 0; j < arr.length; j++) {\n    var v = parseFloat(arr[j].value);\n    if (isNaN(v)) { continue; }\n    var tsQampo = arr[j].timestamp;\n    var ts = tsQampo - (madridOffsetHours(tsQampo) - 1) * 3600000;\n    if (!byTs[ts]) { byTs[ts] = {}; }\n    byTs[ts][keys[k]] = v;\n  }\n}\nvar out = [];\nvar tsKeys = Object.keys(byTs);\nfor (var t = 0; t < tsKeys.length; t++) {\n  out.push({ ts: parseInt(tsKeys[t], 10), values: byTs[tsKeys[t]] });\n}\nreturn { msg: (out.length > 0 ? out : {}), metadata: metadata, msgType: 'POST_TELEMETRY_REQUEST' };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b617cf3-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Serie temporal",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "createEntityIfNotExists crea el dispositivo (y su profile por el type) sin login ni URL. changeOriginatorToRelatedEntity pasa el originador al dispositivo. Crea ademas la relacion 'Qampo Poller Contains dispositivo'.",
+        "layoutX" : 1660,
+        "layoutY" : 300
+      },
+      "configuration" : {
+        "direction" : "FROM",
+        "relationType" : "Contains",
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "${deviceName}",
+        "entityTypePattern" : "${deviceType}",
+        "createEntityIfNotExists" : true,
+        "removeCurrentRelations" : false,
+        "changeOriginatorToRelatedEntity" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b61a400-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Crea dispositivo si no existe",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1880,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b61a401-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Guarda serie",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Coords/owner/funcion para el dashboard.",
+        "layoutX" : 1880,
+        "layoutY" : 400
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Atributos de servidor para el dashboard (mapa, filtro, salud).\nvar attrs = { owner: metadata.owner, qampo_nodeid: metadata.nodeid, funcion: metadata.deviceType };\nif (metadata.lat && metadata.lat !== '') { attrs.latitude = parseFloat(metadata.lat); }\nif (metadata.lon && metadata.lon !== '') { attrs.longitude = parseFloat(metadata.lon); }\nreturn { msg: attrs, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b61a402-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Prepara atributos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Solo escribe si cambia el valor.",
+        "layoutX" : 2100,
+        "layoutY" : 400
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b61cb10-d754-11f1-978c-dfd970d8cc3e"
+      },
+      "name" : "Guarda atributos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

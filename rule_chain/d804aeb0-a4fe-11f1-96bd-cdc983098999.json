@@ -1,0 +1,3095 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Cadena para tratar los datos de caudalímetros"
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "d81a0b70-a4fe-11f1-96bd-cdc983098999"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "d804aeb0-a4fe-11f1-96bd-cdc983098999"
+    },
+    "name" : "Pila_de_Datos_v2.3",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 0,
+      "toIndex" : 32,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 0,
+      "toIndex" : 62,
+      "type" : "Attributes Updated"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 19,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 34,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 46,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 31,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 30,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 37,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 38,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 68,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 81,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 8,
+      "type" : "True"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 36,
+      "type" : "False"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 39,
+      "type" : "False"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 47,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 20,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 21,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 85,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 23,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 24,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 27,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 28,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 29,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 30,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 33,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 42,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 34,
+      "toIndex" : 35,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 38,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 39,
+      "toIndex" : 40,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 40,
+      "toIndex" : 41,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 41,
+      "toIndex" : 76,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 42,
+      "toIndex" : 43,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 43,
+      "toIndex" : 45,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 44,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 45,
+      "toIndex" : 44,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 47,
+      "toIndex" : 48,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 48,
+      "toIndex" : 49,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 49,
+      "toIndex" : 50,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 50,
+      "toIndex" : 51,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 51,
+      "toIndex" : 53,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 53,
+      "toIndex" : 54,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 54,
+      "toIndex" : 55,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 55,
+      "toIndex" : 56,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 56,
+      "toIndex" : 52,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 56,
+      "toIndex" : 57,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 57,
+      "toIndex" : 58,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 58,
+      "toIndex" : 59,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 58,
+      "toIndex" : 60,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 60,
+      "toIndex" : 61,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 62,
+      "toIndex" : 63,
+      "type" : "True"
+    }, {
+      "fromIndex" : 63,
+      "toIndex" : 64,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 64,
+      "toIndex" : 65,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 65,
+      "toIndex" : 66,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 66,
+      "toIndex" : 67,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 68,
+      "toIndex" : 69,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 69,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 69,
+      "toIndex" : 70,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 70,
+      "toIndex" : 71,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 72,
+      "toIndex" : 73,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 73,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 73,
+      "toIndex" : 74,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 74,
+      "toIndex" : 75,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 76,
+      "toIndex" : 77,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 77,
+      "toIndex" : 78,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 79,
+      "toIndex" : 80,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 81,
+      "toIndex" : 79,
+      "type" : "False"
+    }, {
+      "fromIndex" : 81,
+      "toIndex" : 82,
+      "type" : "True"
+    }, {
+      "fromIndex" : 82,
+      "toIndex" : 83,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 83,
+      "toIndex" : 84,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 84,
+      "toIndex" : 72,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 85,
+      "toIndex" : 86,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 86,
+      "toIndex" : 87,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 87,
+      "toIndex" : 88,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 0,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 292,
+        "layoutY" : 150
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789727128913,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81a0b70-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Message Type Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 559,
+        "layoutY" : 92
+      },
+      "configuration" : {
+        "defaultTTL" : 7776000,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785231362489,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81a3280-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar trama cruda (TTL 90d)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Decodifica la trama, valida longitud vs grupo_v4, aplica el filtro de picos puntuales (compara cada lectura con la anterior y la siguiente; umbral desviacion 40%, umbral recuperacion 20%; correccion = mediana de las 3), limita a 500 l/s, e integra volumen (l/s) con dt real capado y estado batcheado en acumulados_v2. NOTA: cada caudalimetro se emite con 1 ciclo de retraso respecto a la llegada de la trama, ya que el filtro necesita conocer la lectura siguiente antes de poder confirmar la actual.",
+        "layoutX" : 1007,
+        "layoutY" : 270
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function madridOffsetMs(t) {\r\n    // Offset de España peninsular con cambio de hora automático\r\n    // (último domingo de marzo 01:00 UTC -> último domingo de octubre 01:00 UTC)\r\n    function lastSundayUtc1(y, m) {\r\n        var last = new Date(Date.UTC(y, m + 1, 0));\r\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\r\n    }\r\n    var y = new Date(t).getUTCFullYear();\r\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\r\n}\r\n\r\nfunction fechaLocal(t) {\r\n    var off = madridOffsetMs(t);\r\n    var d = new Date(t + off);\r\n    return {\r\n        fecha: d.getUTCFullYear() + \"-\" + (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" + (\"0\" + d.getUTCDate()).slice(-2),\r\n        anio: \"\" + d.getUTCFullYear()\r\n    };\r\n}\r\n\r\n// ===== Decodificar trama + acumulados batcheados (v4 - SIN retraso de confirmacion) =====\r\nvar MAX_CAUDAL = 999999999999;       // l/s: limite maximo permitido por caudalimetro\r\nvar MAX_DT_S = 3600;                 // tope de integracion tras un corte de comunicaciones (segundos)\r\n\r\nfunction parseObj(value) {\r\n    if (!value) { return {}; }\r\n    if (typeof value === \"string\") {\r\n        try { return JSON.parse(value); } catch (e) { return {}; }\r\n    }\r\n    if (typeof value === \"object\") { return value; }\r\n    return {};\r\n}\r\n\r\nfunction r3(x) { return Math.round(x * 1000) / 1000; }\r\n\r\nfunction buildBaseMetadata(source, tsOverride) {\r\n    var target = {};\r\n    target.ts = (tsOverride !== undefined && tsOverride !== null) ? String(tsOverride) : source.ts;\r\n    if (source.deviceType) { target.deviceType = source.deviceType; }\r\n    if (source.deviceName) { target.pila_origen = source.deviceName; }\r\n    if (source.Pila_de_Datos) { target.Pila_de_Datos = source.Pila_de_Datos; }\r\n    return target;\r\n}\r\n\r\nvar data = msg.data;\r\nif (!data || typeof data !== \"string\") {\r\n    throw new Error(\"Mensaje sin campo 'data'\");\r\n}\r\n\r\nvar grupo = parseObj(msg.ss_grupo_v4 || metadata.ss_grupo_v4);\r\nvar maxPorNombre = parseObj(msg.ss_caudal_maximo_v1 || metadata.ss_caudal_maximo_v1);\r\n// >>> NUEVO v2.5: signos +Suma/-Resta sincronizados desde el widget (Bloque A).\r\n// Se leen aqui, UNA vez por trama, para poder calcular el total YA firmado del\r\n// grupo en el mismo bucle que decodifica todos los caudalimetros -- sin repartir\r\n// el calculo en varios mensajes independientes (eso causaba los saltos raros en\r\n// los volumenes: dos caudalimetros del mismo grupo actualizando el mismo mapa\r\n// compartido casi a la vez, pisandose el uno al otro).\r\nvar signos = parseObj(msg.ss_operaciones_caudalimetros_v1 || metadata.ss_operaciones_caudalimetros_v1);\r\nvar nPos = 0;\r\nfor (var kk in grupo) { if (grupo.hasOwnProperty(kk)) { nPos++; } }\r\nif (nPos === 0) {\r\n    throw new Error(\"Atributo grupo_v4 ausente o vacio en la pila\");\r\n}\r\n\r\nvar caudalesHex = data.slice(12, -14);\r\nvar totalVals = Math.floor(caudalesHex.length / 4);\r\nif (totalVals !== nPos) {\r\n    throw new Error(\"La trama trae \" + totalVals + \" caudalimetros y grupo_v4 define \" + nPos);\r\n}\r\n\r\n// ---- Estado de acumulacion: UN solo atributo por pila (acumulados_v2) ----\r\nvar st = parseObj(msg.ss_acumulados_v2 || metadata.ss_acumulados_v2);\r\nvar ts = metadata.ts ? parseInt(metadata.ts) : new Date().getTime();\r\n\r\nvar tsAnterior = (st._lastTs !== undefined) ? parseInt(st._lastTs) : undefined;\r\nvar dtSeg = 0;\r\nif (tsAnterior !== undefined) {\r\n    dtSeg = (ts - tsAnterior) / 1000;\r\n    if (dtSeg < 0) { dtSeg = 0; }\r\n    if (dtSeg > MAX_DT_S) { dtSeg = MAX_DT_S; }\r\n}\r\n\r\nvar fl = fechaLocal(ts);\r\nvar fechaActual = fl.fecha;\r\nvar anioActual = fl.anio;\r\n\r\nvar items = [];\r\nvar sumaPorGrupo = {};\r\nvar diarioPorGrupo = {};\r\n// >>> NUEVO v2.5: acumuladores YA firmados (con +1/-1 segun el widget), uno por\r\n// grupo. Calculados en el MISMO bucle que decodifica la trama -> sin carreras.\r\nvar sumaFirmadaPorGrupo = {};\r\nvar diarioFirmadoPorGrupo = {};\r\nvar anualFirmadoPorGrupo = {};\r\nvar totalFirmadoPorGrupo = {};\r\n\r\nfor (var i = 0; i < caudalesHex.length; i += 4) {\r\n    var posicion = i / 4;\r\n    var hex = caudalesHex.slice(i, i + 4);\r\n    if (hex.length < 4) { continue; }\r\n    var decimalNuevo = parseInt(hex, 16); // lectura RAW de esta trama\r\n    var info = grupo[String(posicion)];\r\n    if (!info) { continue; }\r\n\r\n    var nombre = info.n;\r\n    var grupoRiego = info.g;\r\n    var e = st[nombre];\r\n    if (!e) { e = {}; }\r\n\r\n    var caudal = decimalNuevo;\r\n    var caudalRaw = null;\r\n    var caudalLimitado = false;\r\n    var limiteItem = (maxPorNombre[nombre] !== undefined && maxPorNombre[nombre] !== null && maxPorNombre[nombre] !== \"\" && !isNaN(parseFloat(maxPorNombre[nombre])))\r\n        ? parseFloat(maxPorNombre[nombre])\r\n        : null;\r\n    if (limiteItem !== null && caudal > limiteItem) {\r\n        caudalRaw = caudal;\r\n        caudal = limiteItem;\r\n        caudalLimitado = true;\r\n    }\r\n\r\n    var cierreDia = null;\r\n    var cierreAnio = null;\r\n    var anualPrevio = (e.a !== undefined) ? e.a : 0;\r\n    if (e.f !== fechaActual) {\r\n        if (e.f !== undefined) { cierreDia = (e.d !== undefined) ? e.d : 0; }\r\n        e.d = 0;\r\n        e.f = fechaActual;\r\n    }\r\n    if (e.aR !== anioActual) {\r\n        if (e.aR !== undefined) { cierreAnio = anualPrevio; }\r\n        e.a = 0;\r\n        e.aR = anioActual;\r\n    }\r\n\r\n    var vol = caudal * dtSeg / 1000;\r\n    e.d = (e.d !== undefined ? e.d : 0) + vol;\r\n    e.a = (e.a !== undefined ? e.a : 0) + vol;\r\n    if (e.t === undefined) { e.t = anualPrevio; }\r\n    e.t = e.t + vol;\r\n    e.lc = caudal;\r\n    e.d = r3(e.d); e.a = r3(e.a); e.t = r3(e.t);\r\n    st[nombre] = e;\r\n\r\n    var item = {\r\n        deviceName: nombre,\r\n        grupo_riego: grupoRiego,\r\n        caudal: caudal,\r\n        state: caudal > 0,\r\n        volumen_intervalo_m3: r3(vol),\r\n        caudal_total_diario_m3: e.d,\r\n        caudal_total_anual_m3: e.a,\r\n        caudal_total_m3: e.t\r\n    };\r\n    if (caudalRaw !== null) { item.caudal_raw = caudalRaw; }\r\n    if (caudalLimitado) { item.caudal_limitado = true; }\r\n    if (cierreDia !== null) { item.caudal_total_dia_cerrado = r3(cierreDia); }\r\n    if (cierreAnio !== null) { item[\"caudal_total_año_cerrado\"] = r3(cierreAnio); }\r\n    if (info.s !== undefined) { item.sector = info.s; }\r\n    if (info.z !== undefined && info.z !== null) { item.zona = info.z; }\r\n    items.push(item);\r\n\r\n    sumaPorGrupo[grupoRiego] = (sumaPorGrupo[grupoRiego] || 0) + caudal;\r\n    diarioPorGrupo[grupoRiego] = (diarioPorGrupo[grupoRiego] || 0) + e.d;\r\n\r\n    // >>> NUEVO v2.5: mismo caudalimetro, pero ya con su signo aplicado.\r\n    // Por defecto \"suma\" si todavia no tiene signo configurado (igual que en v2.4).\r\n    var signo = (signos[nombre] === \"resta\") ? -1 : 1;\r\n    sumaFirmadaPorGrupo[grupoRiego] = (sumaFirmadaPorGrupo[grupoRiego] || 0) + signo * caudal;\r\n    diarioFirmadoPorGrupo[grupoRiego] = (diarioFirmadoPorGrupo[grupoRiego] || 0) + signo * e.d;\r\n    anualFirmadoPorGrupo[grupoRiego] = (anualFirmadoPorGrupo[grupoRiego] || 0) + signo * e.a;\r\n    totalFirmadoPorGrupo[grupoRiego] = (totalFirmadoPorGrupo[grupoRiego] || 0) + signo * e.t;\r\n}\r\n\r\nvar RESTAR_DE_OTRO_GRUPO = {\r\n    \"La Española\": \"La Española Desembalse\"\r\n};\r\n\r\nfor (var gAjuste in RESTAR_DE_OTRO_GRUPO) {\r\n    if (!RESTAR_DE_OTRO_GRUPO.hasOwnProperty(gAjuste)) { continue; }\r\n    var gRestar = RESTAR_DE_OTRO_GRUPO[gAjuste];\r\n    if (sumaPorGrupo[gRestar] === undefined) { continue; }\r\n\r\n    items.push({\r\n        deviceName: gAjuste,\r\n        grupo_riego: gAjuste,\r\n        ajuste_resta_otro_grupo: sumaPorGrupo[gRestar],\r\n        ajuste_resta_otro_grupo_diario_m3: r3(diarioPorGrupo[gRestar] || 0),\r\n        tipo: \"grupo\"\r\n    });\r\n}\r\n\r\n// >>> NUEVO v2.5: un item de \"totales ya firmados\" por cada Grupo_Riego presente\r\n// en esta trama -- sustituye el calculo repartido en varios mensajes (nodos\r\n// \"Cargar mapa/signos..\" a \"Guardar caudal_operaciones (GR)\" viejos).\r\nfor (var gTotal in sumaFirmadaPorGrupo) {\r\n    if (!sumaFirmadaPorGrupo.hasOwnProperty(gTotal)) { continue; }\r\n    items.push({\r\n        deviceName: gTotal,\r\n        grupo_riego: gTotal,\r\n        tipo: \"operaciones_totales\",\r\n        caudal_Sum_v2: r3(sumaFirmadaPorGrupo[gTotal]),\r\n        caudal_total_diario_m3_v2: r3(diarioFirmadoPorGrupo[gTotal] || 0),\r\n        caudal_total_anual_m3_v2: r3(anualFirmadoPorGrupo[gTotal] || 0),\r\n        caudal_total_m3_v2: r3(totalFirmadoPorGrupo[gTotal] || 0)\r\n    });\r\n}\r\n\r\nst._lastTs = ts;\r\ndelete st._pendienteRaw;\r\ndelete st._lastDtSeg;\r\n\r\nvar target = buildBaseMetadata(metadata, ts);\r\ntarget.acumulados_out = JSON.stringify(st);\r\ntarget.manuales_activos_hoy = metadata.ss_manuales_activos_hoy || \"{}\";\r\n\r\nreturn { msg: items, metadata: target, msgType: msgType };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789727488862,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81a5990-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Decodificar y acumular",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 892,
+        "layoutY" : 396
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "DATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "grupo_v4", "acumulados_v2", "caudal_maximo_v1", "operaciones_caudalimetros_v1" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785495873960,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81aa7b0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar grupo_v4 + acumulados_v2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1674,
+        "layoutY" : 561
+      },
+      "configuration" : {
+        "inputValueKey" : "caudal",
+        "outputValueKey" : "caudal_medio_diario",
+        "mathFunction" : "AVG",
+        "aggIntervalType" : "DAY",
+        "timeZoneId" : "Europe/Madrid",
+        "aggIntervalValue" : 1,
+        "aggIntervalTimeUnit" : "HOURS",
+        "intervalPersistencePolicy" : "ON_EACH_CHECK_AFTER_INTERVAL_END",
+        "outMsgType" : "POST_TELEMETRY_REQUEST",
+        "intervalCheckValue" : 1,
+        "intervalCheckTimeUnit" : "MINUTES",
+        "statePersistencePolicy" : "ON_EACH_CHANGE",
+        "statePersistenceValue" : 1,
+        "statePersistenceTimeUnit" : "MINUTES",
+        "autoCreateIntervals" : false,
+        "periodValue" : 5,
+        "periodTimeUnit" : "MINUTES",
+        "parentEntitiesQuery" : {
+          "type" : "group",
+          "entityGroupId" : null
+        }
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81acec0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "caudal_medio_diario",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.incoming.TbSimpleAggMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2085,
+        "layoutY" : 703
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1780140044762,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81acec1-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Cambia el originador al Device del caudalimetro. Si no existe, lo crea con perfil Caudalimetro y crea la relacion Contains desde la Pila.",
+        "layoutX" : 1602,
+        "layoutY" : 296
+      },
+      "configuration" : {
+        "direction" : "TO",
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "$[deviceName]",
+        "entityTypePattern" : "Caudalimetro",
+        "relationType" : "Contains",
+        "createEntityIfNotExists" : true,
+        "removeCurrentRelations" : false,
+        "changeOriginatorToRelatedEntity" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1783335779471,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81af5d0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Buscar/Crear Caudalimetro",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1148,
+        "layoutY" : 121
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1784874975012,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81af5d1-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Split items",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1702,
+        "layoutY" : 53
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "$[deviceName]",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1784283250948,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b1ce0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "cambia a GR",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1423,
+        "layoutY" : 77
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.tipo === \"grupo\" || msg.tipo === \"operaciones_totales\";",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1784874975012,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b43f0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "tipo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2410,
+        "layoutY" : 229
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b43f1-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2330,
+        "layoutY" : 128
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var msg2 = {\r\n    caudal_fijado: msg.caudal_medio_diario\r\n};\r\n\r\n// ts de inicio del día que trae el nodo de agregación\r\nvar startTs = metadata.ts ? parseInt(metadata.ts) : new Date().getTime();\r\nvar endOfDayTs = startTs + 86399000; // 23:59:59.000 del mismo día\r\n\r\n// metadata para el punto de las 00:00 (la de siempre, sin tocar)\r\nvar metadataInicio = metadata;\r\n\r\n// metadata para el punto de las 23:59:59 (copia independiente con el ts cambiado)\r\nvar metadataFin = JSON.parse(JSON.stringify(metadata));\r\nmetadataFin.ts = String(endOfDayTs);\r\n\r\nreturn [\r\n    { msg: msg2, metadata: metadataInicio, msgType: msgType },\r\n    { msg: msg2, metadata: metadataFin, msgType: msgType }\r\n];",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b43f2-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "caudal_fijado",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2047,
+        "layoutY" : 180
+      },
+      "configuration" : {
+        "inputValueKey" : "caudal_Sum",
+        "outputValueKey" : "caudal_medio_diario",
+        "mathFunction" : "AVG",
+        "aggIntervalType" : "DAY",
+        "timeZoneId" : "Europe/Madrid",
+        "aggIntervalValue" : 1,
+        "aggIntervalTimeUnit" : "HOURS",
+        "intervalPersistencePolicy" : "ON_EACH_CHECK_AFTER_INTERVAL_END",
+        "outMsgType" : "POST_TELEMETRY_REQUEST",
+        "intervalCheckValue" : 1,
+        "intervalCheckTimeUnit" : "MINUTES",
+        "statePersistencePolicy" : "ON_EACH_CHANGE",
+        "statePersistenceValue" : 1,
+        "statePersistenceTimeUnit" : "MINUTES",
+        "autoCreateIntervals" : false,
+        "periodValue" : 5,
+        "periodTimeUnit" : "MINUTES",
+        "parentEntitiesQuery" : {
+          "type" : "group",
+          "entityGroupId" : null
+        }
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1784283250948,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b43f3-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "caudal_medio_diario",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.incoming.TbSimpleAggMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2692,
+        "layoutY" : 206
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ============================================================\r\n// Nodo: \"Procesar Ciclo (tz Madrid)\"  --  Cadena: Pila_de_Datos_v2.3\r\n// (aparece dos veces en la cadena: una para el grupo de riego / caudalimetro,\r\n// otra para el sector -- este arreglo aplica igual a las dos copias, el\r\n// script es idéntico en ambas)\r\n//\r\n// FIX 1 (2026-09-18): media_proyectada daba la MITAD de lo que debía.\r\n// Causa: \"Calcular caudal fijado (incremental)\" dispara el \"save\" en\r\n// CADA trama con un mensaje vacío (sin caudal_Sum/caudal_Sum_v2) para\r\n// mantener vivo el flujo, y este script lo contaba como caudal = 0.\r\n// Arreglo: \"tieneCaudalReal\" -- si no trae caudal_Sum/_v2, no se acumula.\r\n// CONFIRMADO EN PRODUCCION (18/09/2026): El Rosario paso de ~15 a 31,\r\n// igual que el caudal real.\r\n//\r\n// FIX 2 (2026-09-18): cada trama real se contaba DOS veces (el filtro\r\n// \"tipo\" deja pasar tanto tipo:\"grupo\" como tipo:\"operaciones_totales\" de\r\n// la MISMA trama, y las dos disparan este nodo con el mismo caudal_Sum_v2).\r\n//\r\n// FIX 2, v3: la primera version de este fix (v2) detectaba el duplicado\r\n// comparando caudal_total_diario_m3_v2 entre tramas -- pero eso falla\r\n// si el grupo esta parado (caudal = 0): dos tramas reales SEGUIDAS con\r\n// caudal 0 tienen el mismo total acumulado (no sube), y se confundirian\r\n// con un duplicado, perdiendo una lectura real de 0 (la media saldria\r\n// mas alta de lo real en los grupos que paran durante el dia).\r\n//\r\n// Arreglo v3: en vez de comparar el total, se mide el TIEMPO transcurrido\r\n// desde la ultima trama real ya contada. Los dos duplicados de una misma\r\n// trama (grupo + operaciones_totales) llegan con milisegundos de\r\n// diferencia; dos tramas reales de verdad siempre estan separadas ~15\r\n// minutos. Si el tiempo transcurrido es menor que UMBRAL_DUPLICADO_MS,\r\n// es el duplicado de la misma trama -- no se cuenta otra vez.\r\n// ============================================================\r\n\r\nvar UMBRAL_DUPLICADO_MS = 10000; // 10 segundos\r\n\r\nfunction madridOffsetMs(t) {\r\n    function lastSundayUtc1(y, m) {\r\n        var last = new Date(Date.UTC(y, m + 1, 0));\r\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\r\n    }\r\n    var y = new Date(t).getUTCFullYear();\r\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\r\n}\r\n\r\n// 1. Dato real entrante\r\nvar tieneCaudalReal = (msg.caudal_Sum_v2 !== undefined && msg.caudal_Sum_v2 !== null) ||\r\n                      (msg.caudal_Sum !== undefined && msg.caudal_Sum !== null);\r\n\r\nvar caudal = 0;\r\nif (tieneCaudalReal) {\r\n    caudal = (msg.caudal_Sum_v2 !== undefined && msg.caudal_Sum_v2 !== null)\r\n        ? parseFloat(msg.caudal_Sum_v2)\r\n        : parseFloat(msg.caudal_Sum);\r\n    if (isNaN(caudal)) {\r\n        caudal = 0;\r\n        tieneCaudalReal = false;\r\n    }\r\n}\r\n\r\n// 2. Calcular la hora real y el inicio del día\r\nvar ts = metadata.ts ? parseInt(metadata.ts) : new Date().getTime();\r\nvar offsetEspana = madridOffsetMs(ts);\r\nvar d = new Date(ts + offsetEspana);\r\nd.setUTCHours(0, 0, 0, 0);\r\nvar inicio_dia_ts = d.getTime() - offsetEspana;\r\nvar dia_actual = new Date(inicio_dia_ts).getDate();\r\n\r\n// 3. Rescatar memoria (con el historial de 4 y el ts de la última trama contada)\r\nvar mem_dia = (metadata.ss_dia !== undefined) ? parseInt(metadata.ss_dia) : -1;\r\nvar suma = (metadata.ss_suma !== undefined) ? parseFloat(metadata.ss_suma) : 0;\r\nvar contador = (metadata.ss_contador !== undefined) ? parseInt(metadata.ss_contador) : 0;\r\nvar last_4_str = (metadata.ss_last_4 !== undefined) ? metadata.ss_last_4 : \"\";\r\nvar ultimo_ts_contado = (metadata.ss_ultimo_ts_contado !== undefined && metadata.ss_ultimo_ts_contado !== \"\")\r\n    ? parseInt(metadata.ss_ultimo_ts_contado) : null;\r\n\r\n// 4. Reset a cero si cambiamos de día\r\nif (dia_actual !== mem_dia) {\r\n    suma = 0;\r\n    contador = 0;\r\n    last_4_str = \"\";\r\n    ultimo_ts_contado = null;\r\n}\r\n\r\n// 5. FIX 2 (v3): duplicado de la misma trama si llega a menos de\r\n// UMBRAL_DUPLICADO_MS de la ultima trama real ya contada.\r\nvar esDuplicado = tieneCaudalReal && ultimo_ts_contado !== null &&\r\n    Math.abs(ts - ultimo_ts_contado) < UMBRAL_DUPLICADO_MS;\r\n\r\n// 6. Solo acumulamos si trae caudal real Y no es un duplicado de la misma trama\r\nif (tieneCaudalReal && !esDuplicado) {\r\n    suma += caudal;\r\n    contador += 1;\r\n\r\n    var last_4_arr = last_4_str ? last_4_str.split(',').map(Number) : [];\r\n    last_4_arr.push(caudal);\r\n    if (last_4_arr.length > 4) {\r\n        last_4_arr.shift();\r\n    }\r\n    last_4_str = last_4_arr.join(',');\r\n\r\n    ultimo_ts_contado = ts;\r\n}\r\n\r\n// 7. Preparar paquete para el simulador del futuro (Script 2)\r\nmetadata.caudal_val = caudal.toString();\r\nmetadata.suma_val = suma.toString();\r\nmetadata.contador_val = contador.toString();\r\nmetadata.inicio_dia_ts = inicio_dia_ts.toString();\r\nmetadata.ts_real = ts.toString();\r\nmetadata.last_4_val = last_4_str;\r\n\r\n// 8. Guardar variables de estado en el amarillo\r\nvar msg_attr = {\r\n    dia: dia_actual,\r\n    suma: suma,\r\n    contador: contador,\r\n    last_4: last_4_str,\r\n    ultimo_ts_contado: (ultimo_ts_contado !== null ? ultimo_ts_contado : \"\")\r\n};\r\n\r\nreturn {msg: msg_attr, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1790334743740,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b43f4-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Procesar Ciclo (tz Madrid)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2802,
+        "layoutY" : 97
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b6b00-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar Atributos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2930,
+        "layoutY" : 223
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var caudal_ultimo = parseFloat(metadata.caudal_val);\r\nvar suma_actual = parseFloat(metadata.suma_val);\r\nvar contador_actual = parseInt(metadata.contador_val);\r\nvar inicio_dia = parseInt(metadata.inicio_dia_ts);\r\nvar ts_real = parseInt(metadata.ts_real);\r\n\r\n// --- TENDENCIA DE LOS ÚLTIMOS 4 ---\r\nvar last_4_str = metadata.last_4_val || caudal_ultimo.toString();\r\nvar last_4_arr = last_4_str.split(',').map(Number);\r\nvar suma_tendencia = 0;\r\nfor (var j = 0; j < last_4_arr.length; j++) {\r\n    suma_tendencia += last_4_arr[j];\r\n}\r\nvar caudal_tendencia = suma_tendencia / last_4_arr.length;\r\n\r\nvar MS_15_MIN = 900000;\r\nvar MS_DIA = 86400000; // 24h\r\n\r\n// Fin del día = último segundo del día actual (23:59:59.999),\r\n// para que el punto se vea dentro del mismo día y no se pierda\r\n// al caer en el bucket del día siguiente.\r\nvar fin_dia = inicio_dia + MS_DIA - 1;\r\n\r\n// Cuántos slots de 15 min quedan hasta el final del día\r\nvar slot_actual = Math.floor((ts_real - inicio_dia) / MS_15_MIN);\r\nvar pasos_restantes = 96 - (slot_actual + 1);\r\nif (pasos_restantes < 0) pasos_restantes = 0;\r\n\r\n// Proyección acumulada: sumamos la tendencia por cada slot que falta\r\nvar suma_simulada = suma_actual + (caudal_tendencia * pasos_restantes);\r\nvar contador_simulado = contador_actual + pasos_restantes;\r\nvar media_final = Math.round((suma_simulada / contador_simulado) * 100) / 100;\r\n\r\n// Solo 2 puntos, mismo valor -> línea recta horizontal visible en el día actual\r\nvar proyectados = [\r\n    {\r\n        \"ts\": inicio_dia,\r\n        \"values\": { \"media_proyectada\": media_final }\r\n    },\r\n    {\r\n        \"ts\": fin_dia,\r\n        \"values\": { \"media_proyectada\": media_final }\r\n    }\r\n];\r\n\r\nreturn {msg: proyectados, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\"};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1780309345037,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b9210-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Generar Proyección Futura",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3063,
+        "layoutY" : 103
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786364723504,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b9211-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Dibujar Proyección",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2591,
+        "layoutY" : 110
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "dia", "suma", "contador", "last_4", "ultimo_ts_contado" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81b9212-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Recuperar Memoria",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2372,
+        "layoutY" : 666
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "36d6c860-b89c-11f0-acc3-dfcadad3d397"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81bb920-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "toma GR",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1182,
+        "layoutY" : 414
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ============================================================\r\n// Nodo: \"calcular_resumen (s/z)\"  --  Cadena: Pila_de_Datos_v2.3\r\n//\r\n// FIX (2026-09-17): caudal_s0 (y en general cualquier caudal_sX) se estaba\r\n// pisando con SOLO el valor manual cada vez que llegaba una trama de\r\n// CUALQUIER Pila del sistema, aunque esa Pila no tuviera nada que ver con\r\n// ese sector.\r\n//\r\n// Causa: \"manualSumsGlobal\" se calcula a partir del atributo\r\n// \"manuales_activos_hoy\", que es GLOBAL (todos los manuales activos de\r\n// TODO el sistema, no solo los de los grupos que trae ESTA trama). Como\r\n// consecuencia, el bucle que decide que sectores hay que emitir\r\n// (\"sectoresAEmitir\") metia un sector con manual activo AUNQUE la trama\r\n// actual no trajera ni un solo grupo de ese sector -- y al no haber datos\r\n// automaticos de ese sector en \"sums\", el resultado emitido era solo el\r\n// manual (p.ej. caudal_s0 = 0 + 50 = 50), borrando el ultimo total\r\n// correcto (automatico + manual) que habia dejado la Pila que si es de\r\n// ese sector.\r\n//\r\n// Confirmado con debug: una trama de Sector 3/4 (sin ningun grupo de\r\n// sector 0) emitia igualmente \"caudal_s0\": 50, pisando el 106 real.\r\n//\r\n// Arreglo: un sector solo puede emitirse/pisarse si esta REALMENTE\r\n// cubierto por la trama actual (es decir, si al menos un grupo de esa\r\n// Pila pertenece a ese sector) -- \"sectoresCubiertos\", calculado a partir\r\n// de \"grupoSectorSiempre\" (que ya se rellena para TODOS los grupos de la\r\n// trama, tengan o no manual activo). Asi, una Pila de otro sector nunca\r\n// puede tocar el total de un sector que no le pertenece, y el sector\r\n// correcto sigue actualizandose bien (automatico + manual) cuando su\r\n// propia Pila reporta.\r\n// ============================================================\r\n\r\nfunction parseObj(v) {\r\n    if (!v) { return {}; }\r\n    if (typeof v === \"string\") { try { return JSON.parse(v); } catch (e) { return {}; } }\r\n    if (typeof v === \"object\") { return v; }\r\n    return {};\r\n}\r\nfunction normKey(s) {\r\n    if (s === undefined || s === null) { return \"\"; }\r\n    var desde = \"áéíóúÁÉÍÓÚüÜñÑàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛäëïöÄËÏÖ\";\r\n    var hasta = \"aeiouAEIOUuUnNaeiouAEIOUaeiouAEIOUaeioAEIO\";\r\n    var out = \"\";\r\n    var str = String(s);\r\n    for (var i = 0; i < str.length; i++) {\r\n        var ch = str.charAt(i);\r\n        var idx = desde.indexOf(ch);\r\n        out += (idx !== -1) ? hasta.charAt(idx) : ch;\r\n    }\r\n    return out\r\n        .trim()\r\n        .toLowerCase()\r\n        .replace(/\\s+/g, \" \");\r\n}\r\nfunction madridOffsetMs(t) {\r\n    function lastSundayUtc1(y, m) {\r\n        var last = new Date(Date.UTC(y, m + 1, 0));\r\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\r\n    }\r\n    var y = new Date(t).getUTCFullYear();\r\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\r\n}\r\nfunction fechaLocal(t) {\r\n    var off = madridOffsetMs(t);\r\n    var d = new Date(t + off);\r\n    return d.getUTCFullYear() + \"-\" + (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" + (\"0\" + d.getUTCDate()).slice(-2);\r\n}\r\n\r\nvar items = msg;\r\nif (!Array.isArray(items)) {\r\n    return { msg: msg, metadata: metadata, msgType: msgType };\r\n}\r\n\r\nvar manuales = parseObj(metadata.manuales_activos_hoy);\r\nvar tsActual = new Date().getTime();\r\nvar diaActual = fechaLocal(tsActual);\r\n\r\nvar manualesNorm = {};\r\nfor (var gk in manuales) {\r\n    if (manuales.hasOwnProperty(gk)) { manualesNorm[normKey(gk)] = manuales[gk]; }\r\n}\r\n\r\nvar sums = {};\r\nvar zonas = {};\r\n\r\nvar debugExcluidos = [];\r\nvar debugNoExcluidos = [];\r\n\r\nvar sumaPorGrupoReal = {};\r\nvar grupoSector = {};\r\nvar sumaPorGrupoSiempre = {};\r\nvar grupoSectorSiempre = {};\r\n\r\nfor (var i = 0; i < items.length; i++) {\r\n    var it = items[i];\r\n    if (it.tipo === \"grupo\") { continue; }\r\n\r\n    var caud = parseFloat(it.caudal) || 0;\r\n    var grupo = it.grupo_riego;\r\n\r\n    if (it.sector !== undefined) {\r\n        var manual = manualesNorm[normKey(grupo)];\r\n        var manualActivo = (manual !== undefined && manual.dia === diaActual);\r\n\r\n        sumaPorGrupoSiempre[grupo] = (sumaPorGrupoSiempre[grupo] || 0) + caud;\r\n        grupoSectorSiempre[grupo] = it.sector;\r\n\r\n        if (!manualActivo) {\r\n            sumaPorGrupoReal[grupo] = (sumaPorGrupoReal[grupo] || 0) + caud;\r\n            grupoSector[grupo] = it.sector;\r\n        } else {\r\n            if (debugExcluidos.indexOf(grupo) === -1) { debugExcluidos.push(grupo); }\r\n        }\r\n    }\r\n    if (it.zona) {\r\n        zonas[it.zona] = (zonas[it.zona] || 0) + caud;\r\n    }\r\n}\r\n\r\nvar RESTAR_DE_OTRO_GRUPO = {\r\n    \"La Española\": \"La Española Desembalse\"\r\n};\r\nfor (var gAjuste in RESTAR_DE_OTRO_GRUPO) {\r\n    if (!RESTAR_DE_OTRO_GRUPO.hasOwnProperty(gAjuste)) { continue; }\r\n    var gRestar = RESTAR_DE_OTRO_GRUPO[gAjuste];\r\n    if (sumaPorGrupoReal[gAjuste] === undefined || sumaPorGrupoReal[gRestar] === undefined) { continue; }\r\n\r\n    sumaPorGrupoReal[gAjuste] = Math.max(0, sumaPorGrupoReal[gAjuste] - sumaPorGrupoReal[gRestar]);\r\n}\r\n\r\nfor (var gAjuste2 in RESTAR_DE_OTRO_GRUPO) {\r\n    if (!RESTAR_DE_OTRO_GRUPO.hasOwnProperty(gAjuste2)) { continue; }\r\n    var gRestar2 = RESTAR_DE_OTRO_GRUPO[gAjuste2];\r\n    if (sumaPorGrupoSiempre[gAjuste2] === undefined || sumaPorGrupoSiempre[gRestar2] === undefined) { continue; }\r\n\r\n    sumaPorGrupoSiempre[gAjuste2] = Math.max(0, sumaPorGrupoSiempre[gAjuste2] - sumaPorGrupoSiempre[gRestar2]);\r\n}\r\n\r\n// NUEVO -- T-II-1-2 y T-II-1-4 (Sector 3) son ramificaciones aguas abajo de\r\n// \"B-II FLUME GATE\": su caudal ya viene contado dentro de la propia B-II\r\n// FLUME GATE, asi que si tambien se suman aqui aparte, esa agua se cuenta\r\n// DOS VECES en el total del sector (informe ANALISIS SOLUCION G01, pag. 15).\r\n// Se siguen guardando sus valores individuales con normalidad (para verlos\r\n// celda a celda en el Calendario) -- solo se excluyen de la SUMA TOTAL del\r\n// sector. Pendiente de confirmar si T-II-1-1, T-II-1-1-3 y T-II-1-2-1 deben\r\n// añadirse tambien a esta lista (el informe solo nombra estos dos).\r\nvar EXCLUIR_DEL_TOTAL_SECTOR = [\"T-II-1-2\", \"T-II-1-4\"];\r\n\r\nfor (var gTotal in sumaPorGrupoReal) {\r\n    if (!sumaPorGrupoReal.hasOwnProperty(gTotal)) { continue; }\r\n    if (EXCLUIR_DEL_TOTAL_SECTOR.indexOf(gTotal) !== -1) { continue; }\r\n    var sect = grupoSector[gTotal];\r\n    if (sect === undefined) { continue; }\r\n    sums[sect] = (sums[sect] || 0) + sumaPorGrupoReal[gTotal];\r\n}\r\n\r\nvar debugExcluidosNorm = debugExcluidos.map(normKey);\r\nfor (var gCheck in manuales) {\r\n    if (!manuales.hasOwnProperty(gCheck)) { continue; }\r\n    var mCheck = manuales[gCheck];\r\n    if (mCheck.dia === diaActual && debugExcluidosNorm.indexOf(normKey(gCheck)) === -1) {\r\n        debugNoExcluidos.push(gCheck);\r\n    }\r\n}\r\nmetadata.debug_manual_excluidos = debugExcluidos.join(\",\");\r\nmetadata.debug_manual_no_excluidos = debugNoExcluidos.join(\",\");\r\n\r\n// FIX: sectores que esta trama REALMENTE cubre (tiene al menos un grupo\r\n// perteneciente a ese sector, tenga o no manual activo). Un sector que no\r\n// este aqui NO se debe ni emitir ni pisar, aunque tenga un manual activo\r\n// en otra parte del sistema -- ese manual lo aplicara la Pila a la que de\r\n// verdad pertenece ese sector quien corresponda.\r\nvar sectoresCubiertos = {};\r\nfor (var gCubierto in grupoSectorSiempre) {\r\n    if (!grupoSectorSiempre.hasOwnProperty(gCubierto)) { continue; }\r\n    var sCub = grupoSectorSiempre[gCubierto] !== undefined ? String(grupoSectorSiempre[gCubierto]).replace(/[^0-9]/g, \"\") : \"\";\r\n    if (sCub !== \"\") { sectoresCubiertos[sCub] = true; }\r\n}\r\n\r\nvar gruposManualUsados = {};\r\nvar manualSumsGlobal = { \"0\": 0, \"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0 };\r\nfor (var g in manuales) {\r\n    if (!manuales.hasOwnProperty(g)) { continue; }\r\n    var m = manuales[g];\r\n    if (m.dia === diaActual && m.sector !== undefined && !gruposManualUsados[g]) {\r\n        var sKey = String(m.sector).replace(/[^0-9]/g, \"\");\r\n        if (sKey !== \"\") {\r\n            manualSumsGlobal[sKey] = (manualSumsGlobal[sKey] || 0) + (parseFloat(m.valor) || 0);\r\n            gruposManualUsados[g] = true;\r\n        }\r\n    }\r\n}\r\nfor (var s2 in manualSumsGlobal) {\r\n    metadata[\"manual_s\" + s2] = manualSumsGlobal[s2].toString();\r\n}\r\n\r\nvar tsTrama = metadata.ts ? parseInt(metadata.ts) : tsActual;\r\nvar listaCu = [];\r\nfor (var gCu in sumaPorGrupoSiempre) {\r\n    if (!sumaPorGrupoSiempre.hasOwnProperty(gCu)) { continue; }\r\n    var sectorCu = grupoSectorSiempre[gCu];\r\n    if (sectorCu === undefined) { continue; }\r\n    listaCu.push({\r\n        nombre: gCu,\r\n        valor: Math.round(sumaPorGrupoSiempre[gCu] * 1000) / 1000,\r\n        sector: sectorCu,\r\n        ts: tsTrama\r\n    });\r\n}\r\nmetadata.cu_lista_json = JSON.stringify(listaCu);\r\n\r\nvar resultado = {};\r\nvar hay = false;\r\n\r\nvar sectoresAEmitir = {};\r\nfor (var sReal in sums) {\r\n    if (sums.hasOwnProperty(sReal)) { sectoresAEmitir[sReal] = true; }\r\n}\r\n// FIX: antes se metia aqui CUALQUIER sector con manual activo, aunque esta\r\n// trama no tuviera ni un grupo de ese sector (eso era el bug: pisaba\r\n// caudal_sX de sectores ajenos con solo el valor del manual). Ahora solo\r\n// se añade si el sector esta realmente cubierto por esta trama.\r\nfor (var sManual in manualSumsGlobal) {\r\n    if (manualSumsGlobal.hasOwnProperty(sManual) && manualSumsGlobal[sManual] > 0 && sectoresCubiertos[sManual]) {\r\n        sectoresAEmitir[sManual] = true;\r\n    }\r\n}\r\n\r\nfor (var s in sectoresAEmitir) {\r\n    if (!sectoresAEmitir.hasOwnProperty(s)) { continue; }\r\n    var valorFinal = (sums[s] || 0) + (manualSumsGlobal[s] || 0);\r\n    resultado[\"caudal_s\" + s] = valorFinal;\r\n    metadata[\"caudal_s\" + s + \"_nuevo\"] = valorFinal;\r\n    hay = true;\r\n}\r\nfor (var z in zonas) {\r\n    if (!zonas.hasOwnProperty(z)) { continue; }\r\n    resultado[\"caudal_\" + z] = zonas[z];\r\n    hay = true;\r\n}\r\nif (!hay) {\r\n    return { msg: msg, metadata: metadata, msgType: msgType };\r\n}\r\nreturn { msg: resultado, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1790248234314,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81be030-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "calcular_resumen (s/z)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1177,
+        "layoutY" : 536
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "CRBG_Resumen_Caudales",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1784879113176,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c0740-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Originator → Asset Resumen",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1167,
+        "layoutY" : 642
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785231677048,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c0741-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1158,
+        "layoutY" : 751
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "DATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ ],
+        "latestTsKeyNames" : [ "caudal_s0", "caudal_s1", "caudal_s2", "caudal_s3", "caudal_s4", "caudal_s5" ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c0742-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar caudales sectores",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1156,
+        "layoutY" : 858
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var s0 = parseFloat(msg.caudal_s0) || 0;\r\nvar s1 = parseFloat(msg.caudal_s1) || 0;\r\nvar s2 = parseFloat(msg.caudal_s2) || 0;\r\nvar s3 = parseFloat(msg.caudal_s3) || 0;\r\nvar s4 = parseFloat(msg.caudal_s4) || 0;\r\nvar s5 = parseFloat(msg.caudal_s5) || 0;\r\n\r\n// Sobreescribir con el valor recién calculado que viaja en metadata\r\nif (metadata.caudal_s0_nuevo !== undefined) s0 = parseFloat(metadata.caudal_s0_nuevo) || 0;\r\nif (metadata.caudal_s1_nuevo !== undefined) s1 = parseFloat(metadata.caudal_s1_nuevo) || 0;\r\nif (metadata.caudal_s2_nuevo !== undefined) s2 = parseFloat(metadata.caudal_s2_nuevo) || 0;\r\nif (metadata.caudal_s3_nuevo !== undefined) s3 = parseFloat(metadata.caudal_s3_nuevo) || 0;\r\nif (metadata.caudal_s4_nuevo !== undefined) s4 = parseFloat(metadata.caudal_s4_nuevo) || 0;\r\nif (metadata.caudal_s5_nuevo !== undefined) s5 = parseFloat(metadata.caudal_s5_nuevo) || 0;\r\n\r\nmsg.caudal_total = s1 + s2 + s3 + s4 + s5;\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1785489672536,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c0743-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Calcular caudal total",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1163,
+        "layoutY" : 972
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c0744-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2613,
+        "layoutY" : 529
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "dia", "suma", "contador", "last_4", "ultimo_ts_comando" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c0745-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Recuperar Memoria",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2594,
+        "layoutY" : 631
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ============================================================\r\n// Nodo: \"Procesar Ciclo (tz Madrid)\"  --  Cadena: Pila_de_Datos_v2.3\r\n// (aparece dos veces en la cadena: una para el grupo de riego / caudalimetro,\r\n// otra para el sector -- este arreglo aplica igual a las dos copias, el\r\n// script es idéntico en ambas)\r\n//\r\n// FIX 1 (2026-09-18): media_proyectada daba la MITAD de lo que debía.\r\n// Causa: \"Calcular caudal fijado (incremental)\" dispara el \"save\" en\r\n// CADA trama con un mensaje vacío (sin caudal_Sum/caudal_Sum_v2) para\r\n// mantener vivo el flujo, y este script lo contaba como caudal = 0.\r\n// Arreglo: \"tieneCaudalReal\" -- si no trae caudal_Sum/_v2, no se acumula.\r\n// CONFIRMADO EN PRODUCCION (18/09/2026): El Rosario paso de ~15 a 31,\r\n// igual que el caudal real.\r\n//\r\n// FIX 2 (2026-09-18): cada trama real se contaba DOS veces (el filtro\r\n// \"tipo\" deja pasar tanto tipo:\"grupo\" como tipo:\"operaciones_totales\" de\r\n// la MISMA trama, y las dos disparan este nodo con el mismo caudal_Sum_v2).\r\n//\r\n// FIX 2, v3: la primera version de este fix (v2) detectaba el duplicado\r\n// comparando caudal_total_diario_m3_v2 entre tramas -- pero eso falla\r\n// si el grupo esta parado (caudal = 0): dos tramas reales SEGUIDAS con\r\n// caudal 0 tienen el mismo total acumulado (no sube), y se confundirian\r\n// con un duplicado, perdiendo una lectura real de 0 (la media saldria\r\n// mas alta de lo real en los grupos que paran durante el dia).\r\n//\r\n// Arreglo v3: en vez de comparar el total, se mide el TIEMPO transcurrido\r\n// desde la ultima trama real ya contada. Los dos duplicados de una misma\r\n// trama (grupo + operaciones_totales) llegan con milisegundos de\r\n// diferencia; dos tramas reales de verdad siempre estan separadas ~15\r\n// minutos. Si el tiempo transcurrido es menor que UMBRAL_DUPLICADO_MS,\r\n// es el duplicado de la misma trama -- no se cuenta otra vez.\r\n// ============================================================\r\n\r\nvar UMBRAL_DUPLICADO_MS = 10000; // 10 segundos\r\n\r\nfunction madridOffsetMs(t) {\r\n    function lastSundayUtc1(y, m) {\r\n        var last = new Date(Date.UTC(y, m + 1, 0));\r\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\r\n    }\r\n    var y = new Date(t).getUTCFullYear();\r\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\r\n}\r\n\r\n// 1. Dato real entrante\r\nvar tieneCaudalReal = (msg.caudal_Sum_v2 !== undefined && msg.caudal_Sum_v2 !== null) ||\r\n                      (msg.caudal_Sum !== undefined && msg.caudal_Sum !== null);\r\n\r\nvar caudal = 0;\r\nif (tieneCaudalReal) {\r\n    caudal = (msg.caudal_Sum_v2 !== undefined && msg.caudal_Sum_v2 !== null)\r\n        ? parseFloat(msg.caudal_Sum_v2)\r\n        : parseFloat(msg.caudal_Sum);\r\n    if (isNaN(caudal)) {\r\n        caudal = 0;\r\n        tieneCaudalReal = false;\r\n    }\r\n}\r\n\r\n// 2. Calcular la hora real y el inicio del día\r\nvar ts = metadata.ts ? parseInt(metadata.ts) : new Date().getTime();\r\nvar offsetEspana = madridOffsetMs(ts);\r\nvar d = new Date(ts + offsetEspana);\r\nd.setUTCHours(0, 0, 0, 0);\r\nvar inicio_dia_ts = d.getTime() - offsetEspana;\r\nvar dia_actual = new Date(inicio_dia_ts).getDate();\r\n\r\n// 3. Rescatar memoria (con el historial de 4 y el ts de la última trama contada)\r\nvar mem_dia = (metadata.ss_dia !== undefined) ? parseInt(metadata.ss_dia) : -1;\r\nvar suma = (metadata.ss_suma !== undefined) ? parseFloat(metadata.ss_suma) : 0;\r\nvar contador = (metadata.ss_contador !== undefined) ? parseInt(metadata.ss_contador) : 0;\r\nvar last_4_str = (metadata.ss_last_4 !== undefined) ? metadata.ss_last_4 : \"\";\r\nvar ultimo_ts_contado = (metadata.ss_ultimo_ts_contado !== undefined && metadata.ss_ultimo_ts_contado !== \"\")\r\n    ? parseInt(metadata.ss_ultimo_ts_contado) : null;\r\n\r\n// 4. Reset a cero si cambiamos de día\r\nif (dia_actual !== mem_dia) {\r\n    suma = 0;\r\n    contador = 0;\r\n    last_4_str = \"\";\r\n    ultimo_ts_contado = null;\r\n}\r\n\r\n// 5. FIX 2 (v3): duplicado de la misma trama si llega a menos de\r\n// UMBRAL_DUPLICADO_MS de la ultima trama real ya contada.\r\nvar esDuplicado = tieneCaudalReal && ultimo_ts_contado !== null &&\r\n    Math.abs(ts - ultimo_ts_contado) < UMBRAL_DUPLICADO_MS;\r\n\r\n// 6. Solo acumulamos si trae caudal real Y no es un duplicado de la misma trama\r\nif (tieneCaudalReal && !esDuplicado) {\r\n    suma += caudal;\r\n    contador += 1;\r\n\r\n    var last_4_arr = last_4_str ? last_4_str.split(',').map(Number) : [];\r\n    last_4_arr.push(caudal);\r\n    if (last_4_arr.length > 4) {\r\n        last_4_arr.shift();\r\n    }\r\n    last_4_str = last_4_arr.join(',');\r\n\r\n    ultimo_ts_contado = ts;\r\n}\r\n\r\n// 7. Preparar paquete para el simulador del futuro (Script 2)\r\nmetadata.caudal_val = caudal.toString();\r\nmetadata.suma_val = suma.toString();\r\nmetadata.contador_val = contador.toString();\r\nmetadata.inicio_dia_ts = inicio_dia_ts.toString();\r\nmetadata.ts_real = ts.toString();\r\nmetadata.last_4_val = last_4_str;\r\n\r\n// 8. Guardar variables de estado en el amarillo\r\nvar msg_attr = {\r\n    dia: dia_actual,\r\n    suma: suma,\r\n    contador: contador,\r\n    last_4: last_4_str,\r\n    ultimo_ts_contado: (ultimo_ts_contado !== null ? ultimo_ts_contado : \"\")\r\n};\r\n\r\nreturn {msg: msg_attr, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\"};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c2e50-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Procesar Ciclo (tz Madrid)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2841,
+        "layoutY" : 579
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c2e51-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar Atributos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2915,
+        "layoutY" : 721
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var caudal_ultimo = parseFloat(metadata.caudal_val);\r\nvar suma_actual = parseFloat(metadata.suma_val);\r\nvar contador_actual = parseInt(metadata.contador_val);\r\nvar inicio_dia = parseInt(metadata.inicio_dia_ts);\r\nvar ts_real = parseInt(metadata.ts_real);\r\n\r\n// --- TENDENCIA DE LOS ÚLTIMOS 4 ---\r\nvar last_4_str = metadata.last_4_val || caudal_ultimo.toString();\r\nvar last_4_arr = last_4_str.split(',').map(Number);\r\nvar suma_tendencia = 0;\r\nfor (var j = 0; j < last_4_arr.length; j++) {\r\n    suma_tendencia += last_4_arr[j];\r\n}\r\nvar caudal_tendencia = suma_tendencia / last_4_arr.length;\r\n\r\nvar MS_15_MIN = 900000;\r\nvar MS_DIA = 86400000; // 24h\r\n\r\n// Fin del día = 23:59:59.999 del día actual, para que el punto\r\n// se vea dentro del mismo día y no se pierda en el bucket del día siguiente.\r\nvar fin_dia = inicio_dia + MS_DIA - 1;\r\n\r\n// Cuántos slots de 15 min quedan hasta el final del día\r\nvar slot_actual = Math.floor((ts_real - inicio_dia) / MS_15_MIN);\r\nvar pasos_restantes = 96 - (slot_actual + 1);\r\nif (pasos_restantes < 0) pasos_restantes = 0;\r\n\r\n// Proyección acumulada: sumamos la tendencia por cada slot que falta\r\nvar suma_simulada = suma_actual + (caudal_tendencia * pasos_restantes);\r\nvar contador_simulado = contador_actual + pasos_restantes;\r\nvar media_final = Math.round((suma_simulada / contador_simulado) * 100) / 100;\r\n\r\n// Solo 2 puntos, mismo valor -> línea recta horizontal visible en el día actual\r\nvar proyectados = [\r\n    {\r\n        \"ts\": inicio_dia,\r\n        \"values\": { \"media_proyectada\": media_final }\r\n    },\r\n    {\r\n        \"ts\": fin_dia,\r\n        \"values\": { \"media_proyectada\": media_final }\r\n    }\r\n];\r\n\r\nreturn {msg: proyectados, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\"};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c2e52-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Generar Proyección Futura",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3100,
+        "layoutY" : 581
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786364716817,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c2e53-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Dibujar Proyección",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2328,
+        "layoutY" : 603
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Nombre: \"Guardar caudal en metadata\"\r\nmetadata.caudal_entrante = msg.caudal ? msg.caudal.toString() : \"0\";\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c2e54-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar caudal en metadata",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1764,
+        "layoutY" : 685
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var startTs = metadata.ts ? parseInt(metadata.ts) : new Date().getTime();\r\nvar endOfDayTs = startTs + 86399000; // 23:59:59.000 del mismo día\r\n\r\n// metadata para el punto de las 00:00 (la de siempre, sin tocar)\r\nvar metadataInicio = metadata;\r\n\r\n// metadata para el punto de las 23:59:59 (copia independiente con el ts cambiado)\r\nvar metadataFin = JSON.parse(JSON.stringify(metadata));\r\nmetadataFin.ts = String(endOfDayTs);\r\n\r\nreturn [\r\n    { msg: msg, metadata: metadataInicio, msgType: msgType },\r\n    { msg: msg, metadata: metadataFin, msgType: msgType }\r\n];",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c5560-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "caudal_medio_diario",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Cabecera 0x72 + fin ##*CRLF + checksum XOR en ASCII hex. Failure -> alarma",
+        "layoutX" : 597,
+        "layoutY" : 385
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ===== Validacion estructural de la trama (cabecera + fin + checksum XOR) =====\nvar data = msg.data;\nif (!data || typeof data !== \"string\") {\n    throw new Error(\"Mensaje sin campo 'data'\");\n}\nvar f = data.toLowerCase();\nif (f.length % 2 !== 0) {\n    throw new Error(\"Trama con longitud impar: \" + f.length + \" caracteres\");\n}\nif (f.length < 30) {\n    throw new Error(\"Trama demasiado corta: \" + f.length + \" caracteres\");\n}\nif (f.substring(0, 2) !== \"72\") {\n    throw new Error(\"Cabecera invalida: empieza por 0x\" + f.substring(0, 2));\n}\nif (f.slice(-10) !== \"23232a0d0a\") {\n    throw new Error(\"Fin de trama invalido: \" + f.slice(-10));\n}\n// Checksum: XOR de todos los bytes desde 'r' hasta el ultimo dato,\n// transmitido como 2 caracteres ASCII hexadecimales antes del fin de trama\nvar xorCalc = 0;\nfor (var i = 0; i < f.length - 14; i += 2) {\n    xorCalc ^= parseInt(f.substring(i, i + 2), 16);\n}\nvar c1 = String.fromCharCode(parseInt(f.substring(f.length - 14, f.length - 12), 16));\nvar c2 = String.fromCharCode(parseInt(f.substring(f.length - 12, f.length - 10), 16));\nvar crcRx = (c1 + c2).toUpperCase();\nvar crcCalc = (\"0\" + xorCalc.toString(16)).slice(-2).toUpperCase();\nif (crcRx !== crcCalc) {\n    throw new Error(\"Checksum KO: recibido \" + crcRx + \", calculado \" + crcCalc);\n}\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c5561-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Validar trama (CRC XOR)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Se dispara si falla la validacion estructural o la decodificacion",
+        "layoutX" : 679,
+        "layoutY" : 285
+      },
+      "configuration" : {
+        "alarmType" : "Trama inválida",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "dynamicSeverity" : false,
+        "scriptLang" : "JS",
+        "jsScript" : "var details = {}; details.trama = msg.data ? msg.data.substring(0, 120) : ''; details.pila = metadata.deviceName || metadata.pila_origen || ''; return details;",
+        "tbelScript" : "return {};",
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "relationTypes" : [ ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c5562-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Alarma: trama inválida",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Convierte el estado calculado en ver1 en un unico atributo de la pila",
+        "layoutX" : 1349,
+        "layoutY" : 346
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return { msg: { acumulados_v2: metadata.acumulados_out }, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c7c70-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar estado acumulados",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1506,
+        "layoutY" : 456
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c7c71-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar acumulados_v2 (pila)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "sector/zona solo se usan para el resumen; no se persisten como telemetria",
+        "layoutX" : 1357,
+        "layoutY" : 254
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "delete msg.sector; delete msg.zona; return { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c7c72-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Limpiar campos internos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Crea/actualiza la relacion Forma_parte_de del caudalimetro hacia su Grupo_Riego (segun grupo_v4). Crea el Asset si no existe. Borra relaciones Forma_parte_de anteriores para evitar duplicados si el caudalimetro cambio de grupo.",
+        "layoutX" : 1942,
+        "layoutY" : 355
+      },
+      "configuration" : {
+        "direction" : "TO",
+        "entityType" : "ASSET",
+        "entityNamePattern" : "$[grupo_riego]",
+        "entityTypePattern" : "Grupo_Riego",
+        "relationType" : "Forma_parte_de",
+        "createEntityIfNotExists" : true,
+        "removeCurrentRelations" : true,
+        "changeOriginatorToRelatedEntity" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c7c73-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Forma_parte_de -> Grupo_Riego",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateRelationNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Se dispara si no se ha podido crear/vincular el Device del caudalimetro o su relacion Forma_parte_de con el Grupo_Riego",
+        "layoutX" : 2014,
+        "layoutY" : 502
+      },
+      "configuration" : {
+        "alarmType" : "Caudalimetro sin vincular a Grupo_Riego",
+        "severity" : "WARNING",
+        "propagate" : false,
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "dynamicSeverity" : false,
+        "scriptLang" : "JS",
+        "jsScript" : "var details = {}; details.caudalimetro = msg.deviceName || ''; details.grupo_riego = msg.grupo_riego || ''; return details;",
+        "tbelScript" : "return {};",
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "relationTypes" : [ ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81c7c74-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Alarma: Caudalimetro sin vincular",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1658,
+        "layoutY" : 176
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "$[grupo_riego]",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789714660714,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ca380-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cambia a GR (telemetria individual)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1866,
+        "layoutY" : 264
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var salida = {};\r\nsalida[msg.deviceName] = msg.caudal;\r\n\r\n// v2.4: se guardan tambien en metadata los acumulados de volumen de ESTE\r\n// caudalimetro (ya calculados en \"Decodificar y acumular\"), para que el\r\n// nodo \"Actualizar mapa caudal_operaciones\" pueda aplicarles el mismo\r\n// signo (+Suma/-Resta) que al caudal instantaneo, y el grupo tenga un\r\n// caudal_total_diario_m3 / anual / total ya reales, no solo el caudal_Sum.\r\nmetadata.civ_deviceName = msg.deviceName;\r\nmetadata.civ_volumen_intervalo_m3 = (msg.volumen_intervalo_m3 !== undefined && msg.volumen_intervalo_m3 !== null) ? String(msg.volumen_intervalo_m3) : \"0\";\r\nmetadata.civ_caudal_total_diario_m3 = (msg.caudal_total_diario_m3 !== undefined && msg.caudal_total_diario_m3 !== null) ? String(msg.caudal_total_diario_m3) : \"\";\r\nmetadata.civ_caudal_total_anual_m3 = (msg.caudal_total_anual_m3 !== undefined && msg.caudal_total_anual_m3 !== null) ? String(msg.caudal_total_anual_m3) : \"\";\r\nmetadata.civ_caudal_total_m3 = (msg.caudal_total_m3 !== undefined && msg.caudal_total_m3 !== null) ? String(msg.caudal_total_m3) : \"\";\r\n\r\nreturn {msg: salida, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\"};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789714675453,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ca381-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Construir clave caudal por caudalimetro",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2164,
+        "layoutY" : 251
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789714688263,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ca382-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar caudal caudalimetro en GR",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 592,
+        "layoutY" : 556
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "CRBG_Resumen_Caudales",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ca383-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cambia a Resumen (leer manuales)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 682,
+        "layoutY" : 713
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "manuales_activos_hoy" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ca384-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Leer manuales_activos_hoy",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 913,
+        "layoutY" : 529
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "${deviceName}",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ca385-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Vuelve a la Pila (self)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 887,
+        "layoutY" : 617
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "metadata.deviceName = msg.deviceName || metadata.deviceName || \"\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81cca90-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Copiar deviceName a metadata",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Se dispara si falla la validacion estructural o la decodificacion",
+        "layoutX" : 917,
+        "layoutY" : 53
+      },
+      "configuration" : {
+        "alarmType" : "Trama inválida",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "dynamicSeverity" : false,
+        "scriptLang" : "JS",
+        "jsScript" : "var details = {}; details.trama = msg.data ? msg.data.substring(0, 120) : ''; details.pila = metadata.deviceName || metadata.pila_origen || ''; return details;",
+        "tbelScript" : "return {};",
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "relationTypes" : [ ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81cca91-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Alarma: trama inválida",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3222,
+        "layoutY" : 176
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var mediaActual = null;\r\nif (Array.isArray(msg) && msg.length > 0 && msg[0].values && msg[0].values.media_proyectada !== undefined) {\r\n    mediaActual = msg[0].values.media_proyectada;\r\n}\r\nif (mediaActual === null) {\r\n    return { msg: msg, metadata: metadata, msgType: msgType };\r\n}\r\nmetadata.gr_media_proyectada = mediaActual.toString();\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81cca92-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Extraer media proyectada (ya calculada)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3331,
+        "layoutY" : 45
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "gr_nombre"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d18b0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Nombre del Grupo_Riego (para mapa)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3599,
+        "layoutY" : 50
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "TO",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Esta",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786365793791,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d3fc0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Ir a Sector (para mapa)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3444,
+        "layoutY" : 143
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "gr_sector"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d3fc1-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Nombre del Sector (para mapa)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3754,
+        "layoutY" : 214
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "ASSET",
+        "entityNamePattern" : "CRBG_Resumen_Caudales",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d3fc2-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cambia a Resumen (medias v3)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4333,
+        "layoutY" : 214
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : true,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786364228523,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d3fc3-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar Media Proyectada Sectores (v3 final)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3839,
+        "layoutY" : 79
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function sanitizeKey(nombre) {\r\n    var desde = \"áéíóúÁÉÍÓÚüÜñÑàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛäëïöÄËÏÖ\";\r\n    var hasta = \"aeiouAEIOUuUnNaeiouAEIOUaeiouAEIOUaeioAEIO\";\r\n    var out = \"\";\r\n    var str = String(nombre);\r\n    for (var i = 0; i < str.length; i++) {\r\n        var ch = str.charAt(i);\r\n        var idx = desde.indexOf(ch);\r\n        out += (idx !== -1) ? hasta.charAt(idx) : ch;\r\n    }\r\n    out = out.toLowerCase();\r\n    var limpio = \"\";\r\n    for (var j = 0; j < out.length; j++) {\r\n        var c = out.charAt(j);\r\n        if ((c >= \"a\" && c <= \"z\") || (c >= \"0\" && c <= \"9\")) {\r\n            limpio += c;\r\n        } else {\r\n            limpio += \"_\";\r\n        }\r\n    }\r\n    // colapsar guiones bajos multiples\r\n    while (limpio.indexOf(\"__\") !== -1) { limpio = limpio.replace(\"__\", \"_\"); }\r\n    // quitar guiones al principio/final\r\n    while (limpio.charAt(0) === \"_\") { limpio = limpio.slice(1); }\r\n    while (limpio.charAt(limpio.length - 1) === \"_\") { limpio = limpio.slice(0, -1); }\r\n    return \"mp_\" + limpio;\r\n}\r\n\r\nvar clave = sanitizeKey(metadata.gr_nombre);\r\nvar valor = {\r\n    valor: parseFloat(metadata.gr_media_proyectada),\r\n    sector: metadata.gr_sector ? String(metadata.gr_sector).replace(/[^0-9]/g, \"\") : metadata.gr_sector,\r\n    ts: metadata.ts ? parseInt(metadata.ts) : new Date().getTime()\r\n};\r\n\r\nvar salida = {};\r\nsalida[clave] = JSON.stringify(valor);\r\n\r\nreturn {\r\n    msg: salida,\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d3fc4-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Construir clave unica del grupo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4146,
+        "layoutY" : 25
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1786365793791,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d66d0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar clave unica (sin carreras)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4105,
+        "layoutY" : 139
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "mp_el_torbiscal", "mp_torremarismas", "mp_montera", "mp_don_bartolome", "mp_a_x_1", "mp_santa_maria_adrian", "mp_santa_maria_roalon", "mp_la_vega", "mp_las_lebreras", "mp_penon_maestre_indesa", "mp_penon_indesa", "mp_a_x_2", "mp_las_arcas", "mp_salinillas_marcelino", "mp_salinillas", "mp_el_rancho_marcelino", "mp_el_rancho_hermana", "mp_el_rosal", "mp_a_x_3", "mp_cordobilla_carlos", "mp_cordobilla_tulio", "mp_ranchillo_tulio", "mp_ranchillo_baena", "mp_ranchillo_grupo", "mp_a_x_3_bis", "mp_los_almendrillos", "mp_cordobilla_cordero", "mp_almendrillos_puchal", "mp_hnos_baena", "mp_almedrillos_altos_canal", "mp_almendrillos_altos_marismillas", "mp_agro_montujar", "mp_grupo_palmilla", "mp_palmilla_carlos", "mp_el_millonario", "mp_palmilla_ican", "mp_hnos_bastos", "mp_el_judio", "mp_a_x_5", "mp_la_condesa", "mp_hornillo_gilete", "mp_don_alberto", "mp_rosario_nunez", "mp_merlina_meango", "mp_merlina_piva", "mp_los_huertos", "mp_melendo", "mp_el_rosario", "mp_gomez_aparicio", "mp_granaillo_grupo", "mp_trinidad_cavam", "mp_la_raspa", "mp_las_coronas_1_abonos_jimenez", "mp_cerrado_de_miura", "mp_santo_tomas", "mp_grupo_el_corzo", "mp_casavacas_1", "mp_matamarilla_tubarro", "mp_torre_nueva", "mp_el_toril_fernando", "mp_la_algabarra", "mp_los_angeles_baldisema", "mp_lasarte", "mp_casavacas_2", "mp_carmona_1_puerto", "mp_algodonales", "mp_la_cabana_gravedad_marques", "mp_los_rubios_jarema", "mp_t_ii_1_1_3", "mp_a_iv_3", "mp_la_corchuela", "mp_v_rancho_lopez_gomez", "mp_t_ii_1_2", "mp_t_ii_1_1", "mp_cisman_t_md", "mp_grupo_arenoso", "mp_las_crucetas", "mp_san_fernando", "mp_t_vii_6_tuberia", "mp_rubio_angel", "mp_juan_gomez_t_1", "mp_t_vii_2", "mp_gilito", "mp_t_vii_7a_acequia", "mp_los_becerros", "mp_juan_gomez_10_2", "mp_pinto_agricola", "mp_cortijo_guadajoz", "mp_presa_la_gitana_desembalse", "mp_real_tesoro", "mp_campanero", "mp_el_corredero", "mp_carmona_2", "mp_el_alcachofar_1", "mp_el_cerro", "mp_los_angeles_parias", "mp_el_toril_ii", "mp_la_cabana_mg", "mp_jarilla", "mp_grupo_algabarra", "mp_matas_verdes", "mp_diputacion", "mp_sortes_y_la_botija", "mp_real_club_de_golf", "mp_la_espanola", "mp_b_ii_flume_gate", "mp_ayala_arenoso", "mp_v_rancho_crucetas", "mp_a_v_5", "mp_t_vii_7", "mp_a_v_3_mejorada", "mp_cisman_y_los_frailes", "mp_t_vii_4", "mp_jaime_perez_izquierda", "mp_el_marchante", "mp_mochales", "mp_trinidad_nufri", "mp_presa_el_rosario_bombeo", "mp_presa_la_restinga_eco", "mp_casilla_villegas", "mp_alamo_alto_em", "mp_presa_el_rosario_eco", "mp_casavacas_santa_adela", "mp_crespo_camino", "mp_la_algabarrilla", "mp_carmona_1_la_chacona", "mp_carmona_1_bernal", "mp_v_rancho_barron", "mp_los_rubios_carlos", "mp_t_iv_6", "mp_v_rancho_cerezuela", "mp_a_v_3", "mp_t_vii_4_2", "mp_el_alcachofar_2", "mp_barrera", "mp_hacienda_nueva_san_jose", "mp_la_cabana_marques", "mp_el_toril_i", "mp_el_serafin", "mp_t_ii_1_4", "mp_la_espanola_desembalse", "mp_a_iv_6_1_bis", "mp_v_rancho_peseta", "mp_a_iv_4_bertedona_dona_ana", "mp_tamaran", "mp_a_vii_9", "mp_ulloa", "mp_a_vii_8", "mp_presa_la_gitana_eco", "mp_trinidad_l_rojas", "mp_oidor", "mp_granaillo_leonardo", "mp_crespo_recuerda", "mp_la_florida", "mp_a_iv_4_zambruno", "mp_hacienda_romana_2_balsa", "mp_pinto_ansar", "mp_jaime_perez_derecha_t", "mp_t_vii_6_acequia", "mp_presa_la_restinga_bombeo", "mp_presa_la_gitana_bombeo", "mp_carmona_3", "mp_meliton", "mp_la_jurada", "mp_grupo_almonazar", "mp_hacienda_hornillo", "mp_a_v_2", "mp_a_v_1", "mp_a_iv_6_1", "mp_a_iv_4", "mp_a_vii_1_1_1", "mp_a_vii_3_molinillo", "mp_presa_la_restinga_desembalse", "mp_legua_leal", "mp_casilla_san_german", "mp_grupo_cesaro", "mp_huerta_escobedo", "mp_a_vii_1_1_2", "mp_sat_la_romana", "mp_torremarismas_cd3", "mp_trinidad_canaveral", "mp_grupo_matamarilla", "mp_a_iv_5", "mp_los_rubios_guayba", "mp_el_toruno", "mp_la_gitana", "mp_presa_el_rosario_desembalse", "mp_secano_de_la_motilla", "mp_la_cabana_gravedad_inagro", "mp_torres_gomez", "mp_los_cabreros", "mp_la_famosa", "mp_carmona_1_los_lares", "mp_grupo_buitrago", "mp_t_ii_1_2_1", "mp_liebanas", "mp_grupo_cisman", "mp_hacienda_romana_canal", "mp_hacienda_oran", "mp_el_cuzco", "mp_sat_dehesilla", "mp_san_rafael", "mp_frutansa", "mp_a_iv_3_bujalmoro_md", "mp_los_llanos", "mp_a_v_4", "mp_rv_agro", "mp_santana", "mp_bujalmoro", "mp_v_rancho_cabezuelo", "mp_t_vii_5", "mp_granaillo_la_milana", "mp_a_vii_10_t", "mp_las_coronas_2", "mp_trinidad_a_rojas", "mp_alamo_alto_md", "mp_torre_arana", "mp_san_juan", "mp_los_santos", "mp_la_cabana_inagro", "mp_el_bodegon", "mp_casablanquilla", "mp_las_coronas_1_casilla_leon", "mp_antonio_lopez", "mp_el_pinganillo", "mp_la_encina", "mp_grupo_espartales", "mp_el_pino", "mp_t_vii_7a_tuberia", "manuales_activos_hoy", "guardas_activos_hoy" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d66d1-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar todas las claves unicas + manuales",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4003,
+        "layoutY" : 257
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function sanitizeKey(nombre) {\r\n    var desde = \"áéíóúÁÉÍÓÚüÜñÑàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛäëïöÄËÏÖ\";\r\n    var hasta = \"aeiouAEIOUuUnNaeiouAEIOUaeiouAEIOUaeioAEIO\";\r\n    var out = \"\";\r\n    var str = String(nombre);\r\n    for (var i = 0; i < str.length; i++) {\r\n        var ch = str.charAt(i);\r\n        var idx = desde.indexOf(ch);\r\n        out += (idx !== -1) ? hasta.charAt(idx) : ch;\r\n    }\r\n    out = out.toLowerCase();\r\n    var limpio = \"\";\r\n    for (var j = 0; j < out.length; j++) {\r\n        var c = out.charAt(j);\r\n        if ((c >= \"a\" && c <= \"z\") || (c >= \"0\" && c <= \"9\")) {\r\n            limpio += c;\r\n        } else {\r\n            limpio += \"_\";\r\n        }\r\n    }\r\n    // colapsar guiones bajos multiples\r\n    while (limpio.indexOf(\"__\") !== -1) { limpio = limpio.replace(\"__\", \"_\"); }\r\n    // quitar guiones al principio/final\r\n    while (limpio.charAt(0) === \"_\") { limpio = limpio.slice(1); }\r\n    while (limpio.charAt(limpio.length - 1) === \"_\") { limpio = limpio.slice(0, -1); }\r\n    return \"mp_\" + limpio;\r\n}\r\n\r\nfunction parseObj(v) {\r\n    if (!v) { return {}; }\r\n    if (typeof v === \"string\") { try { return JSON.parse(v); } catch (e) { return {}; } }\r\n    if (typeof v === \"object\") { return v; }\r\n    return {};\r\n}\r\nfunction madridOffsetMs(t) {\r\n    function lastSundayUtc1(y, m) {\r\n        var last = new Date(Date.UTC(y, m + 1, 0));\r\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\r\n    }\r\n    var y = new Date(t).getUTCFullYear();\r\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\r\n}\r\nfunction fechaLocal(t) {\r\n    var off = madridOffsetMs(t);\r\n    var d = new Date(t + off);\r\n    return d.getUTCFullYear() + \"-\" + (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" + (\"0\" + d.getUTCDate()).slice(-2);\r\n}\r\n\r\nvar NOMBRES = [\"El Torbiscal\", \"Torremarismas\", \"Montera\", \"Don Bartolomé\", \"A-X-1\", \"Santa María Adrián\", \"Santa María Roalón\", \"La Vega\", \"Las Lebreras\", \"Peñon - Maestre -INDESA\", \"Peñon INDESA\", \"A-X-2\", \"Las Arcas\", \"Salinillas Marcelino\", \"Salinillas\", \"El Rancho Marcelino\", \"El Rancho Hermana\", \"El Rosal\", \"A-X-3\", \"Cordobilla Carlos\", \"Cordobilla Tulio\", \"Ranchillo Tulio\", \"Ranchillo Baena\", \"Ranchillo Grupo\", \"A-X-3-BIS\", \"Los Almendrillos\", \"Cordobilla Cordero\", \"Almendrillos Puchal\", \"Hnos. Baena\", \"Almedrillos Altos canal\", \"Almendrillos Altos Marismillas\", \"Agro Montujar\", \"Grupo Palmilla\", \"Palmilla Carlos\", \"El Millonario\", \"Palmilla ICAN\", \"Hnos. Bastos\", \"El Judío\", \"A-X-5\", \"La Condesa\", \"Hornillo-Gilete\", \"Don Alberto\", \"Rosario Nuñez\", \"Merlina Meango\", \"Merlina Piva\", \"Los Huertos\", \"Melendo\", \"El Rosario\",\"Hacienda Hornillo Lora + Leon\", \"Gomez Aparicio\", \"Granaillo Grupo\", \"Trinidad CAVAM\", \"La Raspa\", \"Las Coronas 1 Abonos Jimenez\", \"Cerrado de Miura\", \"Santo Tomás\", \"Grupo El Corzo\", \"Casavacas 1\", \"MatAmarilla Tubarro\", \"Torre Nueva\", \"El Toril Fernando\", \"La Algabarra\", \"Los Angeles Baldisema\", \"Lasarte\", \"Casavacas 2\", \"Carmona 1 Puerto\", \"Algodonales\", \"La Cabaña Gravedad Marqués\", \"Los rubios Jarema\", \"T-II-1-1-3\", \"A-IV-3\", \"La corchuela\", \"V Rancho López Gómez\", \"T-II-1-2\", \"T-II-1-1\", \"Cisman (T) - MD\", \"Grupo Arenoso\", \"Las Crucetas\", \"San Fernando\", \"T-VII-6 Tubería\", \"Rubio Angel\", \"Juan Gómez (T) - 1\", \"T-VII-2\", \"Gilito\", \"T-VII-7A Acequia\", \"Los Becerros\", \"Juan Gomez (10) - 2\", \"Pinto Agrícola\", \"Cortijo Guadajoz\", \"Presa La Gitana desembalse\", \"Real Tesoro\", \"Campanero\", \"El Corredero\", \"Carmona 2\", \"El Alcachofar - 1\", \"El Cerro\", \"Los Angeles Parias\", \"El Toril II\", \"La Cabaña MG\", \"Jarilla\", \"Grupo Algabarra\", \"Matas Verdes\", \"Diputación\", \"Sortes y la botija\", \"Real Club de Golf\", \"La Española\", \"B-II FLUME GATE\", \"Ayala Arenoso\", \"V Rancho Crucetas\", \"A-V-5\", \"T-VII-7\", \"A-V-3 Mejorada\", \"Cisman y los Frailes\", \"T-VII-4\", \"Jaime Perez - Izquierda\", \"El Marchante\", \"Mochales\", \"Trinidad Nufri\", \"Presa-El Rosario Bombeo\", \"Presa La Restinga Eco\", \"Casilla Villegas\", \"Alamo Alto EM\", \"Presa-El Rosario Eco\", \"Casavacas Santa Adela\", \"Crespo Camino\", \"La Algabarrilla\", \"Carmona 1 La Chacona\", \"Carmona 1 Bernal\", \"V Rancho, Barrón\", \"Los rubios Carlos\", \"T-IV-6\", \"V Rancho Cerezuela\", \"A-V-3\", \"T-VII-4-2\", \"El Alcachofar - 2\", \"Barrera\", \"Hacienda Nueva San José\", \"La Cabaña Marqués\", \"El Toril I\", \"El Serafín\", \"T-II-1-4\", \"La Española Desembalse\", \"A-IV-6-1-BIS\", \"V Rancho, Peseta\", \"A IV-4  Bertedona Doña Ana\", \"Tamarán\", \"A-VII-9\", \"Ulloa\", \"A-VII-8\", \"Presa La Gitana Eco\", \"Trinidad L. Rojas\", \"Oidor\", \"Granaillo Leonardo\", \"Crespo Recuerda\", \"La Florida\", \"A IV-4  Zambruno\", \"Hacienda Romana  2 (BALSA)\", \"Pinto ANSAR\", \"Jaime Pérez - Derecha (T)\", \"T-VII-6 Acequia\", \"Presa La Restinga Bombeo\", \"Presa La Gitana Bombeo\", \"Carmona 3\", \"Melitón\", \"La Jurada\", \"Grupo Almonazar\", \"Hacienda Hornillo\", \"A-V-2\", \"A-V-1\", \"A-IV-6-1\", \"A-IV-4\", \"A-VII-1-1 - 1\", \"A-VII-3 (Molinillo)\", \"Presa La Restinga desembalse\", \"Legua Leal\", \"Casilla San Germán\", \"Grupo Cesaro\", \"Huerta Escobedo\", \"A-VII-1-1 - 2\", \"SAT la Romana\", \"Torremarismas CD3\", \"Trinidad Cañaveral\", \"Grupo MatAmarilla\", \"A-IV-5\", \"Los rubios Guayba\", \"El Toruño\", \"La Gitana\", \"Presa-El Rosario Desembalse\", \"Secano de la Motilla\", \"La Cabaña Gravedad INAGRO\", \"Torres Gómez\", \"Los Cabreros\", \"La Famosa\", \"Carmona 1 Los Lares\", \"Grupo Buitrago\", \"T-II-1-2-1\", \"Liebanas\", \"Grupo Cismán\", \"Hacienda Romana canal\", \"Hacienda Oran\", \"El Cuzco\", \"SAT Dehesilla\", \"San Rafael\", \"Frutansa\", \"A-IV-3 Bujalmoro MD\", \"Los Llanos\", \"A-V-4\", \"RV AGRO\", \"Santana\", \"Bujalmoro\", \"V Rancho Cabezuelo\", \"T-VII-5\", \"Granaillo La Milana\", \"A-VII-10 (T)\", \"Las Coronas 2\", \"Trinidad A. Rojas\", \"Alamo Alto MD\", \"Torre Arana\", \"San Juan\", \"Los Santos\", \"La Cabaña Inagro\", \"El Bodegón\", \"Casablanquilla\", \"Las Coronas 1 Casilla León\", \"Antonio López\", \"El Pinganillo\", \"La Encina\", \"Grupo Espartales\", \"El Pino\", \"T-VII-7A Tubería\"];\r\n\r\nvar diaHoy = fechaLocal(new Date().getTime());\r\nvar manuales = parseObj(metadata.ss_manuales_activos_hoy);\r\nvar guardas = parseObj(metadata.ss_guardas_activos_hoy);\r\n\r\nvar totales = { \"0\": 0, \"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0 };\r\nvar conteos = { \"0\": 0, \"1\": 0, \"2\": 0, \"3\": 0, \"4\": 0, \"5\": 0 };\r\nvar debugDesfasados = { \"0\": [], \"1\": [], \"2\": [], \"3\": [], \"4\": [], \"5\": [] };\r\n\r\nfor (var i = 0; i < NOMBRES.length; i++) {\r\n    var nombre = NOMBRES[i];\r\n    var clave = \"ss_\" + sanitizeKey(nombre);\r\n    var m = parseObj(metadata[clave]);\r\n\r\n    var manual = manuales[nombre];\r\n    var manualActivo = (manual !== undefined && manual.dia === diaHoy);\r\n    var guarda = guardas[nombre];\r\n    var guardaActivo = (guarda !== undefined && guarda.dia === diaHoy);\r\n\r\n    // Prioridad: 1) manual  2) caudal automatico (de hoy)  3) guarda -- solo\r\n    // se usa el guarda cuando NI el manual NI el automatico tienen dato valido.\r\n    var valor, sector;\r\n    if (manualActivo) {\r\n        valor = parseFloat(manual.valor) || 0;\r\n        sector = manual.sector;\r\n    } else if (m.valor !== undefined && parseFloat(m.valor) > 0 && m.ts !== undefined && fechaLocal(parseInt(m.ts)) === diaHoy) {\r\n        // OJO: se exige > 0 a proposito -- los caudalimetros SIEMPRE reportan\r\n        // algo (aunque sea 0), asi que sin este chequeo el guarda nunca\r\n        // llegaria a activarse (casi siempre habria un \"automatico\" presente).\r\n        valor = parseFloat(m.valor) || 0;\r\n        sector = m.sector;\r\n    } else if (guardaActivo) {\r\n        valor = parseFloat(guarda.valor) || 0;\r\n        sector = guarda.sector;\r\n    } else {\r\n        // Ni manual, ni automatico de hoy, ni guarda -- no cuenta.\r\n        var sKeyDebug = m.sector !== undefined ? String(m.sector).replace(/[^0-9]/g, \"\") : \"\";\r\n        if (debugDesfasados[sKeyDebug] !== undefined) {\r\n            debugDesfasados[sKeyDebug].push(nombre + \"(\" + (m.ts ? fechaLocal(parseInt(m.ts)) : \"sin_ts\") + \")\");\r\n        }\r\n        continue;\r\n    }\r\n\r\n    var sKey = sector !== undefined ? String(sector).replace(/[^0-9]/g, \"\") : \"\";\r\n    if (sKey === \"\" || totales[sKey] === undefined) { continue; }\r\n    totales[sKey] += valor;\r\n    conteos[sKey] += 1;\r\n}\r\n\r\n// Si NINGUN grupo de un sector tiene dato de \"hoy\" todavia (conteo 0), no se\r\n// emite esa clave -- un sector sin dato es distinto de un sector que vale 0 de\r\n// verdad, y no debe colarse como una lectura real en el acumulador diario\r\n// (nodo \"Calcular media diaria (incremental)\"), que interpretaria cualquier\r\n// numero presente como una muestra valida.\r\nvar valores = {};\r\nvar totalProyectado = 0;\r\nvar totalConteo = 0;\r\nfor (var s in totales) {\r\n    if (conteos[s] === 0) { continue; }\r\n    valores[\"media_proyectada_s\" + s] = Math.round(totales[s] * 100) / 100;\r\n    if (s !== \"0\") { totalProyectado += totales[s]; totalConteo += conteos[s]; }\r\n}\r\nif (totalConteo > 0) {\r\n    valores[\"media_proyectada_total\"] = Math.round(totalProyectado * 100) / 100;\r\n}\r\n\r\nfor (var sd in debugDesfasados) {\r\n    valores[\"debug_desfasados_s\" + sd] = debugDesfasados[sd].join(\", \");\r\n}\r\n\r\nreturn { msg: valores, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d66d2-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Calcular Totales Sector (v4, claves unicas)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4216,
+        "layoutY" : 356
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "rs_state_s0", "rs_state_s1", "rs_state_s2", "rs_state_s3", "rs_state_s4", "rs_state_s5", "rs_state_total" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787045719645,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d66d3-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar estado media diaria sectores",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4520,
+        "layoutY" : 337
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function madridOffsetMs(t) {\n    function lastSundayUtc1(y, m) {\n        var last = new Date(Date.UTC(y, m + 1, 0));\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\n    }\n    var y = new Date(t).getUTCFullYear();\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\n}\nfunction fechaLocal(t) {\n    var off = madridOffsetMs(t);\n    var d = new Date(t + off);\n    return d.getUTCFullYear() + \"-\" + (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" + (\"0\" + d.getUTCDate()).slice(-2);\n}\n// ts de las 23:59:59 (hora local Madrid) del día \"fechaStr\" (YYYY-MM-DD)\nfunction finDeDiaTs(fechaStr, tsReferencia) {\n    var off = madridOffsetMs(tsReferencia);\n    var partes = fechaStr.split(\"-\");\n    var utcMedianoche = Date.UTC(parseInt(partes[0]), parseInt(partes[1]) - 1, parseInt(partes[2]), 0, 0, 0) - off;\n    return utcMedianoche + 86399000; // +23:59:59\n}\n\n// OJO: aqui NO se usa metadata.ts (el ts de la trama de la Pila que dispara\n// este ciclo), porque ese dato puede venir de una Pila concreta que ya ha\n// cruzado la medianoche mientras las demas todavia no -- eso disparaba un\n// cierre de dia falso para TODOS los sectores a la vez, usando el reloj de\n// una sola Pila. Usamos la hora real del servidor, que es la misma para\n// todos los sectores en todo momento.\nvar tsAhora = new Date().getTime();\nvar diaHoy = fechaLocal(tsAhora);\nvar sectores = [\"s0\", \"s1\", \"s2\", \"s3\", \"s4\", \"s5\", \"total\"];\n\nvar salidaHoy = {};      // media_dia_hoy_sX -> se guarda con ts = ahora\nvar salidaCierre = {};   // media_diaria_sX  -> solo si hay cambio de día, ts = 23:59:59 del día anterior\nvar salidaAtributos = {};\nvar hayCierre = false;\nvar tsCierre = null;\n\nfor (var i = 0; i < sectores.length; i++) {\n    var s = sectores[i];\n  var claveEstado = \"rs_state_\" + s;\n    var claveValor = \"media_proyectada_\" + s;\n\n    var valorActual = parseFloat(msg[claveValor]);\n    if (isNaN(valorActual)) { continue; }\n\n    var estadoPrevio = null;\n    try {\n        estadoPrevio = metadata[\"ss_\" + claveEstado] ? JSON.parse(metadata[\"ss_\" + claveEstado]) : null;\n    } catch (e) { estadoPrevio = null; }\n\n    var suma, cuenta;\n\n    if (estadoPrevio && estadoPrevio.dia !== diaHoy) {\n        // Cambio de día detectado: cerramos el día anterior con su media final\n        var mediaCierre = Math.round((estadoPrevio.suma / estadoPrevio.cuenta) * 100) / 100;\n        salidaCierre[\"media_diaria_\" + s] = mediaCierre;\n        hayCierre = true;\n        if (tsCierre === null) { tsCierre = finDeDiaTs(estadoPrevio.dia, tsAhora); }\n\n        // Arrancamos el nuevo día desde cero, con este primer dato\n        suma = valorActual;\n        cuenta = 1;\n    } else if (estadoPrevio) {\n        suma = estadoPrevio.suma + valorActual;\n        cuenta = estadoPrevio.cuenta + 1;\n    } else {\n        // Primera ejecución de siempre (no había estado guardado todavía)\n        suma = valorActual;\n        cuenta = 1;\n    }\n\n    var mediaHoy = Math.round((suma / cuenta) * 100) / 100;\n    salidaHoy[\"media_dia_hoy_\" + s] = mediaHoy;\n    salidaAtributos[claveEstado] = JSON.stringify({ suma: suma, cuenta: cuenta, dia: diaHoy });\n}\n\nmetadata.rs_atributos_nuevos = JSON.stringify(salidaAtributos);\n\nvar mensajes = [\n    { msg: salidaHoy, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" }\n];\n\nif (hayCierre) {\n    var metadataCierre = JSON.parse(JSON.stringify(metadata));\n    metadataCierre.ts = String(tsCierre);\n    mensajes.push({ msg: salidaCierre, metadata: metadataCierre, msgType: \"POST_TELEMETRY_REQUEST\" });\n}\n\nreturn mensajes;",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787045345007,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d66d4-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Calcular media diaria (incremental)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4770,
+        "layoutY" : 287
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d66d5-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar media diaria sectores",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 4770,
+        "layoutY" : 387
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var atributos = JSON.parse(metadata.rs_atributos_nuevos);\r\nreturn { msg: atributos, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d66d6-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar atributos estado media diaria",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 5020,
+        "layoutY" : 387
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d8de0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar estado media diaria",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 283,
+        "layoutY" : 327
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return typeof msg.caudal_maximo !== 'undefined';",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787659364096,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d8de2-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Filtro: cambio de caudal_maximo (Caudalimetro)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 346,
+        "layoutY" : 445
+      },
+      "configuration" : {
+        "fetchTo" : "METADATA",
+        "dataMapping" : {
+          "name" : "cau_nombre"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787659364096,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d8de3-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Nombre del Caudalimetro (antes de cambiar)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 330,
+        "layoutY" : 579
+      },
+      "configuration" : {
+        "originatorSource" : "RELATED",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : null,
+        "entityNamePattern" : null,
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ "DEVICE" ],
+            "negate" : false
+          } ]
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787659364096,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d8de4-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Ir a la Pila (relacion inversa Contains)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 411,
+        "layoutY" : 685
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "caudal_maximo_v1" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787659364096,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81d8de5-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar caudal_maximo_v1 actual (Pila)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 522,
+        "layoutY" : 820
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Fusiona el nuevo caudal_maximo de ESTE caudalimetro dentro del mapa\n// caudal_maximo_v1 que vive en su Pila (clave = nombre del caudalimetro).\nfunction parseObj(value) {\n    if (!value) { return {}; }\n    if (typeof value === \"string\") {\n        try { return JSON.parse(value); } catch (e) { return {}; }\n    }\n    if (typeof value === \"object\") { return value; }\n    return {};\n}\n\nvar mapa = parseObj(metadata.ss_caudal_maximo_v1);\nvar nombre = metadata.cau_nombre;\nvar nuevoValor = parseFloat(msg.caudal_maximo);\n\nif (nombre && !isNaN(nuevoValor)) {\n    mapa[nombre] = nuevoValor;\n}\n\nreturn {\n    msg: { caudal_maximo_v1: JSON.stringify(mapa) },\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787659364096,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81db4f0-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Actualizar mapa caudal_maximo_v1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 831,
+        "layoutY" : 796
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1787659364096,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81db4f1-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar caudal_maximo_v1 (Pila)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3116,
+        "layoutY" : 301
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "cmd_state" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81db4f2-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar estado caudal medio diario (caudalimetro)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3368,
+        "layoutY" : 250
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function madridOffsetMs(t) {\n    function lastSundayUtc1(y, m) {\n        var last = new Date(Date.UTC(y, m + 1, 0));\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\n    }\n    var y = new Date(t).getUTCFullYear();\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\n}\nfunction fechaLocal(t) {\n    var off = madridOffsetMs(t);\n    var d = new Date(t + off);\n    return d.getUTCFullYear() + \"-\" + (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" + (\"0\" + d.getUTCDate()).slice(-2);\n}\nfunction inicioDeDiaTs(fechaStr, tsReferencia) {\n    var off = madridOffsetMs(tsReferencia);\n    var partes = fechaStr.split(\"-\");\n    return Date.UTC(parseInt(partes[0]), parseInt(partes[1]) - 1, parseInt(partes[2]), 0, 0, 0) - off;\n}\nfunction finDeDiaTs(fechaStr, tsReferencia) {\n    return inicioDeDiaTs(fechaStr, tsReferencia) + 86399999;\n}\n\n// Media PONDERADA POR TIEMPO -- cada valor cuenta segun cuanto tiempo\n// estuvo vigente (hasta que llego el siguiente dato), NO segun cuantas\n// veces se recibio. Una media simple (sumar valores / contarlos) se hunde\n// hacia 0 si un caudalimetro manda muchas lecturas seguidas a 0 durante un\n// tramo largo y pocas lecturas durante el tramo con caudal real -- ese fue\n// justamente el fallo detectado: daba \"1\" cuando el valor real rondaba 21-23.\n//\n// Se usa metadata.ts (el instante real de ESTA lectura) para medir cuanto\n// tiempo ha pasado desde la anterior -- eso es lo que hay que ponderar. Para\n// decidir si ha cambiado de DIA se sigue usando la hora del servidor\n// (new Date()), no metadata.ts, por el mismo motivo de siempre: una Pila\n// concreta puede cruzar la medianoche antes que las demas.\nvar tsAhora = new Date().getTime();\nvar diaHoy = fechaLocal(tsAhora);\nvar tsLectura = metadata.ts ? parseInt(metadata.ts) : tsAhora;\n\nvar valorActual = parseFloat(msg.caudal);\nif (isNaN(valorActual)) {\n    return { msg: {}, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };\n}\n\nvar estadoPrevio = null;\ntry {\n    estadoPrevio = metadata.ss_cmd_state ? JSON.parse(metadata.ss_cmd_state) : null;\n} catch (e) { estadoPrevio = null; }\n\nvar mensajes = [];\nvar nuevoEstado;\n\nif (!estadoPrevio) {\n    // Primera lectura de siempre (o tras subir este arreglo) -- no hay\n    // valor anterior que ponderar todavia, solo arrancamos el estado.\n    nuevoEstado = { ultimoValor: valorActual, ultimoTs: tsLectura, sumaPonderada: 0, tiempoAcumulado: 0, dia: diaHoy };\n\n} else if (estadoPrevio.dia !== diaHoy) {\n    // Cambio de dia: cerramos el dia anterior. El ULTIMO valor conocido\n    // sigue vigente hasta el final de ese dia (23:59:59), asi que se\n    // pondera tambien ese ultimo tramo antes de calcular la media final.\n    var finAnterior = finDeDiaTs(estadoPrevio.dia, tsAhora);\n    var gapCierre = Math.max(0, finAnterior - estadoPrevio.ultimoTs);\n    var sumaFinal = estadoPrevio.sumaPonderada + (estadoPrevio.ultimoValor * gapCierre);\n    var tiempoFinal = estadoPrevio.tiempoAcumulado + gapCierre;\n\n    if (tiempoFinal > 0) {\n        var mediaCierre = Math.round((sumaFinal / tiempoFinal) * 100) / 100;\n        var inicioTs = inicioDeDiaTs(estadoPrevio.dia, tsAhora);\n\n        var metaInicio = metadata;\n        var metaFin = JSON.parse(JSON.stringify(metadata));\n        metaInicio.ts = String(inicioTs);\n        metaFin.ts = String(finAnterior);\n\n        var msgCierre = {};\n        msgCierre[\"caudal_medio_diario\"] = mediaCierre;\n\n        mensajes.push({ msg: msgCierre, metadata: metaInicio, msgType: \"POST_TELEMETRY_REQUEST\" });\n        mensajes.push({ msg: msgCierre, metadata: metaFin, msgType: \"POST_TELEMETRY_REQUEST\" });\n    }\n\n    // Arrancamos el nuevo dia desde cero, con esta lectura como punto de partida.\n    nuevoEstado = { ultimoValor: valorActual, ultimoTs: tsLectura, sumaPonderada: 0, tiempoAcumulado: 0, dia: diaHoy };\n\n} else {\n    // Mismo dia: se pondera el valor ANTERIOR por el tiempo que ha estado\n    // vigente hasta AHORA (hasta que llega este nuevo dato).\n    var gap = Math.max(0, tsLectura - estadoPrevio.ultimoTs);\n    nuevoEstado = {\n        ultimoValor: valorActual,\n        ultimoTs: tsLectura,\n        sumaPonderada: estadoPrevio.sumaPonderada + (estadoPrevio.ultimoValor * gap),\n        tiempoAcumulado: estadoPrevio.tiempoAcumulado + gap,\n        dia: diaHoy\n    };\n}\n\nmetadata.acc_atributos_nuevos = JSON.stringify({ \"cmd_state\": JSON.stringify(nuevoEstado) });\n\nif (mensajes.length === 0) {\n    mensajes.push({ msg: {}, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" });\n}\n\nreturn mensajes;\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81db4f3-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Calcular caudal medio diario (incremental)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3594,
+        "layoutY" : 316
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var atributos = JSON.parse(metadata.acc_atributos_nuevos);\nreturn { msg: atributos, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81db4f4-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar atributos estado cmd (caudalimetro)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3787,
+        "layoutY" : 297
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81db4f5-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar estado caudal medio diario (caudalimetro)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3300,
+        "layoutY" : 550
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "cf_state" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81db4f6-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar estado caudal fijado (grupo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3605,
+        "layoutY" : 496
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function madridOffsetMs(t) {\n    function lastSundayUtc1(y, m) {\n        var last = new Date(Date.UTC(y, m + 1, 0));\n        return Date.UTC(y, m, last.getUTCDate() - last.getUTCDay(), 1, 0, 0);\n    }\n    var y = new Date(t).getUTCFullYear();\n    return (t >= lastSundayUtc1(y, 2) && t < lastSundayUtc1(y, 9)) ? 7200000 : 3600000;\n}\nfunction fechaLocal(t) {\n    var off = madridOffsetMs(t);\n    var d = new Date(t + off);\n    return d.getUTCFullYear() + \"-\" + (\"0\" + (d.getUTCMonth() + 1)).slice(-2) + \"-\" + (\"0\" + d.getUTCDate()).slice(-2);\n}\nfunction inicioDeDiaTs(fechaStr, tsReferencia) {\n    var off = madridOffsetMs(tsReferencia);\n    var partes = fechaStr.split(\"-\");\n    return Date.UTC(parseInt(partes[0]), parseInt(partes[1]) - 1, parseInt(partes[2]), 0, 0, 0) - off;\n}\nfunction finDeDiaTs(fechaStr, tsReferencia) {\n    return inicioDeDiaTs(fechaStr, tsReferencia) + 86399999;\n}\n\n// Media PONDERADA POR TIEMPO -- cada valor cuenta segun cuanto tiempo\n// estuvo vigente (hasta que llego el siguiente dato), NO segun cuantas\n// veces se recibio. Una media simple (sumar valores / contarlos) se hunde\n// hacia 0 si un caudalimetro manda muchas lecturas seguidas a 0 durante un\n// tramo largo y pocas lecturas durante el tramo con caudal real -- ese fue\n// justamente el fallo detectado: daba \"1\" cuando el valor real rondaba 21-23.\n//\n// Se usa metadata.ts (el instante real de ESTA lectura) para medir cuanto\n// tiempo ha pasado desde la anterior -- eso es lo que hay que ponderar. Para\n// decidir si ha cambiado de DIA se sigue usando la hora del servidor\n// (new Date()), no metadata.ts, por el mismo motivo de siempre: una Pila\n// concreta puede cruzar la medianoche antes que las demas.\nvar tsAhora = new Date().getTime();\nvar diaHoy = fechaLocal(tsAhora);\nvar tsLectura = metadata.ts ? parseInt(metadata.ts) : tsAhora;\n\nvar valorActual = parseFloat(msg.caudal_Sum);\nif (isNaN(valorActual)) {\n    return { msg: {}, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };\n}\n\nvar estadoPrevio = null;\ntry {\n    estadoPrevio = metadata.ss_cf_state ? JSON.parse(metadata.ss_cf_state) : null;\n} catch (e) { estadoPrevio = null; }\n\nvar mensajes = [];\nvar nuevoEstado;\n\nif (!estadoPrevio) {\n    // Primera lectura de siempre (o tras subir este arreglo) -- no hay\n    // valor anterior que ponderar todavia, solo arrancamos el estado.\n    nuevoEstado = { ultimoValor: valorActual, ultimoTs: tsLectura, sumaPonderada: 0, tiempoAcumulado: 0, dia: diaHoy };\n\n} else if (estadoPrevio.dia !== diaHoy) {\n    // Cambio de dia: cerramos el dia anterior. El ULTIMO valor conocido\n    // sigue vigente hasta el final de ese dia (23:59:59), asi que se\n    // pondera tambien ese ultimo tramo antes de calcular la media final.\n    var finAnterior = finDeDiaTs(estadoPrevio.dia, tsAhora);\n    var gapCierre = Math.max(0, finAnterior - estadoPrevio.ultimoTs);\n    var sumaFinal = estadoPrevio.sumaPonderada + (estadoPrevio.ultimoValor * gapCierre);\n    var tiempoFinal = estadoPrevio.tiempoAcumulado + gapCierre;\n\n    if (tiempoFinal > 0) {\n        var mediaCierre = Math.round((sumaFinal / tiempoFinal) * 100) / 100;\n        var inicioTs = inicioDeDiaTs(estadoPrevio.dia, tsAhora);\n\n        var metaInicio = metadata;\n        var metaFin = JSON.parse(JSON.stringify(metadata));\n        metaInicio.ts = String(inicioTs);\n        metaFin.ts = String(finAnterior);\n\n        var msgCierre = {};\n        msgCierre[\"caudal_fijado\"] = mediaCierre;\n\n        mensajes.push({ msg: msgCierre, metadata: metaInicio, msgType: \"POST_TELEMETRY_REQUEST\" });\n        mensajes.push({ msg: msgCierre, metadata: metaFin, msgType: \"POST_TELEMETRY_REQUEST\" });\n    }\n\n    // Arrancamos el nuevo dia desde cero, con esta lectura como punto de partida.\n    nuevoEstado = { ultimoValor: valorActual, ultimoTs: tsLectura, sumaPonderada: 0, tiempoAcumulado: 0, dia: diaHoy };\n\n} else {\n    // Mismo dia: se pondera el valor ANTERIOR por el tiempo que ha estado\n    // vigente hasta AHORA (hasta que llega este nuevo dato).\n    var gap = Math.max(0, tsLectura - estadoPrevio.ultimoTs);\n    nuevoEstado = {\n        ultimoValor: valorActual,\n        ultimoTs: tsLectura,\n        sumaPonderada: estadoPrevio.sumaPonderada + (estadoPrevio.ultimoValor * gap),\n        tiempoAcumulado: estadoPrevio.tiempoAcumulado + gap,\n        dia: diaHoy\n    };\n}\n\nmetadata.acc_atributos_nuevos = JSON.stringify({ \"cf_state\": JSON.stringify(nuevoEstado) });\n\nif (mensajes.length === 0) {\n    mensajes.push({ msg: {}, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" });\n}\n\nreturn mensajes;\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ddc00-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Calcular caudal fijado (incremental)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3700,
+        "layoutY" : 650
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var atributos = JSON.parse(metadata.acc_atributos_nuevos);\nreturn { msg: atributos, metadata: metadata, msgType: \"POST_ATTRIBUTES_REQUEST\" };",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ddc01-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar atributos estado cf (grupo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 3900,
+        "layoutY" : 650
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ddc02-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar estado caudal fijado (grupo)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2228,
+        "layoutY" : 424
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "mapa_caudal_operaciones", "operaciones_caudalimetros", "mapa_caudal_operaciones_diario", "mapa_caudal_operaciones_anual", "mapa_caudal_operaciones_total_m3", "ajuste_resta_otro_grupo", "ajuste_resta_otro_grupo_diario_m3" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789714704177,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ddc03-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar mapa/signos caudal_operaciones (GR)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2380,
+        "layoutY" : 334
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Suma (o resta, según lo configurado por el widget) el caudal de ESTE\r\n// caudalimetro dentro de los mapas que viven en su Grupo_Riego (clave =\r\n// nombre del caudalimetro, tal como llega en msg / metadata.civ_*). El\r\n// signo de cada caudalimetro se guarda aparte, en el atributo\r\n// \"operaciones_caudalimetros\" del propio Grupo_Riego (mapa nombre -> \"suma\"/\"resta\"),\r\n// que es lo que el widget de configuracion deja escrito.\r\n//\r\n// v2.4: ademas del caudal instantaneo (mapa_caudal_operaciones), se\r\n// mantienen con el MISMO signo los acumulados de volumen del caudalimetro\r\n// (diario / anual / total en m3), para que caudal_Sum, caudal_total_diario_m3,\r\n// caudal_total_anual_m3 y caudal_total_m3 del Grupo_Riego sean todos el\r\n// caudal real ya combinado, no una cifra aparte.\r\nfunction parseObj(value) {\r\n    if (!value) { return {}; }\r\n    if (typeof value === \"string\") {\r\n        try { return JSON.parse(value); } catch (e) { return {}; }\r\n    }\r\n    if (typeof value === \"object\") { return value; }\r\n    return {};\r\n}\r\n\r\nvar mapaValores = parseObj(metadata.ss_mapa_caudal_operaciones);\r\nvar mapaDiario  = parseObj(metadata.ss_mapa_caudal_operaciones_diario);\r\nvar mapaAnual   = parseObj(metadata.ss_mapa_caudal_operaciones_anual);\r\nvar mapaTotal   = parseObj(metadata.ss_mapa_caudal_operaciones_total_m3);\r\nvar signos = parseObj(metadata.ss_operaciones_caudalimetros);\r\n\r\nvar nombreCaudalimetro = Object.keys(msg)[0];\r\nvar valorCrudo = parseFloat(msg[nombreCaudalimetro]);\r\n\r\nif (nombreCaudalimetro && !isNaN(valorCrudo)) {\r\n    // Por defecto \"suma\" -- un caudalimetro recien vinculado, sin configurar\r\n    // todavia desde el widget, cuenta en positivo.\r\n    var signo = (signos[nombreCaudalimetro] === \"resta\") ? -1 : 1;\r\n    mapaValores[nombreCaudalimetro] = Math.round(valorCrudo * signo * 1000) / 1000;\r\n\r\n    var diario = parseFloat(metadata.civ_caudal_total_diario_m3);\r\n    if (!isNaN(diario)) { mapaDiario[nombreCaudalimetro] = Math.round(diario * signo * 1000) / 1000; }\r\n\r\n    var anual = parseFloat(metadata.civ_caudal_total_anual_m3);\r\n    if (!isNaN(anual)) { mapaAnual[nombreCaudalimetro] = Math.round(anual * signo * 1000) / 1000; }\r\n\r\n    var total = parseFloat(metadata.civ_caudal_total_m3);\r\n    if (!isNaN(total)) { mapaTotal[nombreCaudalimetro] = Math.round(total * signo * 1000) / 1000; }\r\n}\r\n\r\nfunction sumarMapa(mapa) {\r\n    var s = 0;\r\n    for (var k in mapa) { if (mapa.hasOwnProperty(k)) { s += mapa[k]; } }\r\n    return Math.round(s * 1000) / 1000;\r\n}\r\n\r\n// Los totales viajan en metadata hasta el nodo siguiente, que los guarda\r\n// como telemetria (caudal_Sum, caudal_total_diario_m3, ...) -- este nodo\r\n// solo se encarga de guardar los mapas actualizados (atributos).\r\nmetadata.caudal_operaciones_total = String(sumarMapa(mapaValores));\r\nmetadata.caudal_operaciones_diario_total = String(sumarMapa(mapaDiario));\r\nmetadata.caudal_operaciones_anual_total = String(sumarMapa(mapaAnual));\r\nmetadata.caudal_operaciones_total_m3_total = String(sumarMapa(mapaTotal));\r\n\r\nreturn {\r\n    msg: {\r\n        mapa_caudal_operaciones: JSON.stringify(mapaValores),\r\n        mapa_caudal_operaciones_diario: JSON.stringify(mapaDiario),\r\n        mapa_caudal_operaciones_anual: JSON.stringify(mapaAnual),\r\n        mapa_caudal_operaciones_total_m3: JSON.stringify(mapaTotal)\r\n    },\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1789714717852,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ddc04-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Actualizar mapa caudal_operaciones",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2783,
+        "layoutY" : 271
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1788761378130,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d81ddc05-a4fe-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar mapa_caudal_operaciones (GR)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2036,
+        "layoutY" : 14
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Deja solo los dos campos de ajuste (quita deviceName/grupo_riego/tipo,\r\n// que no hace falta guardar como atributos del Grupo_Riego).\r\nreturn {\r\n    msg: {\r\n        ajuste_resta_otro_grupo: msg.ajuste_resta_otro_grupo || 0,\r\n        ajuste_resta_otro_grupo_diario_m3: msg.ajuste_resta_otro_grupo_diario_m3 || 0\r\n    },\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9c3d0c30-adad-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar ajuste cruce de grupos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2328,
+        "layoutY" : 9
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9c3d3340-adad-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar ajuste de cruce de grupos",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1947,
+        "layoutY" : 113
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.tipo === \"operaciones_totales\";",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "05b5c580-b010-11f1-96bd-cdc983098999"
+      },
+      "name" : "Tipo2 (totales vs ajuste)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2212,
+        "layoutY" : 66
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "ajuste_resta_otro_grupo", "ajuste_resta_otro_grupo_diario_m3" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "05b5c581-b010-11f1-96bd-cdc983098999"
+      },
+      "name" : "Cargar ajuste cruce de grupos (GR) v2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2504,
+        "layoutY" : 63
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var total = parseFloat(msg.caudal_Sum_v2);\r\nvar diario = parseFloat(msg.caudal_total_diario_m3_v2);\r\nvar anual = parseFloat(msg.caudal_total_anual_m3_v2);\r\nvar totalM3 = parseFloat(msg.caudal_total_m3_v2);\r\n\r\nvar ajuste = parseFloat(metadata.ss_ajuste_resta_otro_grupo);\r\nvar ajusteDiario = parseFloat(metadata.ss_ajuste_resta_otro_grupo_diario_m3);\r\n\r\nif (!isNaN(total) && !isNaN(ajuste) && ajuste !== 0) {\r\n    total = Math.max(0, Math.round((total - ajuste) * 1000) / 1000);\r\n}\r\nif (!isNaN(diario) && !isNaN(ajusteDiario) && ajusteDiario !== 0) {\r\n    diario = Math.max(0, Math.round((diario - ajusteDiario) * 1000) / 1000);\r\n}\r\n\r\nvar salida = {\r\n    caudal_operaciones: isNaN(total) ? 0 : total,\r\n    caudal_Sum: isNaN(total) ? 0 : total\r\n};\r\nif (!isNaN(diario)) { salida.caudal_total_diario_m3 = diario; }\r\nif (!isNaN(anual)) { salida.caudal_total_anual_m3 = anual; }\r\nif (!isNaN(totalM3)) { salida.caudal_total_m3 = totalM3; }\r\n\r\nreturn { msg: salida, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\" };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "05b5c582-b010-11f1-96bd-cdc983098999"
+      },
+      "name" : "Aplicar ajuste y preparar telemetria v2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2800,
+        "layoutY" : 28
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "05b5c583-b010-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar caudal_operaciones (GR) v2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1441,
+        "layoutY" : 604
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var lista = [];\r\ntry {\r\n    lista = JSON.parse(metadata.cu_lista_json || \"[]\");\r\n} catch (e) {\r\n    lista = [];\r\n}\r\nreturn { msg: lista, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f38c9ef0-b01f-11f1-96bd-cdc983098999"
+      },
+      "name" : "Preparar lista claves unicas consumo (cu_)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1446,
+        "layoutY" : 690
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f38c9ef1-b01f-11f1-96bd-cdc983098999"
+      },
+      "name" : "Split grupos consumo (cu_)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1448,
+        "layoutY" : 783
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function sanitizeKey(nombre) {\r\n    var desde = \"áéíóúÁÉÍÓÚüÜñÑàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛäëïöÄËÏÖ\";\r\n    var hasta = \"aeiouAEIOUuUnNaeiouAEIOUaeiouAEIOUaeioAEIO\";\r\n    var out = \"\";\r\n    var str = String(nombre);\r\n    for (var i = 0; i < str.length; i++) {\r\n        var ch = str.charAt(i);\r\n        var idx = desde.indexOf(ch);\r\n        out += (idx !== -1) ? hasta.charAt(idx) : ch;\r\n    }\r\n    out = out.toLowerCase();\r\n    var limpio = \"\";\r\n    for (var j = 0; j < out.length; j++) {\r\n        var c = out.charAt(j);\r\n        if ((c >= \"a\" && c <= \"z\") || (c >= \"0\" && c <= \"9\")) {\r\n            limpio += c;\r\n        } else {\r\n            limpio += \"_\";\r\n        }\r\n    }\r\n    while (limpio.indexOf(\"__\") !== -1) { limpio = limpio.replace(\"__\", \"_\"); }\r\n    while (limpio.charAt(0) === \"_\") { limpio = limpio.slice(1); }\r\n    while (limpio.charAt(limpio.length - 1) === \"_\") { limpio = limpio.slice(0, -1); }\r\n    return \"cu_\" + limpio;\r\n}\r\n\r\nvar clave = sanitizeKey(msg.nombre);\r\nvar valor = {\r\n    valor: msg.valor,\r\n    sector: msg.sector,\r\n    ts: msg.ts\r\n};\r\n\r\nvar salida = {};\r\nsalida[clave] = JSON.stringify(valor);\r\n\r\nreturn {\r\n    msg: salida,\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f38c9ef2-b01f-11f1-96bd-cdc983098999"
+      },
+      "name" : "Construir clave unica de consumo (cu_)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1706,
+        "layoutY" : 793
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f38c9ef3-b01f-11f1-96bd-cdc983098999"
+      },
+      "name" : "Guardar clave unica consumo (sin carreras)",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "d804aeb0-a4fe-11f1-96bd-cdc983098999"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "36d6c860-b89c-11f0-acc3-dfcadad3d397"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 5800155
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

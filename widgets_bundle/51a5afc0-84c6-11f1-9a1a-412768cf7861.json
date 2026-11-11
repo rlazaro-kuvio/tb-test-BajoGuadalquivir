@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "propios",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "51a5afc0-84c6-11f1-9a1a-412768cf7861"
+    },
+    "image" : null,
+    "name" : "Propios",
+    "order" : null,
+    "scada" : false,
+    "title" : "Propios"
+  },
+  "fqns" : [ "tabla_caudales_caudalimetros", "tabla_hibrida_verde", "caudales_sectores", "tarjeta", "tarjeta_modificar2", "guardar_caudal_manual", "guardas", "guardas2", "tabla_hibrida_sectores", "chart1", "chart_d_as_anteriores", "tajeta_info2", "date_range", "operaciones_caudalimetros", "date_rangue", "daterangue2", "auditoria", "proyecci_n", "widgets_video_tutoriales", "kuvio_video_tutorial", "kuvio_pantalla_sensor", "kuvio_ficha_sensor", "kuvio_pestanas_periodo" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4OCIgaGVpZ2h0PSIxMzAiIHZpZXdCb3g9IjAgMCA4OCAxMzAiPgogIDxwb2x5Z29uIHBvaW50cz0iMjAsNzQgNjgsNzQgNDQsMTE2IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiNiYmRlZmIiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxjaXJjbGUgY3g9IjQ0IiBjeT0iNDAiIHI9IjQwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiNiYmRlZmIiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjgsOC44KSBzY2FsZSgyLjYpIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgPHBhdGggZD0iTTEyIDIuNWMtMi4zIDMtNCA1LjUtNCA4YTQgNCAwIDAgMCA4IDBjMC0yLjUtMS43LTUtNC04eiIvPgogICAgPHBhdGggZD0iTTIgMjFjMS41LTEuMyAzLTEuMyA0LjUgMHMzIDEuMyA0LjUgMCAzLTEuMyA0LjUgMCAzIDEuMyA0LjUgMCIvPgogIDwvZz4KPC9zdmc+Cg==",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 88,
+      "height" : 130,
+      "size" : 568,
+      "etag" : "a7688e044a7458fedad5c64bef1f7bf22db3ba9c07daa8aa487ff25bf541fcc2",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 88,
+        "height" : 130,
+        "size" : 568,
+        "etag" : "a7688e044a7458fedad5c64bef1f7bf22db3ba9c07daa8aa487ff25bf541fcc2"
+      }
+    },
+    "etag" : "a7688e044a7458fedad5c64bef1f7bf22db3ba9c07daa8aa487ff25bf541fcc2",
+    "externalId" : null,
+    "fileName" : "bocadillo-agua-suelo_1.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "8995d1d0-90ba-11f1-9a1a-412768cf7861"
+    },
+    "link" : "/api/images/tenant/bocadillo-agua-suelo_1.svg",
+    "name" : "bocadillo-agua-suelo_1.svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/c0YQcZYRWzORocTuA9E47dIBPrUISI1g",
+    "publicResourceKey" : "c0YQcZYRWzORocTuA9E47dIBPrUISI1g",
+    "resourceKey" : "bocadillo-agua-suelo_1.svg",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "bocadillo-agua-suelo_1.svg"
+  }
+}
