@@ -1104,6 +1104,78 @@
           "row" : 0,
           "col" : 0,
           "id" : "1feb4359-482d-0e9d-4cd0-d99754938b6a"
+        },
+        "dd66d421-f480-0322-6464-22aedaf439d1" : {
+          "typeFullFqn" : "system.cards.timeseries_table",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "c8f74283-951c-1a16-456f-51d082c34e47",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "corriente_L3_raw",
+                "type" : "timeseries",
+                "label" : "corriente_L3_raw",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.7715317296059631,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showTimestamp" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true
+            },
+            "title" : "Timeseries table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : true,
+            "configMode" : "basic",
+            "titleFont" : null,
+            "titleColor" : null,
+            "titleIcon" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dd66d421-f480-0322-6464-22aedaf439d1"
         }
       },
       "states" : {
@@ -1165,6 +1237,12 @@
                   "sizeX" : 7,
                   "sizeY" : 6,
                   "row" : 33,
+                  "col" : 0
+                },
+                "dd66d421-f480-0322-6464-22aedaf439d1" : {
+                  "sizeX" : 16,
+                  "sizeY" : 6,
+                  "row" : 39,
                   "col" : 0
                 }
               },
@@ -1273,6 +1351,16 @@
             "assetTypes" : [ "Grupo_Riego" ],
             "assetNameFilter" : ""
           }
+        },
+        "c8f74283-951c-1a16-456f-51d082c34e47" : {
+          "id" : "c8f74283-951c-1a16-456f-51d082c34e47",
+          "alias" : "Sensores Electricos",
+          "filter" : {
+            "type" : "deviceType",
+            "resolveMultiple" : true,
+            "deviceTypes" : [ "Sensores_electricos" ],
+            "deviceNameFilter" : ""
+          }
         }
       },
       "filters" : { },
@@ -1331,8 +1419,8 @@
     },
     "ownerId" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }
