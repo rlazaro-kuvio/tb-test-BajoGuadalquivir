@@ -1117,12 +1117,12 @@
               "entityAliasId" : "c8f74283-951c-1a16-456f-51d082c34e47",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "corriente_L3_raw",
+                "name" : "signal",
                 "type" : "timeseries",
-                "label" : "corriente_L3_raw",
+                "label" : "signal",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.7715317296059631,
+                "_hash" : 0.9988905444584428,
                 "decimals" : 0
               } ],
               "alarmFilterConfig" : {
@@ -1131,14 +1131,35 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
               "realtime" : {
+                "realtimeType" : 0,
                 "interval" : 1000,
-                "timewindowMs" : 60000
+                "timewindowMs" : 2592000000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : null,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "NONE",
                 "limit" : 200
-              }
+              },
+              "timezone" : null
             },
             "showTitle" : true,
             "backgroundColor" : "rgb(255, 255, 255)",
