@@ -218,8 +218,8 @@
     }, {
       "additionalInfo" : {
         "description" : "El token de 4eGrowth dura 7 dias",
-        "layoutX" : 440,
-        "layoutY" : 300
+        "layoutX" : 413,
+        "layoutY" : 111
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1130,8 +1130,8 @@
     } ],
     "ruleChainConnections" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }
