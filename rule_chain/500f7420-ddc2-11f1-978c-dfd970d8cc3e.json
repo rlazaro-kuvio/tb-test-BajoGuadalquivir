@@ -135,7 +135,7 @@
       },
       "configuration" : {
         "msgCount" : 0,
-        "periodInSeconds" : 10,
+        "periodInSeconds" : 3600,
         "scriptLang" : "JS",
         "jsScript" : "return { msg: {}, metadata: {}, msgType: \"AGZOOM_TICK\" };",
         "tbelScript" : "return { msg: {}, metadata: {}, msgType: \"AGZOOM_TICK\" };",
