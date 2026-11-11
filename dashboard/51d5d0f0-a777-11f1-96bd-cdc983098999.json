@@ -1491,7 +1491,7 @@
                 "color" : "#009688",
                 "settings" : { },
                 "_hash" : 0.18258670166981805,
-                "decimals" : 0
+                "decimals" : 9
               }, {
                 "name" : "longitude",
                 "type" : "attribute",
@@ -1499,7 +1499,7 @@
                 "color" : "#00bcd4",
                 "settings" : { },
                 "_hash" : 0.5041941437106998,
-                "decimals" : 0
+                "decimals" : 9
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
