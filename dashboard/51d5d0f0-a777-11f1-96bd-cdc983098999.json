@@ -1117,12 +1117,100 @@
               "entityAliasId" : "c8f74283-951c-1a16-456f-51d082c34e47",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "signal",
+                "name" : "drenaje_temp",
                 "type" : "timeseries",
-                "label" : "signal",
+                "label" : "drenaje_temp",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.9988905444584428,
+                "_hash" : 0.760095439772602,
+                "decimals" : 0
+              }, {
+                "name" : "drenaje_lm2_raw",
+                "type" : "timeseries",
+                "label" : "drenaje_lm2_raw",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.8060412228958994,
+                "decimals" : 0
+              }, {
+                "name" : "drenaje_lm2",
+                "type" : "timeseries",
+                "label" : "drenaje_lm2",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.33551464895965455,
+                "decimals" : 0
+              }, {
+                "name" : "drenaje_ce_uscm",
+                "type" : "timeseries",
+                "label" : "drenaje_ce_uscm",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.40564569568680375,
+                "decimals" : 0
+              }, {
+                "name" : "deposito_nivel_rel_mm",
+                "type" : "timeseries",
+                "label" : "deposito_nivel_rel_mm",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.4369117200326983,
+                "decimals" : 0
+              }, {
+                "name" : "deposito_nivel_mm_raw",
+                "type" : "timeseries",
+                "label" : "deposito_nivel_mm_raw",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.306142933533715,
+                "decimals" : 0
+              }, {
+                "name" : "deposito_nivel_mm",
+                "type" : "timeseries",
+                "label" : "deposito_nivel_mm",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.8315723475587018,
+                "decimals" : 0
+              }, {
+                "name" : "cva_90_raw",
+                "type" : "timeseries",
+                "label" : "cva_90_raw",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.3363012979849249,
+                "decimals" : 0
+              }, {
+                "name" : "cva_90",
+                "type" : "timeseries",
+                "label" : "cva_90",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.39205177744856434,
+                "decimals" : 0
+              }, {
+                "name" : "cva_60",
+                "type" : "timeseries",
+                "label" : "cva_60",
+                "color" : "#ffeb3b",
+                "settings" : { },
+                "_hash" : 0.13359700241550398,
+                "decimals" : 0
+              }, {
+                "name" : "cva_30_raw",
+                "type" : "timeseries",
+                "label" : "cva_30_raw",
+                "color" : "#03a9f4",
+                "settings" : { },
+                "_hash" : 0.9382597862181069,
+                "decimals" : 0
+              }, {
+                "name" : "cva_30",
+                "type" : "timeseries",
+                "label" : "cva_30",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.7515254719182051,
                 "decimals" : 0
               } ],
               "alarmFilterConfig" : {
@@ -1379,7 +1467,7 @@
           "filter" : {
             "type" : "deviceType",
             "resolveMultiple" : true,
-            "deviceTypes" : [ "Sensores_electricos" ],
+            "deviceTypes" : [ "Lisimetro" ],
             "deviceNameFilter" : ""
           }
         }
